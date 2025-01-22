@@ -9,9 +9,12 @@ def load_config():
     """
     config_path = "config.json"
     if not os.path.exists(config_path):
-        raise FileNotFoundError(f"{config_path} not found. Please create the file with the necessary configurations.")
+        raise FileNotFoundError(
+            f"{config_path} not found. Please create the file with the necessary configurations."
+        )
     with open(config_path, "r") as file:
         return json.load(file)
+
 
 flattenedSchema = {
   "title": "BudgetRequest",
@@ -21,9 +24,7 @@ flattenedSchema = {
       "title": "Budget",
       "type": "object",
       "properties": {
-        "budget_limit": {
-          "type": "number"
-        },
+        "budget_limit": {"type": "number"},
         "items": {
           "title": "items",
           "type": "array",
@@ -31,24 +32,12 @@ flattenedSchema = {
             "title": "BudgetItem",
             "type": "object",
             "properties": {
-              "item_name": {
-                "type": "string"
-              },
-              "amount": {
-                "type": "number"
-              },
-              "category": {
-                "type": "string"
-              },
-              "importance_rank": {
-                "type": "integer"
-              },
-              "recurrence_schedule": {
-                "type": ["string", "null"]
-              },
-              "due_date": {
-                "type": ["number", "null"]
-              }
+              "item_name": {"type": "string"},
+              "amount": {"type": "number"},
+              "category": {"type": "string"},
+              "importance_rank": {"type": "integer"},
+              "recurrence_schedule": {"type": ["string", "null"]},
+              "due_date": {"type": ["number", "null"]}
             },
             "required": [
               "item_name",
@@ -58,34 +47,24 @@ flattenedSchema = {
             ]
           }
         },
-        "warnings": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
+        "warnings": {"type": "array", "items": {"type": "string"}},
         "conversations": {
+          "title": "Conversations",
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "user_message": {"type": "string"},
+              "ai_response": {"type": "string"}
+            },
+            "required": ["user_message", "ai_response"]
           }
         }
       },
-      "required": [
-        "budget_limit",
-        "items",
-        "warnings",
-        "conversations"
-      ]
-    },
-    "conversation": {
-      "type": "string"
+      "required": ["budget_limit", "items", "warnings", "conversations"]
     }
   },
-  "required": [
-    "Budget",
-    "conversation"
-  ]
+  "required": ["Budget"]
 }
 
 
@@ -115,31 +94,22 @@ def generate_prompt(previous_budget: dict, user_input: str):
     11. Make sure to follow the parsing format for items in this way: ( "item_name": "Groceries","amount": 300.0, "category": "Regular", "importance_rank": 2, "recurrence_schedule": "weekly", "due_date": null)
     12. If there is no user input, assume it is the beginning input. 
     13. Encourage prudent financial practices.
-
         13.1 Emergency Fund: Emphasize the importance of saving at least three to six months’ worth of expenses in an accessible emergency fund. If the user’s budget does not currently allocate funds for emergencies, consider prompting them to add a line item to gradually build this reserve.
         13.2 Savings Goals: If the user has upcoming expenses—like a vacation or a major purchase—encourage them to set incremental saving targets. Suggest adding these goals as budget items with a monthly amount, even if small.
         13.3 Debt Reduction: If the user mentions debts, guide them to prioritize paying off high-interest debts first. Encourage them to allocate an item specifically for extra debt payments if room exists in the budget.
-
     14. Include caution around fees and interest rates.
-
         14.1 Credit Card Fees: If the user wants to purchase an item on credit, remind them that interest charges or annual fees can eat into their budget. Ask whether they’re accounting for those additional costs.
         14.2 Loan Interest: If they mention financing or personal loans, prompt them to consider total interest over time. They might need to budget for monthly or weekly payments, including interest.
         14.3 Banking/Overdraft Fees: Suggest tracking any recurring banking fees, overdraft fees, or other finance charges, so they’re reflected in the budget items.
-
     15. Offer disclaimers.
-
         15.1 Scope of Advice: Clarify that you provide general budgeting guidance, not personalized or certified financial or investment advice.
         15.2 Professional Consultations: If the user is dealing with large sums, complex investments, or major life changes (like a home purchase), gently recommend consulting a professional (e.g., a certified financial planner or accountant).
         15.3 Accuracy & Assumptions: Note that all advice is based on the current information provided; if key data changes, the user’s financial strategy may need to be updated.
-
     16. Consider best-practice budgeting guidelines (e.g., 50/30/20 rule).
-
         16.1 Overview: Explain common budgeting frameworks, such as spending 50% of take-home pay on needs (housing, food, utilities), 30% on wants (entertainment, dining out), and 20% on savings or debt reduction.
         16.2 Customization: Remind the user that these rules are guidelines, not absolutes. Encourage them to adapt percentages to their lifestyle or region’s cost of living.
         16.3 Practical Steps: If the user wants to adopt such a rule, help them categorize expenses into “needs” vs. “wants” vs. “savings” and track whether each category stays within its recommended percentage of the total budget.
-
     17. When discussing adjustments or trade-offs.
-
         17.1 Prioritizing Items: When the user’s expenses surpass the budget limit, help them identify optional vs. essential expenses. Suggest cutting back on discretionary items first.
         17.2 Opportunity Costs: Emphasize that every increase in one budget item may require a decrease elsewhere. Guide the user on how to shift funds from lower-priority to higher-priority areas.
         17.3 Long-Term Impact: If the user removes or reduces items, prompt them to consider how that change affects future months (e.g., deferring maintenance on a car could lead to higher costs later).
@@ -159,7 +129,7 @@ def configure_genai():
         "temperature": 1,
         "top_p": 0.95,
         "top_k": 40,
-        #"max_output_tokens": 8192 * 64,
+        # "max_output_tokens": 8192 * 64,
         "response_mime_type": "application/json",
     }
 
@@ -178,7 +148,11 @@ def initialize_chat(model, current_budget):
         history=[
             {
                 "role": "user",
-                "parts": [{"text": f"System prompt: {generate_prompt(current_budget, '')} Respond understood if you got it."}],
+                "parts": [
+                    {
+                        "text": f"System prompt: {generate_prompt(current_budget, '')} Respond understood if you got it."
+                    }
+                ],
             },
             {
                 "role": "model",
@@ -195,18 +169,44 @@ def chat_with_user(chat_session, current_budget):
     """
     print(chat_session.last)
 
-    response = chat_session.send_message(generate_prompt(current_budget, input("Enter budget info: ")))
+    response = chat_session.send_message(
+        generate_prompt(current_budget, input("Enter budget info: "))
+    )
     print(response.text)
 
     while True:
         try:
-            user_input = input(json.loads(response.text)["conversation"] + " ")
-            response = chat_session.send_message(generate_prompt(current_budget, user_input))
+            user_input = input(json.loads(response.text)["conversations"] + " ")
+            response = chat_session.send_message(
+                generate_prompt(current_budget, user_input)
+            )
             print(response.text)
         except KeyboardInterrupt:
             print("\nExiting chat. Goodbye!")
             break
 
+
+def send_one_chat(current_state):
+    model = configure_genai()
+    chat_session = initialize_chat(model,current_state)
+    print(chat_session.last)
+
+    response = chat_session.send_message(
+        generate_prompt(current_state, input("Enter budget info: "))
+    )
+    print(response.text)
+
+    while True:
+        try:
+            user_input = input(json.loads(response.text)["conversation"] + " ")
+            response = chat_session.send_message(
+                generate_prompt(current_state, user_input)
+            )
+            print(response.text)
+            return response.text
+        except KeyboardInterrupt:
+            print("\nExiting chat. Goodbye!")
+            break
 
 def main():
     """
@@ -216,13 +216,7 @@ def main():
     model = configure_genai()
 
     # Initial budget structure
-    current_budget = {
-        "Budget": {
-            "budget_limit": 0.0,
-            "items": [],
-            "warnings": []
-        }
-    }
+    current_budget = {"Budget": {"budget_limit": 0.0, "items": [], "warnings": []}}
 
     # Start chat session
     chat_session = initialize_chat(model, current_budget)
