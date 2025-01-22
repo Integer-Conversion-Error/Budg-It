@@ -17,54 +17,64 @@ def load_config():
 
 
 flattenedSchema = {
-  "title": "BudgetRequest",
-  "type": "object",
-  "properties": {
-    "Budget": {
-      "title": "Budget",
-      "type": "object",
-      "properties": {
-        "budget_limit": {"type": "number"},
-        "items": {
-          "title": "items",
-          "type": "array",
-          "items": {
-            "title": "BudgetItem",
+    "title": "BudgetRequest",
+    "type": "object",
+    "properties": {
+        "Budget": {
+            "title": "Budget",
             "type": "object",
             "properties": {
-              "item_name": {"type": "string"},
-              "amount": {"type": "number"},
-              "category": {"type": "string"},
-              "importance_rank": {"type": "integer"},
-              "recurrence_schedule": {"type": ["string", "null"]},
-              "due_date": {"type": ["number", "null"]}
+                "budget_limit": {"type": "number"},
+                "items": {
+                    "title": "items",
+                    "type": "array",
+                    "items": {
+                        "title": "BudgetItem",
+                        "type": "object",
+                        "properties": {
+                            "item_name": {"type": "string"},
+                            "amount": {"type": "number"},
+                            "category": {"type": "string"},
+                            "importance_rank": {"type": "integer"},
+                            "recurrence_schedule": {"type": ["string", "null"]},
+                            "due_date": {"type": ["number", "null"]},
+                        },
+                        "required": [
+                            "item_name",
+                            "amount",
+                            "category",
+                            "importance_rank",
+                        ],
+                    },
+                },
+                "warnings": {"type": "array", "items": {"type": "string"}},
+                "conversations": {
+                    "title": "Conversations",
+                    "type": "array",
+                    "items": {
+                        "title": "dialogue",
+                        "type": "object",
+                        "properties": {
+                            "user_message": {"type": "string"},
+                            "ai_response": {"type": "string"},
+                        },
+                        "required": ["user_message", "ai_response"],
+                    },
+                },
             },
-            "required": [
-              "item_name",
-              "amount",
-              "category",
-              "importance_rank"
-            ]
-          }
+            "required": ["budget_limit", "items", "warnings", "conversations"],
         },
-        "warnings": {"type": "array", "items": {"type": "string"}},
-        "conversations": {
-          "title": "Conversations",
-          "type": "array",
-          "items": {
+        "conversation": {
+            "title": "Conversation",
             "type": "object",
             "properties": {
-              "user_message": {"type": "string"},
-              "ai_response": {"type": "string"}
+                "user_message": {"type": "string", "title": "User Message"},
+                "ai_response": {"type": "string", "title": "AI Response"},
             },
-            "required": ["user_message", "ai_response"]
-          }
-        }
-      },
-      "required": ["budget_limit", "items", "warnings", "conversations"]
-    }
-  },
-  "required": ["Budget"]
+            "required": ["user_message", "ai_response"],
+        },
+    },
+    "required": ["Budget"],
 }
 
 
@@ -86,6 +96,7 @@ def generate_prompt(previous_budget: dict, user_input: str):
     5. Always provide the JSON structure as output.
     6. Engage in conversation with the user by providing clear, friendly, and helpful responses alongside the JSON data. 
         6.1 Append the previous chats to the array called conversations. The most recent chat is to be put into the standalone conversation field
+        6.2 Make sure both the user's chats and responses are placed word for word into the conversations array
     7. At the end of each chat, make sure to ask the user how else you can help them (within the scope of your duties). This is also part of what is to be added to "conversations".
     8. Always factor in one-time purchases to the budget as well, as the budget is always set for the current month. 
     9. Make sure to relate any open-ended questions to the budget. 
@@ -188,7 +199,7 @@ def chat_with_user(chat_session, current_budget):
 
 def send_one_chat(current_state):
     model = configure_genai()
-    chat_session = initialize_chat(model,current_state)
+    chat_session = initialize_chat(model, current_state)
     print(chat_session.last)
 
     response = chat_session.send_message(
@@ -207,6 +218,7 @@ def send_one_chat(current_state):
         except KeyboardInterrupt:
             print("\nExiting chat. Goodbye!")
             break
+
 
 def main():
     """
