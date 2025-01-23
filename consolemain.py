@@ -187,7 +187,7 @@ def chat_with_user(chat_session, current_budget):
 
     while True:
         try:
-            user_input = input(json.loads(response.text)["conversations"] + " ")
+            user_input = input(json.loads(response.text)["conversation"]["ai_response"] + " ")
             response = chat_session.send_message(
                 generate_prompt(current_budget, user_input)
             )

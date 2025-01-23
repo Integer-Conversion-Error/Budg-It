@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .chat-log {
+            height: 150px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"] {
+            width: calc(100% - 100px);
+            padding: 10px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Budgeting Assistant</h1>
+        <div class="chat-log" id="chatLog">
+            <!-- Chat logs will be dynamically added here -->
+        </div>
+        <div>
+            <input type="text" id="userInput" placeholder="Type your input here..." />
+            <button onclick="sendInput()">Send</button>
+        </div>
+        <h2>Budget Items</h2>
+        <table id="budgetTable">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Importance Rank</th>
+                    <th>Recurrence</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Budget items will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let currentState = {
+            Budget: {
+                budget_limit: 2000,
+                items: [],
+                warnings: [],
+                conversations: []
+            },
+            conversation: ""
+        };
+
+        const apiUrl = "http://localhost:8000/chat";
+
+
+        function updateChatLog(conversations) {
+            const chatLog = document.getElementById("chatLog");
+            chatLog.innerHTML = ""; // Clear previous log
+            conversations.forEach(chat => {
+                const userMessage = document.createElement("p");
+                userMessage.textContent = `User: ${chat.user_message}`;
+                const aiResponse = document.createElement("p");
+                aiResponse.textContent = `AI: ${chat.ai_response}`;
+                chatLog.appendChild(userMessage);
+                chatLog.appendChild(aiResponse);
+            });
+            chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
+        }
+
+        function updateBudgetTable(items) {
+            const tableBody = document.getElementById("budgetTable").querySelector("tbody");
+            tableBody.innerHTML = ""; // Clear previous table data
+            items.forEach(item => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${item.item_name}</td>
+                    <td>${item.amount}</td>
+                    <td>${item.category}</td>
+                    <td>${item.importance_rank}</td>
+                    <td>${item.recurrence_schedule || "N/A"}</td>
+                    <td>${item.due_date || "N/A"}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        async function sendInput() {
+            const userInput = document.getElementById("userInput").value;
+            if (!userInput.trim()) {
+                alert("Please enter a valid input.");
+                return;
+            }
+
+            currentState.conversation = userInput;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(currentState)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                currentState = data; // Update current state
+                updateChatLog(currentState.Budget.conversations);
+                updateBudgetTable(currentState.Budget.items);
+                document.getElementById("userInput").value = ""; // Clear input field
+            } catch (error) {
+                console.error("Error communicating with API:", error);
+                alert("Failed to send input to the API.");
+            }
+        }
+    </script>
+</body>
+</html>
