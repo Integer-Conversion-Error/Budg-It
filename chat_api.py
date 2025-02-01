@@ -10,11 +10,12 @@ app = FastAPI()
 # Configure CORS for the FastAPI app
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Adjust based on frontend domain
+    allow_origin_regex=".*",  # This regex matches any origin.
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 @app.post("/chat")
 def send_one_chat(current_state: dict):
     """
