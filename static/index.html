@@ -126,13 +126,19 @@
 
         async function sendInput() {
             const userInput = document.getElementById("userInput").value;
+            console.debug("Send button clicked. Current user input:", userInput);
+        
             if (!userInput.trim()) {
+                console.warn("Empty input detected. Prompting the user to enter a valid input.");
                 alert("Please enter a valid input.");
                 return;
             }
-
+        
+            console.debug("Valid input provided. Updating currentState with user input.");
             currentState.conversation = userInput;
-
+        
+            console.debug("Preparing to send data to the API. Current state:", JSON.stringify(currentState));
+        
             try {
                 const response = await fetch(apiUrl, {
                     method: "POST",
@@ -141,21 +147,32 @@
                     },
                     body: JSON.stringify(currentState)
                 });
-
+        
+                console.debug("API request sent. Awaiting response...");
+        
                 if (!response.ok) {
+                    console.error(`API returned an error: ${response.statusText} (status: ${response.status})`);
                     throw new Error(`Error: ${response.statusText}`);
                 }
-
+        
                 const data = await response.json();
-                currentState = data; // Update current state
+                console.debug("API response received. Data:", data);
+        
+                console.debug("Updating the current state with the response from the API.");
+                currentState = data;
+        
+                console.debug("Updating the chat log and budget table with the new state.");
                 updateChatLog(currentState.Budget.conversations);
                 updateBudgetTable(currentState.Budget.items);
+        
+                console.debug("Clearing the user input field.");
                 document.getElementById("userInput").value = ""; // Clear input field
             } catch (error) {
                 console.error("Error communicating with API:", error);
                 alert("Failed to send input to the API.");
             }
         }
+        
     </script>
 </body>
 </html>

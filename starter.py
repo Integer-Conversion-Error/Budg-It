@@ -1,6 +1,6 @@
 import os,json
 import google.generativeai as genai
-
+from consolemain import generate_prompt
 #REFER TO https://github.com/googleapis/python-genai
 # Helper Function to Load Configurations
 def load_config():
