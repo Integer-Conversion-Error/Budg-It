@@ -1,11 +1,14 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Body
 import uvicorn
-from consolemain import configure_genai, initialize_chat, generate_prompt
-import consolemain
 import json
 from fastapi.middleware.cors import CORSMiddleware
-app = FastAPI()
+from pydantic import BaseModel
+from typing import Optional, Dict, Any
 
+# Import the helper functions from consolemain.
+from consolemain import configure_genai, initialize_chat, generate_prompt
+
+app = FastAPI()
 
 # Configure CORS for the FastAPI app
 app.add_middleware(
@@ -16,38 +19,112 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Define the Pydantic model that describes the expected request payload.
+class ChatRequest(BaseModel):
+    Budget: Dict[str, Any]
+    conversation: Optional[str] = ""  # Defaults to an empty string if not provided.
+
 @app.post("/chat")
-def send_one_chat(current_state: dict):
-    """
-    API function to process a single user input in the budgeting assistant.
-    
-    Parameters:
-        current_state (dict): The current budget state.
-    
-    Returns:
-        dict: The updated budget state with AI responses.
-    """
+def send_one_chat(current_state: ChatRequest = Body(...)):
     try:
-        # Configure the generative AI model
+        # Convert the incoming Pydantic model to a dictionary.
+        state_dict = current_state.dict()
+        print("DEBUG: Received current_state:")
+        print(state_dict)
+
+        # Configure the generative AI model.
         model = configure_genai()
 
-        # Initialize the chat session with the current state
-        chat_session = initialize_chat(model, current_state)
+        # Initialize chat session only if there is no conversation history.
+        # Otherwise, re-create the chat session with the existing conversation.
+        if not state_dict["Budget"].get("conversations"):
+            print("DEBUG: No existing conversation history found. Initializing new chat session.")
+            chat_session = initialize_chat(model, state_dict)
+        else:
+            print("DEBUG: Existing conversation history found:")
+            print(state_dict["Budget"]["conversations"])
+            # Rebuild chat history from previous conversation turns.
+            chat_history = []
+            for conversation in state_dict["Budget"]["conversations"]:
+                chat_history.append({
+                    "role": "user",
+                    "parts": [{"text": conversation["user_message"]}]
+                })
+                chat_history.append({
+                    "role": "model",
+                    "parts": [{"text": conversation["ai_response"]}]
+                })
+            # Add the new user input to the history.
+            chat_history.append({
+                "role": "user",
+                "parts": [{"text": state_dict.get("conversation", "")}]
+            })
+            print("DEBUG: Reconstructed chat_history with new user input:")
+            print(chat_history)
+            chat_session = model.start_chat(history=chat_history)
 
-        # Generate response from the AI
-        response = chat_session.send_message(
-            generate_prompt(current_state, current_state.get("conversation", ""))
-        )
+        # Generate the prompt using the current state.
+        prompt = generate_prompt(state_dict, state_dict.get("conversation", ""))
+        print("DEBUG: Generated prompt:")
+        print(prompt)
 
-        # Parse and return the AI response
+        # Generate response from the AI.
+        response = chat_session.send_message(prompt)
         ai_response = response.text
-        return json.loads(ai_response)
-    except Exception as e:
-        # Raise an HTTPException for any errors
-        raise HTTPException(status_code=500, detail=f"Error processing chat: {str(e)}")
-    
-    
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+        print("DEBUG: Raw AI response text:")
+        print(ai_response)
 
+        # Try to parse the AI response.
+        try:
+            parsed_ai_response = json.loads(ai_response)
+            print("DEBUG: Parsed AI response:")
+            print(parsed_ai_response)
+        except json.JSONDecodeError:
+            parsed_ai_response = {"ai_response": ai_response}
+            print("DEBUG: AI response could not be parsed as JSON. Using raw text:")
+            print(parsed_ai_response)
+
+        # Extract the conversation reply.
+        # If the "conversation" key exists and is a dict, use its "ai_response" value.
+        # Otherwise, use a default message instead of the entire API return.
+        if "conversation" in parsed_ai_response and isinstance(parsed_ai_response["conversation"], dict):
+            ai_reply = parsed_ai_response["conversation"].get("ai_response", "Operation completed.")
+        else:
+            ai_reply = "Operation completed."
+        print("DEBUG: Extracted AI reply for conversation:")
+        print(ai_reply)
+
+        # Append the new conversation turn to the conversation history.
+        if "conversations" not in state_dict["Budget"]:
+            state_dict["Budget"]["conversations"] = []
+        state_dict["Budget"]["conversations"].append({
+            "user_message": state_dict.get("conversation", ""),
+            "ai_response": ai_reply
+        })
+        print("DEBUG: Updated conversation history:")
+        print(state_dict["Budget"]["conversations"])
+
+        # Update budget items if provided in the AI response.
+        if ("Budget" in parsed_ai_response 
+                and isinstance(parsed_ai_response["Budget"], dict) 
+                and "items" in parsed_ai_response["Budget"]):
+            state_dict["Budget"]["items"] = parsed_ai_response["Budget"]["items"]
+            print("DEBUG: Updated budget items:")
+            print(state_dict["Budget"]["items"])
+        else:
+            print("DEBUG: No update to 'items' was found in the AI response.")
+
+        return state_dict
+
+    except Exception as e:
+        print("DEBUG: Exception encountered:", e)
+        raise HTTPException(status_code=500, detail=f"Error processing chat: {str(e)}")
+
+
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing chat: {str(e)}")
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000)
