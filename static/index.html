@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgeting Assistant</title>
+    <!-- Include Chart.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,6 +61,17 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        /* Style for the pie chart section */
+        #budget-chart {
+            margin-top: 30px;
+        }
+
+        #budget-chart canvas {
+            max-width: 400px;
+            margin: 0 auto;
+            display: block;
+        }
     </style>
 </head>
 
@@ -72,7 +85,10 @@
             <input type="text" id="userInput" placeholder="Type your input here..." />
             <button onclick="sendInput()">Send</button>
         </div>
-        
+        <div>
+            <input type="file" id="receiptInput" accept="image/*" />
+            <button onclick="uploadReceipt()">Upload Receipt</button>
+          </div>
         <section id="current-budget">
             <h2>Current Budget</h2>
             <p id="budget-value">No Budget Defined</p>
@@ -93,6 +109,11 @@
                 <!-- Budget items will be dynamically added here -->
             </tbody>
         </table>
+        <!-- Pie Chart Section -->
+        <section id="budget-chart">
+            <h2>Budget Distribution</h2>
+            <canvas id="pieChart"></canvas>
+        </section>
     </div>
 
     <script>
@@ -108,7 +129,7 @@
 
         const apiUrl = "http://localhost:8000/chat";
 
-
+        // Updates the chat log with conversation messages.
         function updateChatLog(conversations) {
             const chatLog = document.getElementById("chatLog");
             chatLog.innerHTML = ""; // Clear previous log
@@ -123,85 +144,138 @@
             chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
         }
 
+        // Updates the budget table with the latest budget items.
         function updateBudgetTable(items) {
             const tableBody = document.getElementById("budgetTable").querySelector("tbody");
             tableBody.innerHTML = ""; // Clear previous table data
             items.forEach(item => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td>${item.item_name}</td>
-                    <td>${item.amount}</td>
-                    <td>${item.category}</td>
-                    <td>${item.importance_rank}</td>
-                    <td>${item.recurrence_schedule || "N/A"}</td>
-                    <td>${item.due_date || "N/A"}</td>
-                `;
+          <td>${item.item_name}</td>
+          <td>${item.amount}</td>
+          <td>${item.category}</td>
+          <td>${item.importance_rank}</td>
+          <td>${item.recurrence_schedule || "N/A"}</td>
+          <td>${item.due_date || "N/A"}</td>
+        `;
                 tableBody.appendChild(row);
             });
         }
 
-        // This function updates the budget display (budget_limit) field
+        // Updates the budget limit display.
         function updateBudgetDisplay(budget) {
             const budgetElement = document.getElementById('budget-value');
             if (budget !== null && budget !== undefined) {
-                // Format the budget as needed (e.g., with two decimal places)
                 budgetElement.textContent = `$${parseFloat(budget).toFixed(2)}`;
             } else {
                 budgetElement.textContent = "No Budget Defined";
             }
         }
 
-        // New function that acts like updateBudgetTable—but for the budget limit.
-        // It reads from the currentState and then calls updateBudgetDisplay.
+        // Mimics updateBudgetTable, but for the budget limit.
         function updateBudgetItem() {
             updateBudgetDisplay(currentState.Budget.budget_limit);
         }
 
+        // Create or update the pie chart that visualizes the budget distribution.
+        function updateBudgetChart() {
+            const items = currentState.Budget.items;
+            const budgetLimit = parseFloat(currentState.Budget.budget_limit) || 0;
+            let labels = [];
+            let dataValues = [];
+
+            // Sum the cost of budget items and prepare labels/data.
+            const totalItemsCost = items.reduce((total, item) => {
+                const amount = parseFloat(item.amount) || 0;
+                labels.push(item.item_name);
+                dataValues.push(amount);
+                return total + amount;
+            }, 0);
+
+            // Calculate surplus and add it if available.
+            const surplus = budgetLimit - totalItemsCost;
+            if (surplus > 0) {
+                labels.push("Surplus");
+                dataValues.push(surplus);
+            }
+
+            // Create or update the pie chart using Chart.js.
+            if (window.pieChartInstance) {
+                // Update existing chart data.
+                window.pieChartInstance.data.labels = labels;
+                window.pieChartInstance.data.datasets[0].data = dataValues;
+                window.pieChartInstance.data.datasets[0].backgroundColor = generateColors(labels.length);
+                window.pieChartInstance.update();
+            } else {
+                // Initialize the chart.
+                const ctx = document.getElementById('pieChart').getContext('2d');
+                window.pieChartInstance = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: dataValues,
+                            backgroundColor: generateColors(labels.length)
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'top' },
+                            title: { display: true, text: 'Budget Distribution' }
+                        }
+                    }
+                });
+            }
+        }
+
+        // Helper function to generate colors for the chart segments.
+        function generateColors(numColors) {
+            const colors = ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'];
+            if (numColors <= colors.length) {
+                return colors.slice(0, numColors);
+            } else {
+                let extended = [];
+                for (let i = 0; i < numColors; i++) {
+                    extended.push(colors[i % colors.length]);
+                }
+                return extended;
+            }
+        }
+
+        // Sends user input to the /chat endpoint and updates the state.
         async function sendInput() {
             const userInput = document.getElementById("userInput").value;
-            console.debug("Send button clicked. Current user input:", userInput);
-
             if (!userInput.trim()) {
-                console.warn("Empty input detected. Prompting the user to enter a valid input.");
                 alert("Please enter a valid input.");
                 return;
             }
-
-            console.debug("Valid input provided. Updating currentState with user input.");
             currentState.conversation = userInput;
-
-            console.debug("Preparing to send data to the API. Current state:", JSON.stringify(currentState));
 
             try {
                 const response = await fetch(apiUrl, {
                     method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
+                    headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(currentState)
                 });
 
-                console.debug("API request sent. Awaiting response...");
-
                 if (!response.ok) {
-                    console.error(`API returned an error: ${response.statusText} (status: ${response.status})`);
                     throw new Error(`Error: ${response.statusText}`);
                 }
 
                 const data = await response.json();
-                console.debug("API response received. Data:", data);
-
-                console.debug("Updating the current state with the response from the API.");
+                // Update the current state with the API response.
                 currentState = data;
 
-                console.debug("Updating the chat log and budget table with the new state.");
+                // Update the UI components.
                 updateChatLog(data.Budget.conversations);
                 updateBudgetTable(data.Budget.items);
-                updateBudgetDisplay(data.Budget.budget_limit)
-                console.debug(data.Budget.budget_limit)
+                updateBudgetItem();
+                updateBudgetChart();
+                console.debug("New budget_limit:", data.Budget.budget_limit);
 
-                console.debug("Clearing the user input field.");
-                document.getElementById("userInput").value = ""; // Clear input field
+                // Clear the input field.
+                document.getElementById("userInput").value = "";
             } catch (error) {
                 console.error("Error communicating with API:", error);
                 alert("Failed to send input to the API.");
@@ -209,13 +283,48 @@
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            // Here you would typically retrieve the current budget value from a data source.
-            // For demonstration, we use a placeholder. Replace `null` with the actual budget value.
-            const currentBudget = null; // e.g., set to 2500 for a defined budget
-
-            updateBudgetDisplay(currentBudget);
+            updateBudgetItem();
+            updateBudgetChart();
         });
 
+        async function uploadReceipt() {
+            const fileInput = document.getElementById('receiptInput');
+            if (!fileInput.files || fileInput.files.length === 0) {
+                alert("Please select an image file to upload.");
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('receipt', file);
+            // Adding a command helps the API route this request appropriately.
+            formData.append('command', 'uploadReceipt');
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    body: formData
+                    // No need to set Content-Type header; the browser will do it automatically.
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                // Assume the API now processes the receipt image, extracts items,
+                // and returns an updated state with new budget items.
+                currentState = data;
+                updateChatLog(data.Budget.conversations);
+                updateBudgetTable(data.Budget.items);
+                updateBudgetItem();
+                updateBudgetChart();
+                alert("Receipt processed successfully!");
+            } catch (error) {
+                console.error("Error uploading receipt:", error);
+                alert("Failed to process receipt.");
+            }
+        }
     </script>
 </body>
 
