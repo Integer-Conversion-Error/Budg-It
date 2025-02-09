@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,12 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
         }
+
         .chat-log {
             height: 450px;
             overflow-y: scroll;
@@ -21,24 +24,30 @@
             margin-bottom: 10px;
             background-color: #f9f9f9;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
-        table th, table td {
+
+        table th,
+        table td {
             border: 1px solid #ccc;
             padding: 8px;
             text-align: left;
         }
+
         table th {
             background-color: #f2f2f2;
         }
+
         input[type="text"] {
             width: calc(100% - 100px);
             padding: 10px;
             margin-right: 10px;
         }
+
         button {
             padding: 10px 20px;
             background-color: #007bff;
@@ -46,11 +55,13 @@
             border: none;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Budgeting Assistant</h1>
@@ -61,6 +72,11 @@
             <input type="text" id="userInput" placeholder="Type your input here..." />
             <button onclick="sendInput()">Send</button>
         </div>
+        
+        <section id="current-budget">
+            <h2>Current Budget</h2>
+            <p id="budget-value">No Budget Defined</p>
+        </section>
         <h2>Budget Items</h2>
         <table id="budgetTable">
             <thead>
@@ -82,7 +98,7 @@
     <script>
         let currentState = {
             Budget: {
-                budget_limit: 2000,
+                budget_limit: null,
                 items: [],
                 warnings: [],
                 conversations: []
@@ -124,21 +140,38 @@
             });
         }
 
+        // This function updates the budget display (budget_limit) field
+        function updateBudgetDisplay(budget) {
+            const budgetElement = document.getElementById('budget-value');
+            if (budget !== null && budget !== undefined) {
+                // Format the budget as needed (e.g., with two decimal places)
+                budgetElement.textContent = `$${parseFloat(budget).toFixed(2)}`;
+            } else {
+                budgetElement.textContent = "No Budget Defined";
+            }
+        }
+
+        // New function that acts like updateBudgetTable—but for the budget limit.
+        // It reads from the currentState and then calls updateBudgetDisplay.
+        function updateBudgetItem() {
+            updateBudgetDisplay(currentState.Budget.budget_limit);
+        }
+
         async function sendInput() {
             const userInput = document.getElementById("userInput").value;
             console.debug("Send button clicked. Current user input:", userInput);
-        
+
             if (!userInput.trim()) {
                 console.warn("Empty input detected. Prompting the user to enter a valid input.");
                 alert("Please enter a valid input.");
                 return;
             }
-        
+
             console.debug("Valid input provided. Updating currentState with user input.");
             currentState.conversation = userInput;
-        
+
             console.debug("Preparing to send data to the API. Current state:", JSON.stringify(currentState));
-        
+
             try {
                 const response = await fetch(apiUrl, {
                     method: "POST",
@@ -147,24 +180,26 @@
                     },
                     body: JSON.stringify(currentState)
                 });
-        
+
                 console.debug("API request sent. Awaiting response...");
-        
+
                 if (!response.ok) {
                     console.error(`API returned an error: ${response.statusText} (status: ${response.status})`);
                     throw new Error(`Error: ${response.statusText}`);
                 }
-        
+
                 const data = await response.json();
                 console.debug("API response received. Data:", data);
-        
+
                 console.debug("Updating the current state with the response from the API.");
                 currentState = data;
-        
+
                 console.debug("Updating the chat log and budget table with the new state.");
-                updateChatLog(currentState.Budget.conversations);
-                updateBudgetTable(currentState.Budget.items);
-        
+                updateChatLog(data.Budget.conversations);
+                updateBudgetTable(data.Budget.items);
+                updateBudgetDisplay(data.Budget.budget_limit)
+                console.debug(data.Budget.budget_limit)
+
                 console.debug("Clearing the user input field.");
                 document.getElementById("userInput").value = ""; // Clear input field
             } catch (error) {
@@ -172,7 +207,16 @@
                 alert("Failed to send input to the API.");
             }
         }
-        
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Here you would typically retrieve the current budget value from a data source.
+            // For demonstration, we use a placeholder. Replace `null` with the actual budget value.
+            const currentBudget = null; // e.g., set to 2500 for a defined budget
+
+            updateBudgetDisplay(currentBudget);
+        });
+
     </script>
 </body>
+
 </html>
