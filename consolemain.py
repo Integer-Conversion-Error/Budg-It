@@ -1,5 +1,5 @@
 import os
-import json
+import json,re
 import google.generativeai as genai
 
 
@@ -219,6 +219,35 @@ def send_one_chat(current_state):
             print("\nExiting chat. Goodbye!")
             break
 
+def parse_receipt_text(text):
+    """
+    Parses the OCR-extracted text from a receipt.
+    Assumes each line with an item has a format like:
+      ItemName  <whitespace> $Cost
+    Returns a list of budget items.
+    """
+    items = []
+    lines = text.splitlines()
+    # Regular expression to capture an item name and a cost.
+    pattern = re.compile(r'(.+?)\s+\$?(\d+\.\d{2})')
+    
+    for line in lines:
+        match = pattern.search(line)
+        if match:
+            item_name = match.group(1).strip()
+            try:
+                amount = float(match.group(2))
+            except ValueError:
+                continue  # Skip lines that don’t parse correctly
+            items.append({
+                "item_name": item_name,
+                "amount": amount,
+                "category": "Receipt",
+                "importance_rank": None,
+                "recurrence_schedule": None,
+                "due_date": None
+            })
+    return items
 
 def main():
     """
