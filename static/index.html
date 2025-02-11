@@ -128,6 +128,8 @@
         };
 
         const apiUrl = "http://localhost:8000/chat";
+        const receiptUrl = "http://localhost:8000/receipt";
+
 
         // Updates the chat log with conversation messages.
         function updateChatLog(conversations) {
@@ -143,7 +145,48 @@
             });
             chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
         }
-
+        async function uploadReceipt() {
+            const fileInput = document.getElementById('receiptInput');
+            if (!fileInput.files || fileInput.files.length === 0) {
+                alert("Please select an image file to upload.");
+                return;
+            }
+        
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('receipt', file);
+            // Adding a command helps the API route this request appropriately.
+            formData.append('command', 'uploadReceipt');
+            formData.append('current_state', JSON.stringify(currentState));
+        
+            try {
+                const response = await fetch(receiptUrl, {
+                    method: 'POST',
+                    body: formData
+                    // No need to set Content-Type header; the browser will do it automatically.
+                });
+        
+                if (!response.ok) {
+                    throw new Error(`Error: ${response.statusText}`);
+                }
+        
+                const data = await response.json();
+                // Assume the API now processes the receipt image, extracts items,
+                // and returns an updated state with new budget items.
+                currentState = data;
+                updateChatLog(data.Budget.conversations);
+                updateBudgetTable(data.Budget.items);
+                updateBudgetItem();
+                updateBudgetChart();
+                alert("Receipt processed successfully!");
+            } catch (error) {
+                console.error("Error uploading receipt:", error);
+                alert("Failed to process receipt.");
+            }
+        }
+        
+        
+        
         // Updates the budget table with the latest budget items.
         function updateBudgetTable(items) {
             const tableBody = document.getElementById("budgetTable").querySelector("tbody");
