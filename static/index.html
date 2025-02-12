@@ -339,7 +339,8 @@
 
             const file = fileInput.files[0];
             const formData = new FormData();
-            formData.append('receipt', file);
+            formData.append('receipt', file,file.name);
+            formData.append('current_state',currentState)
             // Adding a command helps the API route this request appropriately.
             formData.append('command', 'uploadReceipt');
 

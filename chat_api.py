@@ -1,6 +1,8 @@
 import io
+from PIL import Image
 from fastapi import FastAPI, HTTPException, File,UploadFile,Form,Body
-import uvicorn
+from fastapi.responses import JSONResponse
+import uvicorn # type: ignore
 import json,re
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -121,6 +123,11 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
         raise HTTPException(status_code=500, detail=f"Error processing chat: {str(e)}")
 
 
+
+
+# Assuming you have these functions defined elsewhere
+#from your_utils import log_message, extract_text_from_image_stream
+#https://stackoverflow.com/questions/63048825/how-to-upload-file-using-fastapi
 @app.post("/receipt")
 async def process_receipt(
     receipt: UploadFile = File(...),
@@ -128,6 +135,7 @@ async def process_receipt(
     command: Optional[str] = Form(None)
 ):
     log_message("DEBUG: /receipt endpoint hit")
+    temp_file_path = None
     try:
         log_message("DEBUG: Received current_state (raw): " + current_state)
         if command:
@@ -137,25 +145,44 @@ async def process_receipt(
         state_data = json.loads(current_state)
         log_message("DEBUG: Parsed state_data: " + str(state_data))
         
-        # Read the receipt file and extract its text.
-        contents = await receipt.read()
-        log_message("DEBUG: Receipt file contents type: " + str(type(contents)) + " length: " + str(len(contents)))
+        # Save the uploaded file temporarily
+        temp_file_path = f"temp_{receipt.filename}"
+        contents = receipt.file.read()
+        with open(receipt.filename, 'wb') as f:
+            f.write(contents)
         
-        receipt_text = extract_text_from_image_stream(io.BytesIO(contents))
-        log_message("DEBUG: Extracted receipt_text (raw): " + str(receipt_text))
+        with open(temp_file_path, "wb") as buffer:
+            content = await receipt.read()
+            buffer.write(content)
+        
+        log_message(f"DEBUG: Temporary file saved: {temp_file_path}")
+        
+        # Open the image and convert it to a stream
+        with Image.open(temp_file_path) as img:
+            img_byte_arr = io.BytesIO()
+            img.save(img_byte_arr, format='PNG')
+            img_byte_arr.seek(0)
+        
+        log_message("DEBUG: Image converted to byte stream")
+        
+        # Extract text from the image stream
+        receipt_text = extract_text_from_image_stream(img_byte_arr)
+        log_message(f"DEBUG: Extracted receipt_text (raw): {receipt_text}")
         
         if isinstance(receipt_text, bytes):
             receipt_text = receipt_text.decode('utf-8', errors='replace')
-            log_message("DEBUG: Decoded receipt_text: " + receipt_text)
+            log_message(f"DEBUG: Decoded receipt_text: {receipt_text}")
         else:
             log_message("DEBUG: receipt_text is already a string")
         
         # Add an additional subprompt to the extracted text.
         additional_subprompt = "\nPlease add the above receipt items as budget items."
         full_prompt = receipt_text + additional_subprompt
-        log_message("DEBUG: full_prompt: " + full_prompt)
+        log_message(f"DEBUG: full_prompt: {full_prompt}")
         
         # Append this as a new conversation entry.
+        if "Budget" not in state_data:
+            state_data["Budget"] = {}
         if "conversations" not in state_data["Budget"]:
             state_data["Budget"]["conversations"] = []
         state_data["Budget"]["conversations"].append({
@@ -163,11 +190,19 @@ async def process_receipt(
             "ai_response": full_prompt
         })
         
-        log_message("DEBUG: Updated state_data: " + str(state_data))
-        return state_data
+        log_message(f"DEBUG: Updated state_data: {str(state_data)}")
+        return JSONResponse(content=state_data)
+    except json.JSONDecodeError:
+        log_message("DEBUG: JSON decode error occurred")
+        raise HTTPException(status_code=400, detail="Invalid JSON in current_state")
     except Exception as e:
-        log_message("DEBUG: Exception occurred: " + str(e))
+        log_message(f"DEBUG: Exception occurred: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error processing receipt: {str(e)}")
+    finally:
+        # Delete the temporary file
+        if temp_file_path and os.path.exists(temp_file_path):
+            os.remove(temp_file_path)
+            log_message(f"DEBUG: Temporary file deleted: {temp_file_path}")
 
 
 

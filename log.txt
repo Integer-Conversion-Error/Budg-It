@@ -119,3 +119,6 @@ Your Total Savings $0.00
 Please add the above receipt items as budget items.
 DEBUG: Updated state_data: {'Budget': {'budget_limit': 1000, 'items': [], 'warnings': [], 'conversations': [{'user_message': 'Uploaded receipt', 'ai_response': 'Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.'}]}}
 DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+DEBUG: Current working directory: D:\Users\Esad.Kaya\Desktop\Github-Desktop\Budg-It
+DEBUG: Current working directory: D:\Users\Esad.Kaya\Desktop\Github-Desktop\Budg-It
+DEBUG: Current working directory: D:\Users\Esad.Kaya\Desktop\Github-Desktop\Budg-It
