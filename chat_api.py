@@ -12,6 +12,15 @@ from receipt_reader import extract_text_from_image_stream
 # Import the helper functions from consolemain.
 from consolemain import configure_genai, initialize_chat, generate_prompt
 
+from datetime import datetime
+
+def get_current_time_string():
+    """
+    Returns the current time as a string in the format YYYY-MM-DD-HH:MM:SS.
+    """
+    return datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
+
+
 app = FastAPI()
 
 # Configure CORS for the FastAPI app
@@ -30,11 +39,12 @@ class ChatRequest(BaseModel):
 
 
 
-def log_message(message: str):
+def log_message(message: Optional[str]):
     with open("log.txt", "a") as f:
-        f.write(message + "\n")
+        f.write(get_current_time_string() + " -- "+ message + "\n")
         
 import os
+log_message("\nDEBUG: New Attempt")
 log_message("DEBUG: Current working directory: " + os.getcwd())
 
 @app.post("/chat")
@@ -134,26 +144,30 @@ async def process_receipt(
     current_state: str = Form(...),
     command: Optional[str] = Form(None)
 ):
+    
     log_message("DEBUG: /receipt endpoint hit")
     temp_file_path = None
     try:
+        
         log_message("DEBUG: Received current_state (raw): " + current_state)
         if command:
             log_message("DEBUG: Received command: " + command)
         
         # Parse the JSON string from the form field into a dict.
         state_data = json.loads(current_state)
-        log_message("DEBUG: Parsed state_data: " + str(state_data))
+
         
         # Save the uploaded file temporarily
         temp_file_path = f"temp_{receipt.filename}"
-        contents = receipt.file.read()
+        contents = await receipt.read()
+        
+        log_message(f"DEBUG: Receipt Size: {len(contents)} bytes")
+        
         with open(receipt.filename, 'wb') as f:
             f.write(contents)
         
         with open(temp_file_path, "wb") as buffer:
-            content = await receipt.read()
-            buffer.write(content)
+            buffer.write(contents)
         
         log_message(f"DEBUG: Temporary file saved: {temp_file_path}")
         
@@ -167,6 +181,7 @@ async def process_receipt(
         
         # Extract text from the image stream
         receipt_text = extract_text_from_image_stream(img_byte_arr)
+        
         log_message(f"DEBUG: Extracted receipt_text (raw): {receipt_text}")
         
         if isinstance(receipt_text, bytes):
@@ -185,10 +200,7 @@ async def process_receipt(
             state_data["Budget"] = {}
         if "conversations" not in state_data["Budget"]:
             state_data["Budget"]["conversations"] = []
-        state_data["Budget"]["conversations"].append({
-            "user_message": "Uploaded receipt",
-            "ai_response": full_prompt
-        })
+        send_one_chat(state_data)
         
         log_message(f"DEBUG: Updated state_data: {str(state_data)}")
         return JSONResponse(content=state_data)

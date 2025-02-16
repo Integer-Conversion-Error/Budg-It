@@ -1,10 +1,50 @@
-DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
-DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
-DEBUG: /receipt endpoint hit
-DEBUG: Received current_state (raw): {"Budget": {"budget_limit": 1000, "items": [], "warnings": [], "conversations": []}}
-DEBUG: Parsed state_data: {'Budget': {'budget_limit': 1000, 'items': [], 'warnings': [], 'conversations': []}}
-DEBUG: Receipt file contents type: <class 'bytes'> length: 94596
-DEBUG: Extracted receipt_text (raw): Dharmacu
+2025-02-16-03:05:48 -- 
+DEBUG: New Attempt
+2025-02-16-03:05:48 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:06:18 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:06:18 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:06:18 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:06:18 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:06:18 -- DEBUG: Exception occurred: object of type 'UploadFile' has no len()
+2025-02-16-03:09:54 -- 
+DEBUG: New Attempt
+2025-02-16-03:09:54 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:09:56 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:09:56 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:09:56 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:09:56 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:09:56 -- DEBUG: Exception occurred: object of type 'UploadFile' has no len()
+2025-02-16-03:10:45 -- 
+DEBUG: New Attempt
+2025-02-16-03:10:45 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:15:22 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:15:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:15:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:15:22 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:15:22 -- DEBUG: Exception occurred: cannot access local variable 'content' where it is not associated with a value
+2025-02-16-03:15:22 -- DEBUG: Temporary file: temp_reciept_test_1.png
+2025-02-16-03:17:20 -- 
+DEBUG: New Attempt
+2025-02-16-03:17:20 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:17:22 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:17:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:17:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:17:22 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:17:22 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-03:17:23 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-03:17:23 -- DEBUG: Exception occurred: cannot identify image file 'temp_reciept_test_1.png'
+2025-02-16-03:17:23 -- DEBUG: Temporary file: temp_reciept_test_1.png
+2025-02-16-03:19:33 -- 
+DEBUG: New Attempt
+2025-02-16-03:19:33 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:19:38 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:19:38 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:19:38 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:19:38 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:19:38 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-03:19:38 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-03:19:38 -- DEBUG: Image converted to byte stream
+2025-02-16-03:19:38 -- DEBUG: Extracted receipt_text (raw): Dharmacu
 = LA@ J = y
 
 LOCAL DRUGS
@@ -30,8 +70,8 @@ Your Total Savings $0.00
 136981048978476770
 
 
-DEBUG: receipt_text is already a string
-DEBUG: full_prompt: Dharmacu
+2025-02-16-03:19:38 -- DEBUG: receipt_text is already a string
+2025-02-16-03:19:38 -- DEBUG: full_prompt: Dharmacu
 = LA@ J = y
 
 LOCAL DRUGS
@@ -58,67 +98,5 @@ Your Total Savings $0.00
 
 
 Please add the above receipt items as budget items.
-DEBUG: Updated state_data: {'Budget': {'budget_limit': 1000, 'items': [], 'warnings': [], 'conversations': [{'user_message': 'Uploaded receipt', 'ai_response': 'Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.'}]}}
-DEBUG: /receipt endpoint hit
-DEBUG: Received current_state (raw): {"Budget": {"budget_limit": 1000, "items": [], "warnings": [], "conversations": []}}
-DEBUG: Parsed state_data: {'Budget': {'budget_limit': 1000, 'items': [], 'warnings': [], 'conversations': []}}
-DEBUG: Receipt file contents type: <class 'bytes'> length: 94596
-DEBUG: Extracted receipt_text (raw): Dharmacu
-= LA@ J = y
-
-LOCAL DRUGS
-
-07/22/2020 04:36 PH
-
-6705110736, 384601 gT02
-RAF: 7105-7663-2109-3705-0142
-
-1 Pain Killer $2.99 SALE
-2 Corona Medication $199.98 SALE
-3 ITEM
-Subtotal: $202.97
-Tax=0.00% $0.00
-TOTAL $202.97
-CHARGE $202.97
-XXXXXXXXXXXXVISA, 3434
-CHANGE $0.00
-Your Total Savings $0.00
-
-‘THANKS FOR SHOPPING WITH US
-
-136981048978476770
-
-
-DEBUG: receipt_text is already a string
-DEBUG: full_prompt: Dharmacu
-= LA@ J = y
-
-LOCAL DRUGS
-
-07/22/2020 04:36 PH
-
-6705110736, 384601 gT02
-RAF: 7105-7663-2109-3705-0142
-
-1 Pain Killer $2.99 SALE
-2 Corona Medication $199.98 SALE
-3 ITEM
-Subtotal: $202.97
-Tax=0.00% $0.00
-TOTAL $202.97
-CHARGE $202.97
-XXXXXXXXXXXXVISA, 3434
-CHANGE $0.00
-Your Total Savings $0.00
-
-‘THANKS FOR SHOPPING WITH US
-
-136981048978476770
-
-
-Please add the above receipt items as budget items.
-DEBUG: Updated state_data: {'Budget': {'budget_limit': 1000, 'items': [], 'warnings': [], 'conversations': [{'user_message': 'Uploaded receipt', 'ai_response': 'Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.'}]}}
-DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
-DEBUG: Current working directory: D:\Users\Esad.Kaya\Desktop\Github-Desktop\Budg-It
-DEBUG: Current working directory: D:\Users\Esad.Kaya\Desktop\Github-Desktop\Budg-It
-DEBUG: Current working directory: D:\Users\Esad.Kaya\Desktop\Github-Desktop\Budg-It
+2025-02-16-03:19:38 -- DEBUG: Updated state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': [{'user_message': 'Uploaded receipt', 'ai_response': 'Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.'}]}, 'conversation': ''}
+2025-02-16-03:19:38 -- DEBUG: Temporary file: temp_reciept_test_1.png

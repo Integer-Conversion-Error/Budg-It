@@ -330,45 +330,7 @@
             updateBudgetChart();
         });
 
-        async function uploadReceipt() {
-            const fileInput = document.getElementById('receiptInput');
-            if (!fileInput.files || fileInput.files.length === 0) {
-                alert("Please select an image file to upload.");
-                return;
-            }
-
-            const file = fileInput.files[0];
-            const formData = new FormData();
-            formData.append('receipt', file,file.name);
-            formData.append('current_state',currentState)
-            // Adding a command helps the API route this request appropriately.
-            formData.append('command', 'uploadReceipt');
-
-            try {
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    body: formData
-                    // No need to set Content-Type header; the browser will do it automatically.
-                });
-
-                if (!response.ok) {
-                    throw new Error(`Error: ${response.statusText}`);
-                }
-
-                const data = await response.json();
-                // Assume the API now processes the receipt image, extracts items,
-                // and returns an updated state with new budget items.
-                currentState = data;
-                updateChatLog(data.Budget.conversations);
-                updateBudgetTable(data.Budget.items);
-                updateBudgetItem();
-                updateBudgetChart();
-                alert("Receipt processed successfully!");
-            } catch (error) {
-                console.error("Error uploading receipt:", error);
-                alert("Failed to process receipt.");
-            }
-        }
+        
     </script>
 </body>
 
