@@ -9,6 +9,7 @@ from pydantic import BaseModel
 from typing import Optional, Dict, Any
 from receipt_reader import extract_text_from_image_stream
 
+
 # Import the helper functions from consolemain.
 from consolemain import configure_genai, initialize_chat, generate_prompt
 
@@ -134,21 +135,22 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
 
 
 
-
-# Assuming you have these functions defined elsewhere
-#from your_utils import log_message, extract_text_from_image_stream
-#https://stackoverflow.com/questions/63048825/how-to-upload-file-using-fastapi
 @app.post("/receipt")
 async def process_receipt(
     receipt: UploadFile = File(...),
     current_state: str = Form(...),
     command: Optional[str] = Form(None)
 ):
-    
     log_message("DEBUG: /receipt endpoint hit")
     temp_file_path = None
     try:
+        log_message("DEBUG: Received current_state (raw): " + current_state)
+        if command:
+            log_message("DEBUG: Received command: " + command)
         
+        # Convert JSON string to dict
+        state_data = json.loads(current_state)
+
         log_message("DEBUG: Received current_state (raw): " + current_state)
         if command:
             log_message("DEBUG: Received command: " + command)
@@ -189,21 +191,20 @@ async def process_receipt(
             log_message(f"DEBUG: Decoded receipt_text: {receipt_text}")
         else:
             log_message("DEBUG: receipt_text is already a string")
-        
-        # Add an additional subprompt to the extracted text.
+
+        # Combine the OCR text with any extra instructions:
         additional_subprompt = "\nPlease add the above receipt items as budget items."
         full_prompt = receipt_text + additional_subprompt
-        log_message(f"DEBUG: full_prompt: {full_prompt}")
+
+        # Put it into the conversation key so the helper sees it as "user input"
+        state_data["conversation"] = full_prompt
         
-        # Append this as a new conversation entry.
-        if "Budget" not in state_data:
-            state_data["Budget"] = {}
-        if "conversations" not in state_data["Budget"]:
-            state_data["Budget"]["conversations"] = []
-        send_one_chat(state_data)
-        
-        log_message(f"DEBUG: Updated state_data: {str(state_data)}")
-        return JSONResponse(content=state_data)
+        # Call your shared chat logic
+        updated_state = process_chat_logic(state_data, state_data["conversation"])
+
+        # Return the updated state
+        return JSONResponse(content=updated_state)
+
     except json.JSONDecodeError:
         log_message("DEBUG: JSON decode error occurred")
         raise HTTPException(status_code=400, detail="Invalid JSON in current_state")
@@ -211,12 +212,94 @@ async def process_receipt(
         log_message(f"DEBUG: Exception occurred: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error processing receipt: {str(e)}")
     finally:
-        # Delete the temporary file
+        # Cleanup temp file if desired
         if temp_file_path and os.path.exists(temp_file_path):
             os.remove(temp_file_path)
             log_message(f"DEBUG: Temporary file deleted: {temp_file_path}")
 
 
+
+
+def process_chat_logic(state_dict: Dict[str, Any], user_input: str) -> Dict[str, Any]:
+    """
+    This function replicates the AI chat flow without requiring a FastAPI route.
+    - state_dict: Current state of the Budget & conversation (dict).
+    - user_input: The new user message to add to the conversation.
+
+    Returns:
+        An updated `state_dict` with the AI response appended to .Budget.conversations.
+    """
+    # 1. Configure the model
+    model = configure_genai()
+
+    # 2. Build or rebuild the chat session
+    if not state_dict["Budget"].get("conversations"):
+        # No existing conversation, so initialize
+        chat_session = initialize_chat(model, state_dict)
+    else:
+        # Rebuild from previous conversation
+        chat_history = []
+        for conversation in state_dict["Budget"]["conversations"]:
+            chat_history.append({
+                "role": "user",
+                "parts": [{"text": conversation["user_message"]}]
+            })
+            chat_history.append({
+                "role": "model",
+                "parts": [{"text": conversation["ai_response"]}]
+            })
+
+        # Now add the new user input
+        chat_history.append({
+            "role": "user",
+            "parts": [{"text": user_input}]
+        })
+
+        chat_session = model.start_chat(history=chat_history)
+
+    # 3. Generate the prompt
+    prompt = generate_prompt(state_dict, user_input)
+
+    # 4. Send the prompt to the model
+    response = chat_session.send_message(prompt)
+    ai_response = response.text
+
+    # 5. Parse AI response
+    try:
+        parsed_ai_response = json.loads(ai_response)
+    except json.JSONDecodeError:
+        parsed_ai_response = {"ai_response": ai_response}
+
+    # 6. Extract conversation AI reply
+    if (
+        "conversation" in parsed_ai_response 
+        and isinstance(parsed_ai_response["conversation"], dict)
+    ):
+        ai_reply = parsed_ai_response["conversation"].get("ai_response", "Operation completed.")
+    else:
+        ai_reply = "Operation completed."
+
+    # 7. Append new conversation turn
+    if "conversations" not in state_dict["Budget"]:
+        state_dict["Budget"]["conversations"] = []
+    state_dict["Budget"]["conversations"].append({
+        "user_message": user_input,
+        "ai_response": ai_reply
+    })
+
+    # 8. Check for updated budget items
+    if ("Budget" in parsed_ai_response 
+        and isinstance(parsed_ai_response["Budget"], dict) 
+        and "items" in parsed_ai_response["Budget"]):
+        state_dict["Budget"]["items"] = parsed_ai_response["Budget"]["items"]
+    else:
+        print("DEBUG: No update to 'items' was found in the AI response.")
+
+    # 9. Check budget limit
+    state_dict["Budget"]["budget_limit"] = parsed_ai_response.get("Budget", {}).get("budget_limit")
+
+    # Return the updated state
+    return state_dict
 
 
 def parse_receipt_text(text):

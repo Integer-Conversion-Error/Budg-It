@@ -125,6 +125,8 @@ def generate_prompt(previous_budget: dict, user_input: str):
         17.2 Opportunity Costs: Emphasize that every increase in one budget item may require a decrease elsewhere. Guide the user on how to shift funds from lower-priority to higher-priority areas.
         17.3 Long-Term Impact: If the user removes or reduces items, prompt them to consider how that change affects future months (e.g., deferring maintenance on a car could lead to higher costs later).
         17.4 Alternatives & Creative Solutions: Offer suggestions for cheaper alternatives (e.g., “Instead of eating out 4 times a week, reduce it to 2 times, and use the savings toward your credit card debt.”).
+    18. When presented with a list of receipt/invoice items, group all items categorically, sum up their costs, and name the item something that would summarize that group, along with where the purchase was made. Only make more than one item if there are purchases that are not categorically related to one another (e.g. groceries and clothes, different categories)
+    19. Always represent days in standard date format (YYYY-MM-DD). Convert any other date format into this format
     User input: {user_input}
     """
 

@@ -135,14 +135,24 @@
         function updateChatLog(conversations) {
             const chatLog = document.getElementById("chatLog");
             chatLog.innerHTML = ""; // Clear previous log
+        
             conversations.forEach(chat => {
                 const userMessage = document.createElement("p");
-                userMessage.textContent = `User: ${chat.user_message}`;
+                
+                // If the user message ends with the specified phrase, replace with 'Sent Image'.
+                const displayText = chat.user_message.endsWith("Please add the above receipt items as budget items.")
+                    ? "Sent Image"
+                    : chat.user_message;
+        
+                userMessage.textContent = `User: ${displayText}`;
+        
                 const aiResponse = document.createElement("p");
                 aiResponse.textContent = `AI: ${chat.ai_response}`;
+        
                 chatLog.appendChild(userMessage);
                 chatLog.appendChild(aiResponse);
             });
+        
             chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
         }
         async function uploadReceipt() {

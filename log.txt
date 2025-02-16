@@ -100,3 +100,519 @@ Your Total Savings $0.00
 Please add the above receipt items as budget items.
 2025-02-16-03:19:38 -- DEBUG: Updated state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': [{'user_message': 'Uploaded receipt', 'ai_response': 'Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.'}]}, 'conversation': ''}
 2025-02-16-03:19:38 -- DEBUG: Temporary file: temp_reciept_test_1.png
+2025-02-16-03:50:08 -- 
+DEBUG: New Attempt
+2025-02-16-03:50:08 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:50:11 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:50:11 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}]},"conversation":""}
+2025-02-16-03:50:11 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:50:11 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}]},"conversation":""}
+2025-02-16-03:50:11 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:50:11 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-03:50:11 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-03:50:11 -- DEBUG: Image converted to byte stream
+2025-02-16-03:50:11 -- DEBUG: Extracted receipt_text (raw): Dharmacu
+= LA@ J = y
+
+LOCAL DRUGS
+
+07/22/2020 04:36 PH
+
+6705110736, 384601 gT02
+RAF: 7105-7663-2109-3705-0142
+
+1 Pain Killer $2.99 SALE
+2 Corona Medication $199.98 SALE
+3 ITEM
+Subtotal: $202.97
+Tax=0.00% $0.00
+TOTAL $202.97
+CHARGE $202.97
+XXXXXXXXXXXXVISA, 3434
+CHANGE $0.00
+Your Total Savings $0.00
+
+‘THANKS FOR SHOPPING WITH US
+
+136981048978476770
+
+
+2025-02-16-03:50:11 -- DEBUG: receipt_text is already a string
+2025-02-16-03:50:17 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-04:01:21 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:01:21 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":2500,"items":[{"item_name":"Pain Killer","amount":2.99,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Corona Medication","amount":199.98,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Motorbike New Parts","amount":500,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the items from your receipt to the budget. \"Pain Killer\" for $2.99 and \"Corona Medication\" for $199.98 have been added. Both are categorized as one-time expenses. Is there anything else you'd like to add or adjust?"},{"user_message":"Add 500 for my motorbikes new parts.","ai_response":"I've added \"Motorbike New Parts\" as a one-time expense of $500.0 to your budget. How else may I help you with your budget?"},{"user_message":"Oh it seems I forgot my budget limit, it is 2500.","ai_response":"No problem, I've updated your budget limit to $2500.  Your current expenses total $702.97, so you have plenty of room remaining in your budget. How else may I help you with your budget?"}]},"conversation":"Oh it seems I forgot my budget limit, it is 2500."}
+2025-02-16-04:01:21 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:01:21 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":2500,"items":[{"item_name":"Pain Killer","amount":2.99,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Corona Medication","amount":199.98,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Motorbike New Parts","amount":500,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the items from your receipt to the budget. \"Pain Killer\" for $2.99 and \"Corona Medication\" for $199.98 have been added. Both are categorized as one-time expenses. Is there anything else you'd like to add or adjust?"},{"user_message":"Add 500 for my motorbikes new parts.","ai_response":"I've added \"Motorbike New Parts\" as a one-time expense of $500.0 to your budget. How else may I help you with your budget?"},{"user_message":"Oh it seems I forgot my budget limit, it is 2500.","ai_response":"No problem, I've updated your budget limit to $2500.  Your current expenses total $702.97, so you have plenty of room remaining in your budget. How else may I help you with your budget?"}]},"conversation":"Oh it seems I forgot my budget limit, it is 2500."}
+2025-02-16-04:01:21 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:01:21 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:01:21 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:01:21 -- DEBUG: Image converted to byte stream
+2025-02-16-04:01:22 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:01:22 -- DEBUG: receipt_text is already a string
+2025-02-16-04:01:44 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:11:28 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:11:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3500,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 3500. I spend 500 on gas, and 200 on insurance.","ai_response":"Okay, I've updated your budget with a $3500 limit, $500 for gas, and $200 for insurance. Is there anything else you'd like to add or adjust?"}]},"conversation":"My budget is 3500. I spend 500 on gas, and 200 on insurance."}
+2025-02-16-04:11:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:11:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3500,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 3500. I spend 500 on gas, and 200 on insurance.","ai_response":"Okay, I've updated your budget with a $3500 limit, $500 for gas, and $200 for insurance. Is there anything else you'd like to add or adjust?"}]},"conversation":"My budget is 3500. I spend 500 on gas, and 200 on insurance."}
+2025-02-16-04:11:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:11:28 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:11:28 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:11:28 -- DEBUG: Image converted to byte stream
+2025-02-16-04:11:29 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:11:29 -- DEBUG: receipt_text is already a string
+2025-02-16-04:11:56 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:16:39 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:16:39 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Rent","amount":2000,"category":"Regular","importance_rank":1,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Gas","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance.","ai_response":"Okay, I have added your wage and expenses to your budget. Your total expenses are currently $2700.0, and your budget limit is $4000.0. You have $1300.0 remaining in your budget. Is there anything else I can help you with?"}]},"conversation":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance."}
+2025-02-16-04:16:39 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:16:39 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Rent","amount":2000,"category":"Regular","importance_rank":1,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Gas","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance.","ai_response":"Okay, I have added your wage and expenses to your budget. Your total expenses are currently $2700.0, and your budget limit is $4000.0. You have $1300.0 remaining in your budget. Is there anything else I can help you with?"}]},"conversation":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance."}
+2025-02-16-04:16:39 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:16:39 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:16:39 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:16:39 -- DEBUG: Image converted to byte stream
+2025-02-16-04:16:40 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:16:40 -- DEBUG: receipt_text is already a string
+2025-02-16-04:17:04 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:32:23 -- 
+DEBUG: New Attempt
+2025-02-16-04:32:23 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-04:32:49 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:32:49 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"My budget is 5000","ai_response":"Okay, I've set your budget limit to $5000.0.  How else can I help you with your budget?"}]},"conversation":"My budget is 5000"}
+2025-02-16-04:32:49 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:32:49 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"My budget is 5000","ai_response":"Okay, I've set your budget limit to $5000.0.  How else can I help you with your budget?"}]},"conversation":"My budget is 5000"}
+2025-02-16-04:32:49 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:32:49 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:32:49 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:32:49 -- DEBUG: Image converted to byte stream
+2025-02-16-04:32:50 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:32:50 -- DEBUG: receipt_text is already a string
+2025-02-16-04:33:15 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:39:02 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:39:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000. I spend 500 on gas, 200 on insurance.","ai_response":"Okay, I've updated your budget with a $4000 limit, $500 for gas, and $200 for insurance. You have $3300 remaining. How else can I help you with your budget?"}]},"conversation":"I have a budget of 4000. I spend 500 on gas, 200 on insurance."}
+2025-02-16-04:39:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:39:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000. I spend 500 on gas, 200 on insurance.","ai_response":"Okay, I've updated your budget with a $4000 limit, $500 for gas, and $200 for insurance. You have $3300 remaining. How else can I help you with your budget?"}]},"conversation":"I have a budget of 4000. I spend 500 on gas, 200 on insurance."}
+2025-02-16-04:39:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:39:02 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:39:02 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:39:02 -- DEBUG: Image converted to byte stream
+2025-02-16-04:39:03 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:39:03 -- DEBUG: receipt_text is already a string
+2025-02-16-04:39:25 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:41:18 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:41:18 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Phone Subscription","amount":150,"category":"Utilities","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription.","ai_response":"Okay, I've created a budget for you with a limit of $4000. I've added 'Gas' at $400 and 'Phone Subscription' at $150 as recurring monthly expenses. You currently have $3450 remaining in your budget. Is there anything else you'd like to add or adjust?"}]},"conversation":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription."}
+2025-02-16-04:41:18 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:41:18 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Phone Subscription","amount":150,"category":"Utilities","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription.","ai_response":"Okay, I've created a budget for you with a limit of $4000. I've added 'Gas' at $400 and 'Phone Subscription' at $150 as recurring monthly expenses. You currently have $3450 remaining in your budget. Is there anything else you'd like to add or adjust?"}]},"conversation":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription."}
+2025-02-16-04:41:18 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:41:18 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:41:18 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:41:18 -- DEBUG: Image converted to byte stream
+2025-02-16-04:41:19 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:41:19 -- DEBUG: receipt_text is already a string
+2025-02-16-04:41:40 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
