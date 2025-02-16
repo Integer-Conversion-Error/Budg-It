@@ -1120,3 +1120,94 @@ Your Total Savings $0.00
 
 2025-02-16-05:23:42 -- DEBUG: receipt_text is already a string
 2025-02-16-05:23:49 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-05:27:17 -- 
+DEBUG: New Attempt
+2025-02-16-05:27:17 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:27:25 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:27:25 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:27:25 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:27:25 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:27:25 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:27:25 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-05:27:25 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-05:27:25 -- DEBUG: Image converted to byte stream
+2025-02-16-05:27:26 -- DEBUG: Exception occurred: 400 Please use a valid role: user, model.
+2025-02-16-05:27:26 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-05:35:05 -- 
+DEBUG: New Attempt
+2025-02-16-05:35:05 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:35:22 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:35:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:35:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:35:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:35:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:35:22 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:35:22 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:35:22 -- DEBUG: Image converted to byte stream
+2025-02-16-05:35:27 -- DEBUG: Extracted receipt_text (raw): {'unparsed_text': "```json\n{\n  'items': [\n    {\n      'name': 'Off-peak Electricity',\n      'price': 60.04,\n      'quantity': 750.481291,\n      'category': 'Electricity'\n    },\n    {\n      'name': 'Mid-peak Electricity',\n      'price': 28.05,\n      'quantity': 229.877693,\n      'category': 'Electricity'\n    },\n    {\n      'name': 'On-peak Electricity',\n      'price': 29.52,\n      'quantity': 183.364347,\n      'category': 'Electricity'\n    },\n    {\n      'name': 'Delivery Charges',\n      'price': 56.31,\n      'quantity': 1\n    },\n    {\n      'name': 'Regulatory Charges',\n      'price': 7.12,\n      'quantity': 1\n    },\n    {\n      'name': 'Debt Retirement Charge',\n      'price': 8.08,\n      'quantity': 1\n    },\n    {\n      'name': 'Ontario Clean Energy Benefit',\n      'price': -21.37,\n      'quantity': 1\n    }\n  ],\n  'tax': 24.59,\n  'total': 192.99\n}\n```"}
+2025-02-16-05:35:27 -- DEBUG: receipt_text is already a string
+2025-02-16-05:35:27 -- DEBUG: Exception occurred: unsupported operand type(s) for +: 'dict' and 'str'
+2025-02-16-05:35:27 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:36:19 -- 
+DEBUG: New Attempt
+2025-02-16-05:36:19 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:36:20 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:36:20 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:36:20 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:36:20 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:36:20 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:36:20 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:36:20 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:36:20 -- DEBUG: Image converted to byte stream
+2025-02-16-05:36:22 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-05:36:22 -- DEBUG: receipt_text is already a string
+2025-02-16-05:36:36 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg

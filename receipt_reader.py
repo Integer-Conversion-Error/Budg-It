@@ -3,57 +3,43 @@ import json
 import sys
 from PIL import Image
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 import google.generativeai as genai
 from consolemain import load_config
 
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 def extract_text_from_image_stream(image_stream):
     """
-    Takes an image stream (a file-like object) and returns all text extracted from the image.
-    
-    :param image_stream: A file-like object containing image data (opened in binary mode).
-    :return: A string containing the text extracted from the image.
+    Takes an image stream (a file-like object) and returns text extracted from the image,
+    then passes it to an AI parser for JSON conversion.
     """
-    # Open the image using Pillow (PIL)
     image = Image.open(image_stream)
-    # Use pytesseract to perform OCR on the image
-    text = pytesseract.image_to_string(image)
-    #text = ai_filter_receipt_text(text)
-    return text
-
+    ocr_text = pytesseract.image_to_string(image)
+    #return ai_filter_receipt_text(ocr_text)
+    return ocr_text
 
 def ai_filter_receipt_text(text):
     """
-    Sends the raw OCR text from a receipt to Gemini (via google.generativeai),
-    instructing it to parse the receipt items into a structured format (like JSON).
-
-    :param text: The raw extracted text from a receipt (string).
-    :return: A parsed dictionary of receipt information or an original text if parsing fails.
+    Sends raw OCR text from a receipt to Gemini via google.generativeai,
+    embedding the 'system' prompt in a user message (like your snippet).
+    Expects valid JSON in response or a fallback structure if parsing fails.
     """
-
-    # 1. Configure the Gemini API.
-    # Replace 'YOUR_API_KEY' with your actual key. 
-    # Or load it securely from a config file / env variable.
+    # 1. Load config & configure Gemini
     config = load_config()
     genai.configure(api_key=config["GEMINI_API_KEY"])
 
-    # 2. Set up the model and generation parameters.
-    # Adjust model name or generation_config as needed.
     model = genai.GenerativeModel(
         model_name="gemini-2.0-pro-exp-02-05",
         generation_config={
             "temperature": 0.8,
             "top_p": 0.95,
             "top_k": 40,
-            "max_output_tokens": 102400,
+            "max_output_tokens": 1024,
         },
     )
 
-    # 3. Start a chat session with a strong system message:
-    # The system message is your "system prompt" that ensures the AI stays on task.
-    # Here, we instruct it how to interpret and format the data.
-    system_message = (
+    # 2. "System" instructions, placed in a user message
+    system_instructions = (
         "You are an expert receipt parser. Your job is to take raw text from a store "
         "receipt and parse out individual purchased items, their price, quantity, and "
         "any other relevant data. Always respond in valid JSON with the structure:\n"
@@ -74,41 +60,43 @@ def ai_filter_receipt_text(text):
         "Do not include any commentary outside the JSON response."
     )
 
-    # Initialize chat with a system role
-    chat = model.start_chat(history=[
-        {
-            "role": "system",
-            "parts": [{"text": system_message}],
-        }
-    ])
+    # 3. Initialize the chat session (like your snippet: "System prompt: ... Respond understood.")
+    chat_session = model.start_chat(
+        history=[
+            {
+                "role": "user",
+                "parts": [
+                    {
+                        "text": f"System prompt: {system_instructions}\n"
+                                 "Respond 'Understood.' if you got it."
+                    }
+                ],
+            },
+            {
+                "role": "model",
+                "parts": [{"text": "Understood."}],
+            },
+        ]
+    )
 
-    # 4. Send the user's raw receipt text. 
-    # The AI should respond with structured JSON as per the instructions above.
-    response = chat.send_message(text)
+    # 4. Now send the actual receipt text as the new user message
+    response = chat_session.send_message(text)
 
-    # The raw text from Gemini
     raw_response = response.text.strip()
 
-    # 5. Parse the JSON if possible.
-    # We wrap in a try/catch in case the AI didn't return valid JSON.
+    # 5. Parse the response as JSON if possible
     try:
         return json.loads(raw_response)
     except json.JSONDecodeError:
-        # If the AI returns something invalid, fallback to original text
-        return {"unparsed_text": raw_response }
-
+        return {"unparsed_text": raw_response}
 
 def main():
-    # Ensure the user has provided the path to an image file as an argument.
-    
-    
-    image_file_path = "reciept_test_1.png"
+    image_file_path = "84pxOL1.jpg"
     try:
-        # Open the image file in binary mode.
         with open(image_file_path, "rb") as image_file:
-            extracted_text = extract_text_from_image_stream(image_file)
-            print("Extracted Text:")
-            print(extracted_text)
+            extracted_info = extract_text_from_image_stream(image_file)
+            print("Extracted Info (JSON or fallback):")
+            print(extracted_info)
     except Exception as e:
         print(f"An error occurred while processing the image: {e}")
         sys.exit(1)
