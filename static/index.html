@@ -5,32 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgeting Assistant</title>
+    <!-- Include Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Include Chart.js from a CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
         }
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.8rem;
         }
 
         .chat-log {
             height: 450px;
-            overflow-y: scroll;
+            overflow-y: auto;
             border: 1px solid #ccc;
+            border-radius: 4px;
             padding: 10px;
-            margin-bottom: 10px;
-            background-color: #f9f9f9;
+            margin-bottom: 15px;
+            background-color: #fafafa;
         }
 
+        .chat-log p {
+            margin: 6px 0;
+            line-height: 1.4em;
+        }
+
+        #userInput,
+        #receiptInput {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+
+        #userInput {
+            width: calc(100% - 114px);
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        section#current-budget h2,
+        h2 {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 4px;
+        }
+
+        #budget-value {
+            font-size: 1.05rem;
+            font-weight: 400;
+            margin: 8px 0;
+        }
+
+        /* Table styling */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            background-color: #fff;
         }
 
         table th,
@@ -41,30 +108,18 @@
         }
 
         table th {
-            background-color: #f2f2f2;
+            background-color: #f7f7f7;
+            font-weight: 600;
         }
 
-        input[type="text"] {
-            width: calc(100% - 100px);
-            padding: 10px;
-            margin-right: 10px;
+        table tbody tr:nth-child(even) {
+            background-color: #fafafa;
         }
 
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Style for the pie chart section */
+        /* Pie chart section */
         #budget-chart {
             margin-top: 30px;
+            text-align: center;
         }
 
         #budget-chart canvas {
@@ -78,21 +133,26 @@
 <body>
     <div class="container">
         <h1>Budgeting Assistant</h1>
+
         <div class="chat-log" id="chatLog">
             <!-- Chat logs will be dynamically added here -->
         </div>
+
         <div>
             <input type="text" id="userInput" placeholder="Type your input here..." />
             <button onclick="sendInput()">Send</button>
         </div>
-        <div>
+
+        <div style="margin-top: 10px;">
             <input type="file" id="receiptInput" accept="image/*" />
             <button onclick="uploadReceipt()">Upload Receipt</button>
-          </div>
+        </div>
+
         <section id="current-budget">
             <h2>Current Budget</h2>
             <p id="budget-value">No Budget Defined</p>
         </section>
+
         <h2>Budget Items</h2>
         <table id="budgetTable">
             <thead>
@@ -109,6 +169,7 @@
                 <!-- Budget items will be dynamically added here -->
             </tbody>
         </table>
+
         <!-- Pie Chart Section -->
         <section id="budget-chart">
             <h2>Budget Distribution</h2>
@@ -135,24 +196,24 @@
         function updateChatLog(conversations) {
             const chatLog = document.getElementById("chatLog");
             chatLog.innerHTML = ""; // Clear previous log
-        
+
             conversations.forEach(chat => {
                 const userMessage = document.createElement("p");
-                
+
                 // If the user message ends with the specified phrase, replace with 'Sent Image'.
                 const displayText = chat.user_message.endsWith("Please add the above receipt items as budget items.")
                     ? "Sent Image"
                     : chat.user_message;
-        
+
                 userMessage.textContent = `User: ${displayText}`;
-        
+
                 const aiResponse = document.createElement("p");
                 aiResponse.textContent = `AI: ${chat.ai_response}`;
-        
+
                 chatLog.appendChild(userMessage);
                 chatLog.appendChild(aiResponse);
             });
-        
+
             chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
         }
         async function uploadReceipt() {
@@ -161,25 +222,25 @@
                 alert("Please select an image file to upload.");
                 return;
             }
-        
+
             const file = fileInput.files[0];
             const formData = new FormData();
             formData.append('receipt', file);
             // Adding a command helps the API route this request appropriately.
             formData.append('command', 'uploadReceipt');
             formData.append('current_state', JSON.stringify(currentState));
-        
+
             try {
                 const response = await fetch(receiptUrl, {
                     method: 'POST',
                     body: formData
                     // No need to set Content-Type header; the browser will do it automatically.
                 });
-        
+
                 if (!response.ok) {
                     throw new Error(`Error: ${response.statusText}`);
                 }
-        
+
                 const data = await response.json();
                 // Assume the API now processes the receipt image, extracts items,
                 // and returns an updated state with new budget items.
@@ -194,9 +255,9 @@
                 alert("Failed to process receipt.");
             }
         }
-        
-        
-        
+
+
+
         // Updates the budget table with the latest budget items.
         function updateBudgetTable(items) {
             const tableBody = document.getElementById("budgetTable").querySelector("tbody");
@@ -340,7 +401,7 @@
             updateBudgetChart();
         });
 
-        
+
     </script>
 </body>
 
