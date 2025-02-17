@@ -15,8 +15,8 @@ def extract_text_from_image_stream(image_stream):
     """
     image = Image.open(image_stream)
     ocr_text = pytesseract.image_to_string(image)
-    #return ai_filter_receipt_text(ocr_text)
-    return ocr_text
+    return ai_filter_receipt_text(ocr_text)
+    #return ocr_text
 
 def ai_filter_receipt_text(text):
     """
@@ -29,7 +29,7 @@ def ai_filter_receipt_text(text):
     genai.configure(api_key=config["GEMINI_API_KEY"])
 
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-pro-exp-02-05",
+        model_name="gemini-2.0-flash-exp",
         generation_config={
             "temperature": 0.8,
             "top_p": 0.95,
@@ -58,6 +58,7 @@ def ai_filter_receipt_text(text):
         "If you cannot detect a certain value (like quantity or category), you may default "
         "them to 1 or leave them blank, but ensure the JSON structure remains valid. "
         "Do not include any commentary outside the JSON response."
+        "Make sure to group similar items together. If there is a large purchase and a small purchase, and both are of the same category, combine and sum them as one item."
     )
 
     # 3. Initialize the chat session (like your snippet: "System prompt: ... Respond understood.")
@@ -82,13 +83,12 @@ def ai_filter_receipt_text(text):
     # 4. Now send the actual receipt text as the new user message
     response = chat_session.send_message(text)
 
-    raw_response = response.text.strip()
+    raw_response = response.text.strip()[7:-3]
 
     # 5. Parse the response as JSON if possible
-    try:
-        return json.loads(raw_response)
-    except json.JSONDecodeError:
-        return {"unparsed_text": raw_response}
+    #print(raw_response)
+    
+    return raw_response
 
 def main():
     image_file_path = "84pxOL1.jpg"

@@ -1211,3 +1211,367 @@ SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. 
 
 2025-02-16-05:36:22 -- DEBUG: receipt_text is already a string
 2025-02-16-05:36:36 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-19:16:12 -- 
+DEBUG: New Attempt
+2025-02-16-19:16:12 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-19:35:12 -- DEBUG: /receipt endpoint hit
+2025-02-16-19:35:12 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"}]},"conversation":"I spend 300 on gas "}
+2025-02-16-19:35:12 -- DEBUG: Received command: uploadReceipt
+2025-02-16-19:35:12 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"}]},"conversation":"I spend 300 on gas "}
+2025-02-16-19:35:12 -- DEBUG: Received command: uploadReceipt
+2025-02-16-19:35:12 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-19:35:12 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-19:35:13 -- DEBUG: Image converted to byte stream
+2025-02-16-19:35:15 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-19:35:15 -- DEBUG: receipt_text is already a string
+2025-02-16-19:35:27 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:11:39 -- 
+DEBUG: New Attempt
+2025-02-16-20:11:39 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-20:13:08 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:13:08 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:13:08 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:13:08 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:13:08 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:13:08 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:13:08 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:13:09 -- DEBUG: Image converted to byte stream
+2025-02-16-20:13:14 -- DEBUG: Extracted receipt_text (raw): {'items': [{'name': 'Off-peak/Période creuse', 'price': 60.04, 'quantity': 750.481291, 'category': "Electricity Charge TOU/Frais d'électricité FHC"}, {'name': 'Mid—peak/Période médiane', 'price': 28.05, 'quantity': 229.877693, 'category': "Electricity Charge TOU/Frais d'électricité FHC"}, {'name': 'On-—peak/Période de pointe', 'price': 29.52, 'quantity': 183.364347, 'category': "Electricity Charge TOU/Frais d'électricité FHC"}, {'name': 'Delivery Charges/Frais de livraison', 'price': 56.31, 'quantity': 1}, {'name': 'Regulatory Charges/Frais réglementés', 'price': 7.12, 'quantity': 1}, {'name': 'Debt Retirement Charge/Réglement de la dette', 'price': 8.08, 'quantity': 1}, {'name': 'HST No. 863391363 RT0001/No. TVH 863391363 RT0001', 'price': 24.59, 'quantity': 1}, {'name': "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre", 'price': -21.37, 'quantity': 1}], 'total': 192.99}
+2025-02-16-20:13:14 -- DEBUG: receipt_text is already a string
+2025-02-16-20:13:14 -- DEBUG: Exception occurred: unsupported operand type(s) for +: 'dict' and 'str'
+2025-02-16-20:13:14 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:55:44 -- 
+DEBUG: New Attempt
+2025-02-16-20:55:44 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-20:55:46 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:55:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:55:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:55:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:55:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:55:46 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:55:46 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:55:46 -- DEBUG: Image converted to byte stream
+2025-02-16-20:55:51 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291
+    },
+    {
+      "name": "Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693
+    },
+    {
+      "name": "On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1
+    },
+    {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %*",
+      "price": -21.37,
+      "quantity": 1
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-16-20:55:51 -- DEBUG: receipt_text is already a string
+2025-02-16-20:56:07 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:58:30 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:58:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:30 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:58:30 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:58:30 -- DEBUG: Image converted to byte stream
+2025-02-16-20:58:35 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity Charge TOU/Frais d'électricité FHC"
+    },
+    {
+      "name": "Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity Charge TOU/Frais d'électricité FHC"
+    },
+    {
+      "name": "On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity Charge TOU/Frais d'électricité FHC"
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1
+    },
+    {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre",
+      "price": -21.37,
+      "quantity": 1
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-16-20:58:35 -- DEBUG: receipt_text is already a string
+2025-02-16-20:58:35 -- DEBUG: Exception occurred: 429 Resource has been exhausted (e.g. check quota).
+2025-02-16-20:58:35 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:58:46 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:58:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:46 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:58:46 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:58:47 -- DEBUG: Image converted to byte stream
+2025-02-16-20:58:51 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity Charge"
+    },
+    {
+      "name": "Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity Charge"
+    },
+    {
+      "name": "On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity Charge"
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1
+    },
+    {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre",
+      "price": -21.37,
+      "quantity": 1
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-16-20:58:51 -- DEBUG: receipt_text is already a string
+2025-02-16-20:59:01 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-21:13:26 -- 
+DEBUG: New Attempt
+2025-02-16-21:13:26 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-21:33:31 -- DEBUG: /receipt endpoint hit
+2025-02-16-21:33:31 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3200,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Electricity Bill","amount":192.99,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Off-peak/Période creuse\",\n      \"price\": 60.04,\n      \"quantity\": 750.481291,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Mid—peak/Période médiane\",\n      \"price\": 28.05,\n      \"quantity\": 229.877693,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"On-—peak/Période de pointe\",\n      \"price\": 29.52,\n      \"quantity\": 183.364347,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Delivery Charges/Frais de livraison\",\n      \"price\": 56.31,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Regulatory Charges/Frais réglementés\",\n      \"price\": 7.12,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Debt Retirement Charge/Réglement de la dette\",\n      \"price\": 8.08,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"HST No. 863391363 RT0001/No. TVH 863391363 RT0001\",\n      \"price\": 24.59,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre\",\n      \"price\": -21.37,\n      \"quantity\": 1\n    }\n  ],\n  \"total\": 192.99\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the electricity bill to your budget. The total amount for the electricity bill is $192.99. Is this a recurring monthly expense, or a one-time charge?  How else can I help you with your budget?"},{"user_message":"My budget is 3200","ai_response":"Okay, I have set your budget limit to $3200.0. Currently, your listed expenses are $692.99. This leaves you with $2507.01. \n\nTo make the most of your budget, I recommend allocating funds to an emergency fund. Financial experts suggest saving three to six months' worth of expenses to cover unexpected costs such as medical bills or job loss. Would you like to add a line item for this?\n\nHow else can I help you manage your budget?"}]},"conversation":"My budget is 3200"}
+2025-02-16-21:33:31 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:33:31 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3200,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Electricity Bill","amount":192.99,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Off-peak/Période creuse\",\n      \"price\": 60.04,\n      \"quantity\": 750.481291,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Mid—peak/Période médiane\",\n      \"price\": 28.05,\n      \"quantity\": 229.877693,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"On-—peak/Période de pointe\",\n      \"price\": 29.52,\n      \"quantity\": 183.364347,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Delivery Charges/Frais de livraison\",\n      \"price\": 56.31,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Regulatory Charges/Frais réglementés\",\n      \"price\": 7.12,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Debt Retirement Charge/Réglement de la dette\",\n      \"price\": 8.08,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"HST No. 863391363 RT0001/No. TVH 863391363 RT0001\",\n      \"price\": 24.59,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre\",\n      \"price\": -21.37,\n      \"quantity\": 1\n    }\n  ],\n  \"total\": 192.99\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the electricity bill to your budget. The total amount for the electricity bill is $192.99. Is this a recurring monthly expense, or a one-time charge?  How else can I help you with your budget?"},{"user_message":"My budget is 3200","ai_response":"Okay, I have set your budget limit to $3200.0. Currently, your listed expenses are $692.99. This leaves you with $2507.01. \n\nTo make the most of your budget, I recommend allocating funds to an emergency fund. Financial experts suggest saving three to six months' worth of expenses to cover unexpected costs such as medical bills or job loss. Would you like to add a line item for this?\n\nHow else can I help you manage your budget?"}]},"conversation":"My budget is 3200"}
+2025-02-16-21:33:31 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:33:31 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-21:33:31 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-21:33:31 -- DEBUG: Image converted to byte stream
+2025-02-16-21:33:32 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-02-16-21:33:32 -- DEBUG: receipt_text is already a string
+2025-02-16-21:33:41 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-21:49:30 -- DEBUG: /receipt endpoint hit
+2025-02-16-21:49:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"}]},"conversation":"I have a budget of 5000. I spend 400 on PPV UFC matches."}
+2025-02-16-21:49:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:49:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"}]},"conversation":"I have a budget of 5000. I spend 400 on PPV UFC matches."}
+2025-02-16-21:49:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:49:30 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-21:49:30 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-21:49:30 -- DEBUG: Image converted to byte stream
+2025-02-16-21:49:31 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-02-16-21:49:31 -- DEBUG: receipt_text is already a string
+2025-02-16-21:49:36 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-21:53:17 -- 
+DEBUG: New Attempt
+2025-02-16-21:53:17 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-21:53:19 -- DEBUG: /receipt endpoint hit
+2025-02-16-21:53:19 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null},{"item_name":"Medications","amount":402.93,"category":"Health","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Phone Bill","amount":50,"category":"Utilities","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Pain Killer\",\n      \"price\": 2.99,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Corona Medication\",\n      \"price\": 199.98,\n      \"quantity\": 2\n    },\n    {\n      \"name\": \"ITEM\",\n      \"price\": 0.00,\n      \"quantity\": 3\n    }\n  ],\n  \"tax\": 0.00,\n  \"total\": 202.97\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the medication expenses to your budget. It totals $402.93. Do you have any other expenses to add?"},{"user_message":"I spend 50 on my phone bill","ai_response":"Okay, I've added the phone bill to your budget as a monthly utility expense. Do you have any other expenses to add?"}]},"conversation":"I spend 50 on my phone bill"}
+2025-02-16-21:53:19 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:53:19 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null},{"item_name":"Medications","amount":402.93,"category":"Health","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Phone Bill","amount":50,"category":"Utilities","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Pain Killer\",\n      \"price\": 2.99,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Corona Medication\",\n      \"price\": 199.98,\n      \"quantity\": 2\n    },\n    {\n      \"name\": \"ITEM\",\n      \"price\": 0.00,\n      \"quantity\": 3\n    }\n  ],\n  \"tax\": 0.00,\n  \"total\": 202.97\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the medication expenses to your budget. It totals $402.93. Do you have any other expenses to add?"},{"user_message":"I spend 50 on my phone bill","ai_response":"Okay, I've added the phone bill to your budget as a monthly utility expense. Do you have any other expenses to add?"}]},"conversation":"I spend 50 on my phone bill"}
+2025-02-16-21:53:19 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:53:19 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-21:53:19 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-21:53:19 -- DEBUG: Image converted to byte stream
+2025-02-16-21:53:20 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-02-16-21:53:20 -- DEBUG: receipt_text is already a string
+2025-02-16-21:53:26 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
