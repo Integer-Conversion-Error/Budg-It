@@ -59,6 +59,9 @@ def ai_filter_receipt_text(text):
         "them to 1 or leave them blank, but ensure the JSON structure remains valid. "
         "Do not include any commentary outside the JSON response."
         "Make sure to group similar items together. If there is a large purchase and a small purchase, and both are of the same category, combine and sum them as one item."
+        "If you see a line named Total or total, take its corresponding value instead of the sum if the items can be all grouped together."
+        "Always group together add-on fees and taxes with the corresponding product/service. Never ever seperate tax from the item."
+        "Make sure to include the date the payment is due on/was completed on."
     )
 
     # 3. Initialize the chat session (like your snippet: "System prompt: ... Respond understood.")

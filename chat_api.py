@@ -104,7 +104,7 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
         # If the "conversation" key exists and is a dict, use its "ai_response" value.
         # Otherwise, use a default message instead of the entire API return.
         if "conversation" in parsed_ai_response and isinstance(parsed_ai_response["conversation"], dict):
-            ai_reply = parsed_ai_response["conversation"].get("ai_response", "Operation completed.")
+            ai_reply = parsed_ai_response["conversation"].get("ai_response", "Operation completed, but error returning from the agent. Ask to see your budget through chat.")
         else:
             ai_reply = "Operation completed."
         
@@ -126,7 +126,7 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
             print("DEBUG: No update to 'items' was found in the AI response.")
         
         state_dict["Budget"]["budget_limit"] = parsed_ai_response["Budget"]["budget_limit"]
-        print(state_dict)
+        #print(state_dict)
         return state_dict
 
     except Exception as e:

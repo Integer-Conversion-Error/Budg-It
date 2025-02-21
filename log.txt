@@ -1575,3 +1575,134 @@ DEBUG: New Attempt
 
 2025-02-16-21:53:20 -- DEBUG: receipt_text is already a string
 2025-02-16-21:53:26 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-21-14:41:18 -- 
+DEBUG: New Attempt
+2025-02-21-14:41:18 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-14:42:50 -- DEBUG: /receipt endpoint hit
+2025-02-21-14:42:50 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":500,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000$. I spend 500 on gas every month.","ai_response":"Okay, I've set your budget limit to $5000 and added a monthly gas expense of $500. Is there anything else I can help you budget for?"}]},"conversation":"My budget is 5000$. I spend 500 on gas every month."}
+2025-02-21-14:42:50 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:42:50 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":500,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000$. I spend 500 on gas every month.","ai_response":"Okay, I've set your budget limit to $5000 and added a monthly gas expense of $500. Is there anything else I can help you budget for?"}]},"conversation":"My budget is 5000$. I spend 500 on gas every month."}
+2025-02-21-14:42:50 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:42:50 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-21-14:42:50 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-21-14:42:51 -- DEBUG: Image converted to byte stream
+2025-02-21-14:42:55 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak Electricity",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity"
+    },
+    {
+      "name": "Mid-peak Electricity",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity"
+    },
+    {
+      "name": "On-peak Electricity",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity"
+    },
+    {
+      "name": "Delivery Charges",
+      "price": 56.31,
+      "quantity": 1,
+      "category": "Delivery"
+    },
+    {
+      "name": "Regulatory Charges",
+      "price": 7.12,
+      "quantity": 1,
+      "category": "Regulatory"
+    },
+    {
+      "name": "Debt Retirement Charge",
+      "price": 8.08,
+      "quantity": 1,
+      "category": "Debt"
+    }
+  ],
+  "tax": 24.59,
+  "total": 192.99
+}
+
+2025-02-21-14:42:55 -- DEBUG: receipt_text is already a string
+2025-02-21-14:43:01 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-21-14:48:15 -- 
+DEBUG: New Attempt
+2025-02-21-14:48:15 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-14:48:36 -- DEBUG: /receipt endpoint hit
+2025-02-21-14:48:36 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000. I spend 400 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a $400 gas expense to your budget. Is there anything else I can help you with?"}]},"conversation":"My budget is 5000. I spend 400 on gas"}
+2025-02-21-14:48:36 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:48:36 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000. I spend 400 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a $400 gas expense to your budget. Is there anything else I can help you with?"}]},"conversation":"My budget is 5000. I spend 400 on gas"}
+2025-02-21-14:48:36 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:48:36 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-21-14:48:36 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-21-14:48:36 -- DEBUG: Image converted to byte stream
+2025-02-21-14:48:41 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Electricity Charge TOU/Frais d'électricité FHC - Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity"
+    },
+    {
+      "name": "Electricity Charge TOU/Frais d'électricité FHC - Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity"
+    },
+    {
+      "name": "Electricity Charge TOU/Frais d'électricité FHC - On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity"
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1,
+      "category": "Delivery"
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1,
+      "category": "Regulatory"
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1,
+      "category": "Debt Retirement"
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1,
+      "category": "Tax"
+    },
+      {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre",
+      "price": -21.37,
+      "quantity": 1,
+      "category": "Discount"
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-21-14:48:41 -- DEBUG: receipt_text is already a string
+2025-02-21-14:48:49 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-21-14:54:51 -- 
+DEBUG: New Attempt
+2025-02-21-14:54:51 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-15:45:26 -- 
+DEBUG: New Attempt
+2025-02-21-15:45:26 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
