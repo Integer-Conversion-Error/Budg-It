@@ -1,9 +1,7 @@
-import io
+import json,re,os,io,uvicorn
 from PIL import Image
 from fastapi import FastAPI, HTTPException, File,UploadFile,Form,Body
 from fastapi.responses import JSONResponse
-import uvicorn # type: ignore
-import json,re
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, Dict, Any
@@ -44,7 +42,7 @@ def log_message(message: Optional[str]):
     with open("log.txt", "a") as f:
         f.write(get_current_time_string() + " -- "+ message + "\n")
         
-import os
+
 log_message("\nDEBUG: New Attempt")
 log_message("DEBUG: Current working directory: " + os.getcwd())
 
