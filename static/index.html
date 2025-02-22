@@ -345,7 +345,29 @@
 
         // Helper function to generate colors for the chart segments.
         function generateColors(numColors) {
-            const colors = ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'];
+            const colors = [
+                '#FF6384', // Red-Pink
+                '#36A2EB', // Blue
+                '#FFCE56', // Yellow
+                '#4BC0C0', // Teal
+                '#9966FF', // Purple
+                '#FF9F40', // Orange
+                '#2ECC71', // Green
+                '#E74C3C', // Bright Red
+                '#8E44AD', // Dark Purple
+                '#1ABC9C', // Aqua
+                '#D35400', // Dark Orange
+                '#C0392B', // Dark Red
+                '#3498DB', // Light Blue
+                '#F1C40F', // Golden Yellow
+                '#27AE60', // Forest Green
+                '#9B59B6', // Soft Purple
+                '#34495E', // Dark Gray-Blue
+                '#16A085', // Deep Teal
+                '#F39C12', // Bright Orange
+                '#7F8C8D'  // Muted Gray
+                ];
+
             if (numColors <= colors.length) {
                 return colors.slice(0, numColors);
             } else {

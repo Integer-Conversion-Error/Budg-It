@@ -1706,3 +1706,15 @@ DEBUG: New Attempt
 2025-02-21-15:45:26 -- 
 DEBUG: New Attempt
 2025-02-21-15:45:26 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:03:19 -- 
+DEBUG: New Attempt
+2025-02-21-18:03:19 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:40:02 -- 
+DEBUG: New Attempt
+2025-02-21-18:40:02 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:44:53 -- 
+DEBUG: New Attempt
+2025-02-21-18:44:53 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:55:13 -- 
+DEBUG: New Attempt
+2025-02-21-18:55:13 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It

@@ -46,12 +46,25 @@ def log_message(message: Optional[str]):
 log_message("\nDEBUG: New Attempt")
 log_message("DEBUG: Current working directory: " + os.getcwd())
 
+
+def calculate_surplus(state):
+    total = 0
+    budget = state["Budget"]["budget_limit"] if  state["Budget"]["budget_limit"] != None else 0
+    items = state["Budget"]["items"]
+    
+    for item in items:
+        total += item["amount"]
+    surp_amount = round(budget - total,2)
+    state["Budget"]["budget_surplus"] = surp_amount
+    print(f"Surplus amount: {surp_amount}")
+    return state
+
 @app.post("/chat")
 def send_one_chat(current_state: ChatRequest = Body(...)):
     try:
         # Convert the incoming Pydantic model to a dictionary.
         state_dict = current_state.dict()
-        print(state_dict)
+        #print(state_dict)
 
         # Configure the generative AI model.
         model = configure_genai()
@@ -77,7 +90,7 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
                 "role": "user",
                 "parts": [{"text": state_dict.get("conversation", "")}]
             })
-            print(chat_history)
+            #print(chat_history)
             chat_session = model.start_chat(history=chat_history)
 
         # Generate the prompt using the current state.
@@ -87,8 +100,8 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
         # Generate response from the AI.
         response = chat_session.send_message(prompt)
         ai_response = response.text
-        print("DEBUG: Raw AI response text:")
-        print(ai_response)
+        # print("DEBUG: Raw AI response text:")
+        # print(ai_response)
 
         # Try to parse the AI response.
         try:
@@ -120,11 +133,13 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
                 and "items" in parsed_ai_response["Budget"]):
             state_dict["Budget"]["items"] = parsed_ai_response["Budget"]["items"]
             
-        else:
-            print("DEBUG: No update to 'items' was found in the AI response.")
+        # else:
+        #     print("DEBUG: No update to 'items' was found in the AI response.")
         
         state_dict["Budget"]["budget_limit"] = parsed_ai_response["Budget"]["budget_limit"]
         #print(state_dict)
+        print(json.dumps(state_dict,indent=2))
+        state_dict = calculate_surplus(state_dict)
         return state_dict
 
     except Exception as e:
@@ -201,6 +216,8 @@ async def process_receipt(
         updated_state = process_chat_logic(state_data, state_data["conversation"])
 
         # Return the updated state
+        print(json.dumps(updated_state,indent=2))
+        updated_state = calculate_surplus(updated_state)
         return JSONResponse(content=updated_state)
 
     except json.JSONDecodeError:
@@ -290,8 +307,8 @@ def process_chat_logic(state_dict: Dict[str, Any], user_input: str) -> Dict[str,
         and isinstance(parsed_ai_response["Budget"], dict) 
         and "items" in parsed_ai_response["Budget"]):
         state_dict["Budget"]["items"] = parsed_ai_response["Budget"]["items"]
-    else:
-        print("DEBUG: No update to 'items' was found in the AI response.")
+    # else:
+    #     print("DEBUG: No update to 'items' was found in the AI response.")
 
     # 9. Check budget limit
     state_dict["Budget"]["budget_limit"] = parsed_ai_response.get("Budget", {}).get("budget_limit")

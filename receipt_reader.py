@@ -98,10 +98,10 @@ def main():
     try:
         with open(image_file_path, "rb") as image_file:
             extracted_info = extract_text_from_image_stream(image_file)
-            print("Extracted Info (JSON or fallback):")
-            print(extracted_info)
+            #print("Extracted Info (JSON or fallback):")
+            #print(extracted_info)
     except Exception as e:
-        print(f"An error occurred while processing the image: {e}")
+        #print(f"An error occurred while processing the image: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
