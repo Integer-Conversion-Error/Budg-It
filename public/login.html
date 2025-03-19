@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Assistant - Login</title>
+    <!-- Include Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <!-- Firebase Config -->
+    <script src="/static/firebaseConfig.js"></script>
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDQ4fqFVEGf3Drj0MSu6T4a1Za5eBmxtFc",
+            authDomain: "budg-it-765e4.firebaseapp.com",
+            projectId: "budg-it-765e4",
+            storageBucket: "budg-it-765e4.firebasestorage.app",
+            messagingSenderId: "806507474794",
+            appId: "1:806507474794:web:8c13eb1136e203dce23f13",
+            measurementId: "G-BXY63MYNGZ"
+        };
+
+        // Initialize Firebase - check if it hasn't already been initialized
+        if (!firebase.apps.length) {
+            firebase.initializeApp(firebaseConfig);
+        }
+
+        // Get references to Firebase services
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        // User authentication functions
+        async function signUpUser(email, password, name) {
+            try {
+                // Create user
+                const userCredential = await auth.createUserWithEmailAndPassword(email, password);
+
+                // Update profile with name
+                await userCredential.user.updateProfile({
+                    displayName: name
+                });
+
+                // Create user document in Firestore
+                await db.collection('users').doc(userCredential.user.uid).set({
+                    name: name,
+                    email: email,
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                });
+
+                return userCredential.user;
+            } catch (error) {
+                console.error("Error during signup:", error);
+                throw error;
+            }
+        }
+
+        async function signInUser(email, password) {
+            try {
+                const userCredential = await auth.signInWithEmailAndPassword(email, password);
+                return userCredential.user;
+            } catch (error) {
+                console.error("Error during login:", error);
+                throw error;
+            }
+        }
+
+        function signOutUser() {
+            return auth.signOut();
+        }
+
+        // Budget management functions
+        async function createBudget(userId, budgetName) {
+            try {
+                const newBudgetRef = await db.collection('users').doc(userId).collection('budgets').add({
+                    name: budgetName,
+                    created: firebase.firestore.FieldValue.serverTimestamp(),
+                    budget_limit: null,
+                    budget_surplus: 0,
+                    items: [],
+                    warnings: [],
+                    conversations: []
+                });
+
+                return newBudgetRef.id;
+            } catch (error) {
+                console.error("Error creating budget:", error);
+                throw error;
+            }
+        }
+
+        async function getUserBudgets(userId) {
+            try {
+                const budgetsSnapshot = await db.collection('users').doc(userId)
+                    .collection('budgets').orderBy('created', 'desc').get();
+
+                const budgets = [];
+                budgetsSnapshot.forEach(doc => {
+                    budgets.push({
+                        id: doc.id,
+                        ...doc.data()
+                    });
+                });
+
+                return budgets;
+            } catch (error) {
+                console.error("Error fetching budgets:", error);
+                return [];
+            }
+        }
+
+        async function getBudget(userId, budgetId) {
+            try {
+                const budgetDoc = await db.collection('users').doc(userId)
+                    .collection('budgets').doc(budgetId).get();
+
+                if (budgetDoc.exists) {
+                    return {
+                        id: budgetDoc.id,
+                        ...budgetDoc.data()
+                    };
+                } else {
+                    return null;
+                }
+            } catch (error) {
+                console.error("Error fetching budget:", error);
+                return null;
+            }
+        }
+
+        async function updateBudget(userId, budgetId, budgetData) {
+            try {
+                await db.collection('users').doc(userId)
+                    .collection('budgets').doc(budgetId).update({
+                        ...budgetData,
+                        lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
+                    });
+                return true;
+            } catch (error) {
+                console.error("Error updating budget:", error);
+                return false;
+            }
+        }
+
+        async function deleteBudget(userId, budgetId) {
+            try {
+                await db.collection('users').doc(userId)
+                    .collection('budgets').doc(budgetId).delete();
+                return true;
+            } catch (error) {
+                console.error("Error deleting budget:", error);
+                return false;
+            }
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            width: 400px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .tab-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .form-container {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .brand {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .brand-icon {
+            font-size: 48px;
+            color: #007bff;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="brand">
+            <div class="brand-icon">💰</div>
+            <h1>Budget Assistant</h1>
+        </div>
+
+        <div class="tab-container">
+            <div class="tab active" onclick="switchTab('login')">Login</div>
+            <div class="tab" onclick="switchTab('signup')">Sign Up</div>
+        </div>
+
+        <div id="login-form" class="form-container active">
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="Enter your password"
+                        required>
+                </div>
+
+                <div id="login-error" class="error-message"></div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="signup-form" class="form-container">
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="Choose a password"
+                        required>
+                </div>
+
+                <div id="signup-error" class="error-message"></div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <p class="footer-text">Manage your finances with our AI-powered assistant.</p>
+    </div>
+
+    <!-- Add this to the script section of login.html -->
+    <script>
+
+        // Add this function to the script section of login.html if it doesn't exist already
+        function switchTab(tabName) {
+            // Hide all form containers
+            document.querySelectorAll('.form-container').forEach(container => {
+                container.classList.remove('active');
+            });
+
+            // Show the selected form container
+            document.getElementById(tabName + '-form').classList.add('active');
+
+            // Update tab styles
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Highlight the clicked tab
+            event.currentTarget.classList.add('active');
+        }
+
+
+        // Login form submission
+        document.getElementById('loginForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            const errorElement = document.getElementById('login-error');
+
+            try {
+                const user = await signInUser(email, password);
+
+                // Store user info in session storage
+                sessionStorage.setItem('isLoggedIn', 'true');
+                sessionStorage.setItem('userId', user.uid);
+                sessionStorage.setItem('userEmail', user.email);
+
+                // Load budgets and redirect
+                const budgets = await getUserBudgets(user.uid);
+
+                if (budgets.length === 0) {
+                    // Create a default budget if none exists
+                    const defaultBudgetId = await createBudget(user.uid, 'My First Budget');
+                    sessionStorage.setItem('currentBudgetId', defaultBudgetId);
+                } else {
+                    // Set the first budget as active
+                    sessionStorage.setItem('currentBudgetId', budgets[0].id);
+                }
+
+                // Redirect to budget page
+                window.location.href = '/budget';
+
+            } catch (error) {
+                errorElement.textContent = error.message || "Login failed. Please check your credentials.";
+            }
+        });
+
+        // Signup form submission
+        document.getElementById('signupForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('signup-name').value;
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+            const errorElement = document.getElementById('signup-error');
+
+            try {
+                const user = await signUpUser(email, password, name);
+
+                // Create a default budget
+                const defaultBudgetId = await createBudget(user.uid, 'My First Budget');
+
+                // Store user info in session storage
+                sessionStorage.setItem('isLoggedIn', 'true');
+                sessionStorage.setItem('userId', user.uid);
+                sessionStorage.setItem('userEmail', user.email);
+                sessionStorage.setItem('currentBudgetId', defaultBudgetId);
+
+                // Redirect to budget page
+                window.location.href = '/budget';
+
+            } catch (error) {
+                errorElement.textContent = error.message || "Signup failed. Please try again.";
+            }
+        });
+
+        // Add this to the bottom of your script section
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                // User is signed in
+                sessionStorage.setItem('isLoggedIn', 'true');
+                sessionStorage.setItem('userId', user.uid);
+                sessionStorage.setItem('userEmail', user.email);
+
+                // If on login page, redirect to budget page
+                if (window.location.pathname === '/') {
+                    window.location.href = '/budget';
+                }
+            } else {
+                // User is signed out
+                sessionStorage.removeItem('isLoggedIn');
+                sessionStorage.removeItem('userId');
+                sessionStorage.removeItem('userEmail');
+                sessionStorage.removeItem('currentBudgetId');
+
+                // If on budget page, redirect to login page
+                if (window.location.pathname !== '/') {
+                    window.location.href = '/';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

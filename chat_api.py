@@ -1,12 +1,17 @@
-import json,re,os,io,uvicorn
+import json, re, os, io, uvicorn
 from PIL import Image
-from fastapi import FastAPI, HTTPException, File,UploadFile,Form,Body
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI, HTTPException, File, UploadFile, Form, Body, Request
+from fastapi.responses import JSONResponse, RedirectResponse, HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from typing import Optional, Dict, Any
 from receipt_reader import extract_text_from_image_stream
 
+from firebase_auth import get_current_user
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi import Depends
 
 # Import the helper functions from consolemain.
 from consolemain import configure_genai, initialize_chat, generate_prompt
@@ -23,19 +28,52 @@ def get_current_time_string():
 app = FastAPI()
 
 # Configure CORS for the FastAPI app
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origin_regex=".*",  # This regex matches any origin
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+#     expose_headers=["Authorization"],  # Important for auth
+# )
+
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=".*",  # This regex matches any origin.
+    allow_origins=["*"],  # Allow all origins for development
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allow all methods
+    allow_headers=["*"],  # Allow all headers
 )
+
+
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    log_message(f"DEBUG: Received request: {request.method} {request.url}")
+    log_message(f"DEBUG: Headers: {request.headers}")
+    
+    # Process the request
+    response = await call_next(request)
+    
+    log_message(f"DEBUG: Response status code: {response.status_code}")
+    return response
+
+
+# Mount static files directory
+app.mount("/static", StaticFiles(directory="public"), name="static")
+
+# Define templates
+templates = Jinja2Templates(directory="public")
 
 # Define the Pydantic model that describes the expected request payload.
 class ChatRequest(BaseModel):
     Budget: Dict[str, Any]
     conversation: Optional[str] = ""  # Defaults to an empty string if not provided.
 
+# Define a simple login request model
+class LoginRequest(BaseModel):
+    username: str
+    password: str
 
 
 def log_message(message: Optional[str]):
@@ -49,7 +87,7 @@ log_message("DEBUG: Current working directory: " + os.getcwd())
 
 def calculate_surplus(state):
     total = 0
-    budget = state["Budget"]["budget_limit"] if  state["Budget"]["budget_limit"] != None else 0
+    budget = state["Budget"]["budget_limit"] if state["Budget"]["budget_limit"] != None else 0
     items = state["Budget"]["items"]
     
     for item in items:
@@ -59,13 +97,63 @@ def calculate_surplus(state):
     print(f"Surplus amount: {surp_amount}")
     return state
 
+# Root route - serve the login page
+@app.get("/", response_class=HTMLResponse)
+async def root(request: Request):
+    return templates.TemplateResponse("login.html", {"request": request})
+
+# Budget interface route
+@app.get("/budget", response_class=HTMLResponse)
+async def budget_interface(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+# Login API endpoint
+@app.post("/login")
+async def login(login_data: LoginRequest):
+    # For demonstration, we're accepting any credentials
+    # In a real app, you would validate against Firebase Authentication
+    return {"success": True, "message": "Use Firebase Authentication"}
+
+
+# Add a route to verify tokens and get user info (add this to your app routes)
+@app.post("/verify-token")
+async def verify_token(user: dict = Depends(get_current_user)):
+    """
+    Verify Firebase auth token and return user info.
+    This endpoint can be used by the frontend to check if a token is valid.
+    """
+    return {"success": True, "user": user}
+
+
+USE_AUTH = False  # Set to True when ready for production
+
+# If you're using a security dependency, modify it to be optional
+# This function can replace the get_current_user function
+async def get_optional_user(credentials: Optional[HTTPAuthorizationCredentials] = None):
+    """
+    A development version that doesn't require authentication
+    """
+    # Just return a mock user for development
+    return {
+        "uid": "dev-user-id",
+        "email": "dev-user@example.com"
+    }
+
+# Now update your routes to use this function instead of strict authentication
 @app.post("/chat")
 def send_one_chat(current_state: ChatRequest = Body(...)):
+    # No authentication dependency
     try:
-        # Convert the incoming Pydantic model to a dictionary.
+        # Log the request for debugging
+        log_message("DEBUG: Chat endpoint hit")
+        
+        # Rest of your existing code...
         state_dict = current_state.dict()
-        #print(state_dict)
-
+        
+        # Ensure conversations array exists
+        if "conversations" not in state_dict["Budget"]:
+            state_dict["Budget"]["conversations"] = []
+            
         # Configure the generative AI model.
         model = configure_genai()
 
@@ -79,29 +167,25 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
             for conversation in state_dict["Budget"]["conversations"]:
                 chat_history.append({
                     "role": "user",
-                    "parts": [{"text": conversation["user_message"]}]
+                    "parts": [{"text": conversation.get("user_message", "")}]
                 })
                 chat_history.append({
                     "role": "model",
-                    "parts": [{"text": conversation["ai_response"]}]
+                    "parts": [{"text": conversation.get("ai_response", "")}]
                 })
             # Add the new user input to the history.
             chat_history.append({
                 "role": "user",
                 "parts": [{"text": state_dict.get("conversation", "")}]
             })
-            #print(chat_history)
             chat_session = model.start_chat(history=chat_history)
 
         # Generate the prompt using the current state.
         prompt = generate_prompt(state_dict, state_dict.get("conversation", ""))
         
-
         # Generate response from the AI.
         response = chat_session.send_message(prompt)
         ai_response = response.text
-        # print("DEBUG: Raw AI response text:")
-        # print(ai_response)
 
         # Try to parse the AI response.
         try:
@@ -110,16 +194,12 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
         except json.JSONDecodeError:
             parsed_ai_response = {"ai_response": ai_response}
             
-
         # Extract the conversation reply.
-        # If the "conversation" key exists and is a dict, use its "ai_response" value.
-        # Otherwise, use a default message instead of the entire API return.
         if "conversation" in parsed_ai_response and isinstance(parsed_ai_response["conversation"], dict):
             ai_reply = parsed_ai_response["conversation"].get("ai_response", "Operation completed, but error returning from the agent. Ask to see your budget through chat.")
         else:
             ai_reply = "Operation completed."
         
-
         # Append the new conversation turn to the conversation history.
         if "conversations" not in state_dict["Budget"]:
             state_dict["Budget"]["conversations"] = []
@@ -132,27 +212,23 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
                 and isinstance(parsed_ai_response["Budget"], dict) 
                 and "items" in parsed_ai_response["Budget"]):
             state_dict["Budget"]["items"] = parsed_ai_response["Budget"]["items"]
-            
-        # else:
-        #     print("DEBUG: No update to 'items' was found in the AI response.")
         
         state_dict["Budget"]["budget_limit"] = parsed_ai_response["Budget"]["budget_limit"]
-        #print(state_dict)
-        print(json.dumps(state_dict,indent=2))
+        
+        # Calculate budget surplus
         state_dict = calculate_surplus(state_dict)
+        
         return state_dict
 
     except Exception as e:
-        print("DEBUG: Exception encountered:", e)
+        log_message(f"DEBUG: Exception encountered: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error processing chat: {str(e)}")
-
-
-
 @app.post("/receipt")
 async def process_receipt(
     receipt: UploadFile = File(...),
     current_state: str = Form(...),
-    command: Optional[str] = Form(None)
+    command: Optional[str] = Form(None)#,
+    #user: dict = Depends(get_current_user)
 ):
     log_message("DEBUG: /receipt endpoint hit")
     temp_file_path = None
@@ -163,14 +239,9 @@ async def process_receipt(
         
         # Convert JSON string to dict
         state_data = json.loads(current_state)
-
-        log_message("DEBUG: Received current_state (raw): " + current_state)
-        if command:
-            log_message("DEBUG: Received command: " + command)
         
         # Parse the JSON string from the form field into a dict.
         state_data = json.loads(current_state)
-
         
         # Save the uploaded file temporarily
         temp_file_path = f"temp_{receipt.filename}"
@@ -212,7 +283,7 @@ async def process_receipt(
         # Put it into the conversation key so the helper sees it as "user input"
         state_data["conversation"] = full_prompt
         
-        # Call your shared chat logic
+        # Call the chat logic function
         updated_state = process_chat_logic(state_data, state_data["conversation"])
 
         # Return the updated state
@@ -231,8 +302,6 @@ async def process_receipt(
         if temp_file_path and os.path.exists(temp_file_path):
             os.remove(temp_file_path)
             log_message(f"DEBUG: Temporary file deleted: {temp_file_path}")
-
-
 
 
 def process_chat_logic(state_dict: Dict[str, Any], user_input: str) -> Dict[str, Any]:
@@ -257,11 +326,11 @@ def process_chat_logic(state_dict: Dict[str, Any], user_input: str) -> Dict[str,
         for conversation in state_dict["Budget"]["conversations"]:
             chat_history.append({
                 "role": "user",
-                "parts": [{"text": conversation["user_message"]}]
+                "parts": [{"text": conversation.get("user_message", "")}]
             })
             chat_history.append({
                 "role": "model",
-                "parts": [{"text": conversation["ai_response"]}]
+                "parts": [{"text": conversation.get("ai_response", "")}]
             })
 
         # Now add the new user input
@@ -307,8 +376,6 @@ def process_chat_logic(state_dict: Dict[str, Any], user_input: str) -> Dict[str,
         and isinstance(parsed_ai_response["Budget"], dict) 
         and "items" in parsed_ai_response["Budget"]):
         state_dict["Budget"]["items"] = parsed_ai_response["Budget"]["items"]
-    # else:
-    #     print("DEBUG: No update to 'items' was found in the AI response.")
 
     # 9. Check budget limit
     state_dict["Budget"]["budget_limit"] = parsed_ai_response.get("Budget", {}).get("budget_limit")
@@ -337,7 +404,7 @@ def parse_receipt_text(text):
             try:
                 amount = float(match.group(2))
             except ValueError:
-                continue  # Skip lines that don’t parse correctly
+                continue  # Skip lines that don't parse correctly
             # Append the item to the list; adjust additional fields as needed.
             items.append({
                 "item_name": item_name,
@@ -350,4 +417,9 @@ def parse_receipt_text(text):
     return items
 
 if __name__ == "__main__":
+    # Make sure the static directory exists
+    if not os.path.exists("static"):
+        os.makedirs("static")
+    
+    # Start the server
     uvicorn.run(app, host="127.0.0.1", port=8000)

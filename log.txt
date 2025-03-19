@@ -1718,3 +1718,186 @@ DEBUG: New Attempt
 2025-02-21-18:55:13 -- 
 DEBUG: New Attempt
 2025-02-21-18:55:13 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-16:57:27 -- 
+DEBUG: New Attempt
+2025-03-18-16:57:27 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-17:58:34 -- 
+DEBUG: New Attempt
+2025-03-18-17:58:34 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-18:24:56 -- 
+DEBUG: New Attempt
+2025-03-18-18:24:56 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-18:25:11 -- 
+DEBUG: New Attempt
+2025-03-18-18:25:11 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-18:40:48 -- 
+DEBUG: New Attempt
+2025-03-18-18:40:48 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-19:09:27 -- 
+DEBUG: New Attempt
+2025-03-18-19:09:27 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-23:30:43 -- 
+DEBUG: New Attempt
+2025-03-18-23:30:43 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-23:51:46 -- 
+DEBUG: New Attempt
+2025-03-18-23:51:46 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-19-00:22:11 -- 
+DEBUG: New Attempt
+2025-03-19-00:22:11 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-19-00:23:46 -- 
+DEBUG: New Attempt
+2025-03-19-00:23:46 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-19-00:24:21 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:24:21 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'priority': 'u=0, i'})
+2025-03-19-00:24:21 -- DEBUG: Response status code: 200
+2025-03-19-00:24:21 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-00:24:21 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-00:24:21 -- DEBUG: Response status code: 200
+2025-03-19-00:24:24 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-00:24:24 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:24:24 -- DEBUG: Response status code: 200
+2025-03-19-00:24:27 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:24:27 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:24:27 -- DEBUG: Response status code: 200
+2025-03-19-00:24:27 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-00:24:27 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-00:24:27 -- DEBUG: Response status code: 404
+2025-03-19-00:24:47 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-00:24:47 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '186', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:24:47 -- DEBUG: Chat endpoint hit
+2025-03-19-00:24:49 -- DEBUG: Response status code: 200
+2025-03-19-00:25:43 -- DEBUG: Received request: POST http://localhost:8000/receipt
+2025-03-19-00:25:43 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'multipart/form-data; boundary=----geckoformboundaryacf231d3caadbda63bf6b8a939917935', 'content-length': '95746', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:25:43 -- DEBUG: /receipt endpoint hit
+2025-03-19-00:25:43 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"budget_surplus":4200,"items":[{"due_date":null,"amount":500,"category":"Transportation","importance_rank":3,"item_name":"Gas","recurrence_schedule":"monthly"},{"item_name":"Groceries","category":"Food","importance_rank":2,"recurrence_schedule":"monthly","amount":300,"due_date":null}],"warnings":[],"conversations":[{"ai_response":"Okay, I've set your monthly budget limit to $5000. I've also added gas ($500) and groceries ($300) as recurring monthly expenses. Your current budget surplus is $4200. How else can I help you manage your budget?","user_message":"I have a budget of 5000$ monthly. I spend 500 on gas and 300 on groceries"}]},"conversation":""}
+2025-03-19-00:25:43 -- DEBUG: Received command: uploadReceipt
+2025-03-19-00:25:43 -- DEBUG: Receipt Size: 94596 bytes
+2025-03-19-00:25:43 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-03-19-00:25:44 -- DEBUG: Image converted to byte stream
+2025-03-19-00:25:45 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-03-19-00:25:45 -- DEBUG: receipt_text is already a string
+2025-03-19-00:25:49 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-03-19-00:25:49 -- DEBUG: Response status code: 200
+2025-03-19-00:27:17 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:27:17 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:27:17 -- DEBUG: Response status code: 200
+2025-03-19-00:28:16 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-00:28:16 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '1774', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:28:16 -- DEBUG: Chat endpoint hit
+2025-03-19-00:28:21 -- DEBUG: Response status code: 200
+2025-03-19-00:29:10 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-00:29:10 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '2924', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:29:10 -- DEBUG: Chat endpoint hit
+2025-03-19-00:29:15 -- DEBUG: Response status code: 200
+2025-03-19-00:36:05 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-00:36:05 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:36:05 -- DEBUG: Response status code: 200
+2025-03-19-00:36:05 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-00:36:05 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-00:36:05 -- DEBUG: Response status code: 200
+2025-03-19-00:36:05 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-00:36:05 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-00:36:05 -- DEBUG: Response status code: 404
+2025-03-19-00:36:41 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:36:41 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:36:41 -- DEBUG: Response status code: 200
+2025-03-19-01:08:11 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:11 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '172', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:11 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:12 -- DEBUG: Response status code: 200
+2025-03-19-01:08:31 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:31 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '684', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:31 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:33 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:33 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '684', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:33 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:33 -- DEBUG: Response status code: 200
+2025-03-19-01:08:35 -- DEBUG: Response status code: 200
+2025-03-19-01:08:54 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:54 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '1027', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:54 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:57 -- DEBUG: Response status code: 200
+2025-03-19-01:09:12 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:09:12 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '1392', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:09:12 -- DEBUG: Chat endpoint hit
+2025-03-19-01:09:18 -- DEBUG: Response status code: 200
+2025-03-19-01:09:59 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:09:59 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '2673', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:09:59 -- DEBUG: Chat endpoint hit
+2025-03-19-01:10:07 -- DEBUG: Response status code: 200
+2025-03-19-01:10:38 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:10:38 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '4328', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:10:38 -- DEBUG: Chat endpoint hit
+2025-03-19-01:10:45 -- DEBUG: Exception encountered: 'Budget'
+2025-03-19-01:10:45 -- DEBUG: Response status code: 500
+2025-03-19-01:10:52 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:10:52 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '4328', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:10:52 -- DEBUG: Chat endpoint hit
+2025-03-19-01:10:58 -- DEBUG: Response status code: 200
+2025-03-19-01:12:11 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:12:11 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:12:11 -- DEBUG: Response status code: 200
+2025-03-19-01:12:11 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-01:12:11 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-01:12:11 -- DEBUG: Response status code: 200
+2025-03-19-01:12:34 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:12:34 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:12:34 -- DEBUG: Response status code: 200
+2025-03-19-01:12:37 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:12:37 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:12:37 -- DEBUG: Response status code: 200
+2025-03-19-01:12:58 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:12:58 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '157', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:12:58 -- DEBUG: Chat endpoint hit
+2025-03-19-01:13:00 -- DEBUG: Response status code: 200
+2025-03-19-01:13:10 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:13:10 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '535', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:13:10 -- DEBUG: Chat endpoint hit
+2025-03-19-01:13:12 -- DEBUG: Response status code: 200
+2025-03-19-01:26:29 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:26:29 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:29 -- DEBUG: Response status code: 200
+2025-03-19-01:26:29 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-01:26:29 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-01:26:29 -- DEBUG: Response status code: 200
+2025-03-19-01:26:33 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:26:33 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:33 -- DEBUG: Response status code: 200
+2025-03-19-01:26:36 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:26:36 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:36 -- DEBUG: Response status code: 200
+2025-03-19-01:26:36 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-01:26:36 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-01:26:36 -- DEBUG: Response status code: 404
+2025-03-19-01:26:38 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:26:38 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:38 -- DEBUG: Response status code: 200
+2025-03-19-01:26:41 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:26:41 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:41 -- DEBUG: Response status code: 200
+2025-03-19-01:26:41 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-01:26:41 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-01:26:41 -- DEBUG: Response status code: 404

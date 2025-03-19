@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, jsonify, request
+from flask import Flask, send_from_directory, jsonify, request, redirect, url_for
 from consolemain import configure_genai, initialize_chat, generate_prompt
 import json
 from fastapi import FastAPI, HTTPException
@@ -6,9 +6,14 @@ import os
 
 app = Flask(__name__)
 
-# Route to serve the HTML page
+# Route to serve the login page as the default landing page
 @app.route("/")
 def index():
+    return send_from_directory(directory="static", path="login.html")
+
+# Route to serve the budget interface
+@app.route("/budget")
+def budget_interface():
     return send_from_directory(directory="static", path="index.html")
 
 # Route to serve static files (like CSS and JS if needed)
@@ -17,19 +22,12 @@ def static_files(filename):
     return send_from_directory(directory="static", path=filename)
 
 # Example API route to simulate the chat endpoint
-# @app.route("/chat", methods=["POST"])
 @app.route("/chat", methods=["POST"])
-def send_one_chat(current_state: dict):
-    """
-    API function to process a single user input in the budgeting assistant.
-    
-    Parameters:
-        current_state (dict): The current budget state.
-    
-    Returns:
-        dict: The updated budget state with AI responses.
-    """
+def send_one_chat():
     try:
+        # Get current state from request JSON
+        current_state = request.json
+        
         # Configure the generative AI model
         model = configure_genai()
 
@@ -43,10 +41,18 @@ def send_one_chat(current_state: dict):
 
         # Parse and return the AI response
         ai_response = response.text
-        return json.loads(ai_response)
+        return jsonify(json.loads(ai_response))
     except Exception as e:
-        # Raise an HTTPException for any errors
-        raise HTTPException(status_code=500, detail=f"Error processing chat: {str(e)}")
+        # Return error as JSON response
+        return jsonify({"error": f"Error processing chat: {str(e)}"}), 500
+
+
+# Simple route for testing login functionality
+@app.route("/login", methods=["POST"])
+def login():
+    # For demonstration purposes, we're not actually validating credentials
+    # In a real app, you would validate against a database
+    return jsonify({"success": True, "message": "Login successful"})
 
 
 if __name__ == "__main__":
@@ -54,5 +60,6 @@ if __name__ == "__main__":
     if not os.path.exists("static"):
         os.makedirs("static")
 
-    print("Place your 'index.html' and related files in the 'static' directory.")
+    print("Place your HTML files in the 'static' directory.")
+    print("Access the app at http://localhost:5000")
     app.run(host="0.0.0.0", port=5000, debug=True)
