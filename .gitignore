@@ -1,3 +1,5 @@
 config.json
 *.pyc
 /myenv
+public/firebaseConfig.js
+firebase_credentials.json
