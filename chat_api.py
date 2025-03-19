@@ -1,17 +1,21 @@
+
 import json, re, os, io, uvicorn
 from PIL import Image
 from fastapi import FastAPI, HTTPException, File, UploadFile, Form, Body, Request
 from fastapi.responses import JSONResponse, RedirectResponse, HTMLResponse
+
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from typing import Optional, Dict, Any
+
 from receipt_reader import extract_text_from_image_stream
 
 from firebase_auth import get_current_user
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi import Depends
+
 
 # Import the helper functions from consolemain.
 from consolemain import configure_genai, initialize_chat, generate_prompt
@@ -141,19 +145,22 @@ async def get_optional_user(credentials: Optional[HTTPAuthorizationCredentials] 
 
 # Now update your routes to use this function instead of strict authentication
 @app.post("/chat")
+
 def send_one_chat(current_state: ChatRequest = Body(...)):
     # No authentication dependency
+
     try:
         # Log the request for debugging
         log_message("DEBUG: Chat endpoint hit")
         
         # Rest of your existing code...
         state_dict = current_state.dict()
-        
+
         # Ensure conversations array exists
         if "conversations" not in state_dict["Budget"]:
             state_dict["Budget"]["conversations"] = []
             
+
         # Configure the generative AI model.
         model = configure_genai()
 
@@ -178,6 +185,7 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
                 "role": "user",
                 "parts": [{"text": state_dict.get("conversation", "")}]
             })
+
             chat_session = model.start_chat(history=chat_history)
 
         # Generate the prompt using the current state.
@@ -190,7 +198,6 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
         # Try to parse the AI response.
         try:
             parsed_ai_response = json.loads(ai_response)
-            
         except json.JSONDecodeError:
             parsed_ai_response = {"ai_response": ai_response}
             
@@ -207,17 +214,20 @@ def send_one_chat(current_state: ChatRequest = Body(...)):
             "user_message": state_dict.get("conversation", ""),
             "ai_response": ai_reply
         })
+        
         # Update budget items if provided in the AI response.
         if ("Budget" in parsed_ai_response 
                 and isinstance(parsed_ai_response["Budget"], dict) 
                 and "items" in parsed_ai_response["Budget"]):
             state_dict["Budget"]["items"] = parsed_ai_response["Budget"]["items"]
+
         
         state_dict["Budget"]["budget_limit"] = parsed_ai_response["Budget"]["budget_limit"]
         
         # Calculate budget surplus
         state_dict = calculate_surplus(state_dict)
         
+
         return state_dict
 
     except Exception as e:
@@ -394,7 +404,6 @@ def parse_receipt_text(text):
     items = []
     lines = text.splitlines()
     # Regular expression to capture an item name and a cost.
-    # This regex matches lines with text followed by a number (optionally preceded by a $)
     pattern = re.compile(r'(.+?)\s+\$?(\d+\.\d{2})')
     
     for line in lines:
@@ -404,8 +413,10 @@ def parse_receipt_text(text):
             try:
                 amount = float(match.group(2))
             except ValueError:
+
                 continue  # Skip lines that don't parse correctly
             # Append the item to the list; adjust additional fields as needed.
+
             items.append({
                 "item_name": item_name,
                 "amount": amount,
@@ -415,6 +426,7 @@ def parse_receipt_text(text):
                 "due_date": None
             })
     return items
+
 
 if __name__ == "__main__":
     # Make sure the static directory exists

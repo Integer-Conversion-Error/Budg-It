@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import json
 import sys
 from PIL import Image
@@ -102,6 +103,7 @@ def main():
             #print(extracted_info)
     except Exception as e:
         #print(f"An error occurred while processing the image: {e}")
+
         sys.exit(1)
 
 if __name__ == "__main__":
