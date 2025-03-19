@@ -1,0 +1,1903 @@
+2025-02-16-03:05:48 -- 
+DEBUG: New Attempt
+2025-02-16-03:05:48 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:06:18 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:06:18 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:06:18 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:06:18 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:06:18 -- DEBUG: Exception occurred: object of type 'UploadFile' has no len()
+2025-02-16-03:09:54 -- 
+DEBUG: New Attempt
+2025-02-16-03:09:54 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:09:56 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:09:56 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:09:56 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:09:56 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:09:56 -- DEBUG: Exception occurred: object of type 'UploadFile' has no len()
+2025-02-16-03:10:45 -- 
+DEBUG: New Attempt
+2025-02-16-03:10:45 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:15:22 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:15:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:15:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:15:22 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:15:22 -- DEBUG: Exception occurred: cannot access local variable 'content' where it is not associated with a value
+2025-02-16-03:15:22 -- DEBUG: Temporary file: temp_reciept_test_1.png
+2025-02-16-03:17:20 -- 
+DEBUG: New Attempt
+2025-02-16-03:17:20 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:17:22 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:17:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:17:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:17:22 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:17:22 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-03:17:23 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-03:17:23 -- DEBUG: Exception occurred: cannot identify image file 'temp_reciept_test_1.png'
+2025-02-16-03:17:23 -- DEBUG: Temporary file: temp_reciept_test_1.png
+2025-02-16-03:19:33 -- 
+DEBUG: New Attempt
+2025-02-16-03:19:33 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:19:38 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:19:38 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[]},"conversation":""}
+2025-02-16-03:19:38 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:19:38 -- DEBUG: Parsed state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': []}, 'conversation': ''}
+2025-02-16-03:19:38 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-03:19:38 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-03:19:38 -- DEBUG: Image converted to byte stream
+2025-02-16-03:19:38 -- DEBUG: Extracted receipt_text (raw): Dharmacu
+= LA@ J = y
+
+LOCAL DRUGS
+
+07/22/2020 04:36 PH
+
+6705110736, 384601 gT02
+RAF: 7105-7663-2109-3705-0142
+
+1 Pain Killer $2.99 SALE
+2 Corona Medication $199.98 SALE
+3 ITEM
+Subtotal: $202.97
+Tax=0.00% $0.00
+TOTAL $202.97
+CHARGE $202.97
+XXXXXXXXXXXXVISA, 3434
+CHANGE $0.00
+Your Total Savings $0.00
+
+‘THANKS FOR SHOPPING WITH US
+
+136981048978476770
+
+
+2025-02-16-03:19:38 -- DEBUG: receipt_text is already a string
+2025-02-16-03:19:38 -- DEBUG: full_prompt: Dharmacu
+= LA@ J = y
+
+LOCAL DRUGS
+
+07/22/2020 04:36 PH
+
+6705110736, 384601 gT02
+RAF: 7105-7663-2109-3705-0142
+
+1 Pain Killer $2.99 SALE
+2 Corona Medication $199.98 SALE
+3 ITEM
+Subtotal: $202.97
+Tax=0.00% $0.00
+TOTAL $202.97
+CHARGE $202.97
+XXXXXXXXXXXXVISA, 3434
+CHANGE $0.00
+Your Total Savings $0.00
+
+‘THANKS FOR SHOPPING WITH US
+
+136981048978476770
+
+
+Please add the above receipt items as budget items.
+2025-02-16-03:19:38 -- DEBUG: Updated state_data: {'Budget': {'budget_limit': None, 'items': [], 'warnings': [], 'conversations': [{'user_message': 'Uploaded receipt', 'ai_response': 'Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.'}]}, 'conversation': ''}
+2025-02-16-03:19:38 -- DEBUG: Temporary file: temp_reciept_test_1.png
+2025-02-16-03:50:08 -- 
+DEBUG: New Attempt
+2025-02-16-03:50:08 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-03:50:11 -- DEBUG: /receipt endpoint hit
+2025-02-16-03:50:11 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}]},"conversation":""}
+2025-02-16-03:50:11 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:50:11 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}]},"conversation":""}
+2025-02-16-03:50:11 -- DEBUG: Received command: uploadReceipt
+2025-02-16-03:50:11 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-03:50:11 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-03:50:11 -- DEBUG: Image converted to byte stream
+2025-02-16-03:50:11 -- DEBUG: Extracted receipt_text (raw): Dharmacu
+= LA@ J = y
+
+LOCAL DRUGS
+
+07/22/2020 04:36 PH
+
+6705110736, 384601 gT02
+RAF: 7105-7663-2109-3705-0142
+
+1 Pain Killer $2.99 SALE
+2 Corona Medication $199.98 SALE
+3 ITEM
+Subtotal: $202.97
+Tax=0.00% $0.00
+TOTAL $202.97
+CHARGE $202.97
+XXXXXXXXXXXXVISA, 3434
+CHANGE $0.00
+Your Total Savings $0.00
+
+‘THANKS FOR SHOPPING WITH US
+
+136981048978476770
+
+
+2025-02-16-03:50:11 -- DEBUG: receipt_text is already a string
+2025-02-16-03:50:17 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-04:01:21 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:01:21 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":2500,"items":[{"item_name":"Pain Killer","amount":2.99,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Corona Medication","amount":199.98,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Motorbike New Parts","amount":500,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the items from your receipt to the budget. \"Pain Killer\" for $2.99 and \"Corona Medication\" for $199.98 have been added. Both are categorized as one-time expenses. Is there anything else you'd like to add or adjust?"},{"user_message":"Add 500 for my motorbikes new parts.","ai_response":"I've added \"Motorbike New Parts\" as a one-time expense of $500.0 to your budget. How else may I help you with your budget?"},{"user_message":"Oh it seems I forgot my budget limit, it is 2500.","ai_response":"No problem, I've updated your budget limit to $2500.  Your current expenses total $702.97, so you have plenty of room remaining in your budget. How else may I help you with your budget?"}]},"conversation":"Oh it seems I forgot my budget limit, it is 2500."}
+2025-02-16-04:01:21 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:01:21 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":2500,"items":[{"item_name":"Pain Killer","amount":2.99,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Corona Medication","amount":199.98,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Motorbike New Parts","amount":500,"category":"One-time","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Uploaded receipt","ai_response":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the items from your receipt to the budget. \"Pain Killer\" for $2.99 and \"Corona Medication\" for $199.98 have been added. Both are categorized as one-time expenses. Is there anything else you'd like to add or adjust?"},{"user_message":"Add 500 for my motorbikes new parts.","ai_response":"I've added \"Motorbike New Parts\" as a one-time expense of $500.0 to your budget. How else may I help you with your budget?"},{"user_message":"Oh it seems I forgot my budget limit, it is 2500.","ai_response":"No problem, I've updated your budget limit to $2500.  Your current expenses total $702.97, so you have plenty of room remaining in your budget. How else may I help you with your budget?"}]},"conversation":"Oh it seems I forgot my budget limit, it is 2500."}
+2025-02-16-04:01:21 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:01:21 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:01:21 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:01:21 -- DEBUG: Image converted to byte stream
+2025-02-16-04:01:22 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:01:22 -- DEBUG: receipt_text is already a string
+2025-02-16-04:01:44 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:11:28 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:11:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3500,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 3500. I spend 500 on gas, and 200 on insurance.","ai_response":"Okay, I've updated your budget with a $3500 limit, $500 for gas, and $200 for insurance. Is there anything else you'd like to add or adjust?"}]},"conversation":"My budget is 3500. I spend 500 on gas, and 200 on insurance."}
+2025-02-16-04:11:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:11:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3500,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":1,"recurrence_schedule":"Monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 3500. I spend 500 on gas, and 200 on insurance.","ai_response":"Okay, I've updated your budget with a $3500 limit, $500 for gas, and $200 for insurance. Is there anything else you'd like to add or adjust?"}]},"conversation":"My budget is 3500. I spend 500 on gas, and 200 on insurance."}
+2025-02-16-04:11:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:11:28 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:11:28 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:11:28 -- DEBUG: Image converted to byte stream
+2025-02-16-04:11:29 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:11:29 -- DEBUG: receipt_text is already a string
+2025-02-16-04:11:56 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:16:39 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:16:39 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Rent","amount":2000,"category":"Regular","importance_rank":1,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Gas","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance.","ai_response":"Okay, I have added your wage and expenses to your budget. Your total expenses are currently $2700.0, and your budget limit is $4000.0. You have $1300.0 remaining in your budget. Is there anything else I can help you with?"}]},"conversation":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance."}
+2025-02-16-04:16:39 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:16:39 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Rent","amount":2000,"category":"Regular","importance_rank":1,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Gas","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance.","ai_response":"Okay, I have added your wage and expenses to your budget. Your total expenses are currently $2700.0, and your budget limit is $4000.0. You have $1300.0 remaining in your budget. Is there anything else I can help you with?"}]},"conversation":"I have a wage of 4000 a month. I spend 2000 on rent, 400 on gas, and 300 on insurance."}
+2025-02-16-04:16:39 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:16:39 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:16:39 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:16:39 -- DEBUG: Image converted to byte stream
+2025-02-16-04:16:40 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:16:40 -- DEBUG: receipt_text is already a string
+2025-02-16-04:17:04 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:32:23 -- 
+DEBUG: New Attempt
+2025-02-16-04:32:23 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-04:32:49 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:32:49 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"My budget is 5000","ai_response":"Okay, I've set your budget limit to $5000.0.  How else can I help you with your budget?"}]},"conversation":"My budget is 5000"}
+2025-02-16-04:32:49 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:32:49 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"My budget is 5000","ai_response":"Okay, I've set your budget limit to $5000.0.  How else can I help you with your budget?"}]},"conversation":"My budget is 5000"}
+2025-02-16-04:32:49 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:32:49 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:32:49 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:32:49 -- DEBUG: Image converted to byte stream
+2025-02-16-04:32:50 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:32:50 -- DEBUG: receipt_text is already a string
+2025-02-16-04:33:15 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:39:02 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:39:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000. I spend 500 on gas, 200 on insurance.","ai_response":"Okay, I've updated your budget with a $4000 limit, $500 for gas, and $200 for insurance. You have $3300 remaining. How else can I help you with your budget?"}]},"conversation":"I have a budget of 4000. I spend 500 on gas, 200 on insurance."}
+2025-02-16-04:39:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:39:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Insurance","amount":200,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000. I spend 500 on gas, 200 on insurance.","ai_response":"Okay, I've updated your budget with a $4000 limit, $500 for gas, and $200 for insurance. You have $3300 remaining. How else can I help you with your budget?"}]},"conversation":"I have a budget of 4000. I spend 500 on gas, 200 on insurance."}
+2025-02-16-04:39:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:39:02 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:39:02 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:39:02 -- DEBUG: Image converted to byte stream
+2025-02-16-04:39:03 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:39:03 -- DEBUG: receipt_text is already a string
+2025-02-16-04:39:25 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:41:18 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:41:18 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Phone Subscription","amount":150,"category":"Utilities","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription.","ai_response":"Okay, I've created a budget for you with a limit of $4000. I've added 'Gas' at $400 and 'Phone Subscription' at $150 as recurring monthly expenses. You currently have $3450 remaining in your budget. Is there anything else you'd like to add or adjust?"}]},"conversation":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription."}
+2025-02-16-04:41:18 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:41:18 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null},{"item_name":"Phone Subscription","amount":150,"category":"Utilities","importance_rank":2,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription.","ai_response":"Okay, I've created a budget for you with a limit of $4000. I've added 'Gas' at $400 and 'Phone Subscription' at $150 as recurring monthly expenses. You currently have $3450 remaining in your budget. Is there anything else you'd like to add or adjust?"}]},"conversation":"I have a budget of 4000, I spend 400 on gas, 150 on phone subscription."}
+2025-02-16-04:41:18 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:41:18 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:41:18 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:41:18 -- DEBUG: Image converted to byte stream
+2025-02-16-04:41:19 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:41:19 -- DEBUG: receipt_text is already a string
+2025-02-16-04:41:40 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:54:20 -- 
+DEBUG: New Attempt
+2025-02-16-04:54:20 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-04:54:35 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:54:35 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000.","ai_response":"Okay, I've set your budget limit to $4000.0. Now, let's start adding some items to your budget. What are your regular expenses? We should also think about allocating some funds for an emergency fund, if you haven't already. It's generally recommended to have 3-6 months of living expenses saved up."}]},"conversation":"I have a budget of 4000."}
+2025-02-16-04:54:35 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:54:35 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":4000,"items":[],"warnings":[],"conversations":[{"user_message":"I have a budget of 4000.","ai_response":"Okay, I've set your budget limit to $4000.0. Now, let's start adding some items to your budget. What are your regular expenses? We should also think about allocating some funds for an emergency fund, if you haven't already. It's generally recommended to have 3-6 months of living expenses saved up."}]},"conversation":"I have a budget of 4000."}
+2025-02-16-04:54:35 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:54:35 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-04:54:35 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-04:54:35 -- DEBUG: Image converted to byte stream
+2025-02-16-04:54:36 -- DEBUG: Extracted receipt_text (raw): J@ydroOtiawa Account Summary e Sommaire de compte —_ Page 1 ofae 2
+hydroottawa.com
+Questions/uestions : 613-738-6400 see
+Power Outage/Panne d’électricite : 619-738-0188 Previous Balance/Solde précédent $107.04
+~ . Payment/Paiement 2021-09-29 $115.00 CR
+Service For « Service pour Payment/Paiement 2021-10-15, $110.00 CR
+aime an Payment/Paiement 2021-10-19 $25.00 CR
+‘Account Number * Numéro de compte Electricity Charge/Frais d'électricité
+— on From/Du 2021-09-10 To/Au 2021-10-10 (30 Days/Jours)
+= Off-peak/Période creuse 343.344816 kWh @ $0.082000/KWh $28.15
+Meter Number * Numéro de compteur Mid-peak/Période médiane 99.353992 kWh @ $0.113000/kWh $11.23
+0TT891936 On-peakPériode de pointe 73.139192 kWh @ $0.170000/KWh $12.43
+Moter Reading (current) 134.43 | omDu 2024-09-10 TolAu 2021-10-10 (80 Daystiours)
+RERvaCaconeenon nee Delivery/Frais de livraison J $38.10
+Regulatory Charges/Frais réglementés $2.33
+Meter Reading (previous) 99618.59
+fet eteeresetel preter HST No. 863391363 RTOOO1/No. TVH 863391363 RTOO01 $11.98
+Wh Consumption mm | oe Electricity Rebate/ Remise de fOntario pour rélectricité $17.43 CR
+Consommation en kWh
+Bill Date Due Date Credit Balance
+Date de la facture 2021-10-25 | Dated’échéance 2021-11-17 Solde créditeur $56.17 CR
+
+For your information ¢ Autres renseignements
+
+Total Ontario Support: $17.43. To learn more about the Province's electricity support programs, visit ontario.ca/yourelectricitybill
+
+Soutien total de 'Ontario: 17.43 $. Pour en savoir plus sur les programmes de soutien pour l'électricité de la province, visitez
+ontario.ca/votrefacturedelectricite.
+
+Hydro Ottawa's 2020 Scorecard is now available. You may view Hydro Ottawa's performance year over year at
+hydroottawa.com/scorecard
+
+La carte de pointage 2020 d'Hydro Ottawa est maintenant accessible. Vous pouvez voir le rendement d'Hydro Ottawa au fil des ans sur
+hydroottawa.com/carte-de-pointage.
+
+Online billing is convenient, easy to use and completely secure - not to mention environmentally friendly! Register today at
+hydroottawa.com/onlinebilling
+
+La facture en ligne est pratique, facile a utiliser et entigrement sécurisée. En prime, elle est écologiquel Inscrivez-vous dés aujourd'hui
+sur hydroottawa.com/factureenligne
+
+B
+
+Additional information on reverse. Please retain this portion. « Information supplémentaire au verso. Priére de conserver cette partie.
+
+Ea0E
+
+Service For ¢ Service pour
+
+J@ydroOtiawa
+
+PO Box/ C. P.8700
+
+Tal. ToL: 613-738-6400 Account Number ¢ Numéro de compte
+
+Ottawa, ON Fax. / Téléc. : 613-738-6403
+KIG 3s4 hydroottawa.com — m7:
+Due Date
+Date d'échéance 2021-11-17
+Credit Balance
+Solde créditeur $56.17 CR
+
+Late payments will be charged 1.50% interest per month.
+Les paiements en retard portent d'intérét au taux mensuel de 1,50 %.
+
+1696277203 5000005b17202111172
+
+HOLJ38"900n 9B
+
+2025-02-16-04:54:36 -- DEBUG: receipt_text is already a string
+2025-02-16-04:54:59 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-04:56:50 -- DEBUG: /receipt endpoint hit
+2025-02-16-04:56:50 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000","ai_response":"Great! I've set your budget limit to $5000.0. Now, let's start adding some items to your budget. What are your regular expenses or any one-time purchases you're planning this month?"}]},"conversation":"I have a budget of 5000"}
+2025-02-16-04:56:50 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:56:50 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000","ai_response":"Great! I've set your budget limit to $5000.0. Now, let's start adding some items to your budget. What are your regular expenses or any one-time purchases you're planning this month?"}]},"conversation":"I have a budget of 5000"}
+2025-02-16-04:56:50 -- DEBUG: Received command: uploadReceipt
+2025-02-16-04:56:50 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-04:56:50 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-04:56:50 -- DEBUG: Image converted to byte stream
+2025-02-16-04:56:52 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-04:56:52 -- DEBUG: receipt_text is already a string
+2025-02-16-04:57:13 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:07:26 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:07:26 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gym","amount":50,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Gas","amount":200,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Phone","amount":70,"category":"Regular","importance_rank":1,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have budget of 5000","ai_response":"Okay, I've set your budget limit to $5000.0. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 50 on gym, 200 on gas, 70 on phone.","ai_response":"Okay, I've added the gym membership, gas, and phone expenses to your budget. Your current total expenses are $320.0. How else can I help you with your budget?"}]},"conversation":"I spend 50 on gym, 200 on gas, 70 on phone."}
+2025-02-16-05:07:26 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:07:26 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gym","amount":50,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Gas","amount":200,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Phone","amount":70,"category":"Regular","importance_rank":1,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have budget of 5000","ai_response":"Okay, I've set your budget limit to $5000.0. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 50 on gym, 200 on gas, 70 on phone.","ai_response":"Okay, I've added the gym membership, gas, and phone expenses to your budget. Your current total expenses are $320.0. How else can I help you with your budget?"}]},"conversation":"I spend 50 on gym, 200 on gas, 70 on phone."}
+2025-02-16-05:07:26 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:07:26 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:07:26 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:07:26 -- DEBUG: Image converted to byte stream
+2025-02-16-05:07:28 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-05:07:28 -- DEBUG: receipt_text is already a string
+2025-02-16-05:07:50 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:11:46 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:11:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"i have budget of 5000","ai_response":"Okay, I've set your budget limit to $5000.0. Now, let's start adding some items to your budget. What are your regular expenses? We should also consider allocating some funds for an emergency fund, savings goals, and debt reduction if applicable. How else can I help you?"}]},"conversation":"i have budget of 5000"}
+2025-02-16-05:11:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:11:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[],"warnings":[],"conversations":[{"user_message":"i have budget of 5000","ai_response":"Okay, I've set your budget limit to $5000.0. Now, let's start adding some items to your budget. What are your regular expenses? We should also consider allocating some funds for an emergency fund, savings goals, and debt reduction if applicable. How else can I help you?"}]},"conversation":"i have budget of 5000"}
+2025-02-16-05:11:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:11:46 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:11:46 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:11:46 -- DEBUG: Image converted to byte stream
+2025-02-16-05:11:48 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-05:11:48 -- DEBUG: receipt_text is already a string
+2025-02-16-05:12:08 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:16:02 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:16:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Budget of 5000. I spend 400 on gas.","ai_response":"Okay, I've set up a budget with a limit of $5000 and included $400 for gas. Is this a recurring monthly expense, or a one time charge? How else can I help you with your budget?"}]},"conversation":"Budget of 5000. I spend 400 on gas."}
+2025-02-16-05:16:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:16:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Budget of 5000. I spend 400 on gas.","ai_response":"Okay, I've set up a budget with a limit of $5000 and included $400 for gas. Is this a recurring monthly expense, or a one time charge? How else can I help you with your budget?"}]},"conversation":"Budget of 5000. I spend 400 on gas."}
+2025-02-16-05:16:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:16:02 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:16:02 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:16:02 -- DEBUG: Image converted to byte stream
+2025-02-16-05:16:04 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-05:16:04 -- DEBUG: receipt_text is already a string
+2025-02-16-05:16:24 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:18:28 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:18:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Budget of 5000, spend 500 on gas","ai_response":"Okay, I've set up a budget of $5000 and allocated $500 for gas. How else can I help you with your budget?"}]},"conversation":"Budget of 5000, spend 500 on gas"}
+2025-02-16-05:18:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:18:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"Budget of 5000, spend 500 on gas","ai_response":"Okay, I've set up a budget of $5000 and allocated $500 for gas. How else can I help you with your budget?"}]},"conversation":"Budget of 5000, spend 500 on gas"}
+2025-02-16-05:18:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:18:28 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:18:28 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:18:29 -- DEBUG: Image converted to byte stream
+2025-02-16-05:18:30 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-05:18:30 -- DEBUG: receipt_text is already a string
+2025-02-16-05:18:50 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:21:07 -- 
+DEBUG: New Attempt
+2025-02-16-05:21:07 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:21:23 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:21:23 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:21:23 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:21:23 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:21:23 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:21:23 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:21:23 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:21:23 -- DEBUG: Image converted to byte stream
+2025-02-16-05:21:25 -- DEBUG: Extracted receipt_text (raw): <coroutine object ai_filter_receipt_text at 0x000002C278737640>
+2025-02-16-05:21:25 -- DEBUG: receipt_text is already a string
+2025-02-16-05:21:25 -- DEBUG: Exception occurred: unsupported operand type(s) for +: 'coroutine' and 'str'
+2025-02-16-05:21:25 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:21:28 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:21:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:21:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:21:28 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:21:28 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:21:28 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:21:28 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:21:29 -- DEBUG: Image converted to byte stream
+2025-02-16-05:21:31 -- DEBUG: Extracted receipt_text (raw): <coroutine object ai_filter_receipt_text at 0x000002C278737880>
+2025-02-16-05:21:31 -- DEBUG: receipt_text is already a string
+2025-02-16-05:21:31 -- DEBUG: Exception occurred: unsupported operand type(s) for +: 'coroutine' and 'str'
+2025-02-16-05:21:31 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:21:49 -- 
+DEBUG: New Attempt
+2025-02-16-05:21:49 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:21:51 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:21:51 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:21:51 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:21:51 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:21:51 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:21:51 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:21:51 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:21:52 -- DEBUG: Image converted to byte stream
+2025-02-16-05:21:54 -- DEBUG: Exception occurred: 400 Please use a valid role: user, model.
+2025-02-16-05:21:54 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:22:02 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:22:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:22:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:22:02 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:22:02 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:22:02 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:22:02 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:22:03 -- DEBUG: Image converted to byte stream
+2025-02-16-05:22:05 -- DEBUG: Exception occurred: 400 Please use a valid role: user, model.
+2025-02-16-05:22:05 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:22:47 -- 
+DEBUG: New Attempt
+2025-02-16-05:22:47 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:22:48 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:22:48 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:22:48 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:22:48 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:22:48 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:22:48 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:22:48 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:22:49 -- DEBUG: Image converted to byte stream
+2025-02-16-05:22:51 -- DEBUG: Exception occurred: 400 Please use a valid role: user, model.
+2025-02-16-05:22:51 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:22:57 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:22:57 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:22:57 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:22:57 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 300 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a recurring expense of $300 for gas. Is there anything else you'd like to add or adjust right now?"}]},"conversation":"I have a budget of 5000. I spend 300 on gas"}
+2025-02-16-05:22:57 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:22:57 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-05:22:57 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-05:22:57 -- DEBUG: Image converted to byte stream
+2025-02-16-05:22:58 -- DEBUG: Exception occurred: 400 Please use a valid role: user, model.
+2025-02-16-05:22:58 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-05:23:19 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:23:19 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"}]},"conversation":"My budget is 5400, I spend 400 for groceries"}
+2025-02-16-05:23:19 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:23:19 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"}]},"conversation":"My budget is 5400, I spend 400 for groceries"}
+2025-02-16-05:23:19 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:23:19 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-05:23:19 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-05:23:19 -- DEBUG: Image converted to byte stream
+2025-02-16-05:23:20 -- DEBUG: Exception occurred: 400 Please use a valid role: user, model.
+2025-02-16-05:23:20 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-05:23:38 -- 
+DEBUG: New Attempt
+2025-02-16-05:23:38 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:23:42 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:23:42 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"}]},"conversation":"My budget is 5400, I spend 400 for groceries"}
+2025-02-16-05:23:42 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:23:42 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"}]},"conversation":"My budget is 5400, I spend 400 for groceries"}
+2025-02-16-05:23:42 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:23:42 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-05:23:42 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-05:23:42 -- DEBUG: Image converted to byte stream
+2025-02-16-05:23:42 -- DEBUG: Extracted receipt_text (raw): Dharmacu
+= LA@ J = y
+
+LOCAL DRUGS
+
+07/22/2020 04:36 PH
+
+6705110736, 384601 gT02
+RAF: 7105-7663-2109-3705-0142
+
+1 Pain Killer $2.99 SALE
+2 Corona Medication $199.98 SALE
+3 ITEM
+Subtotal: $202.97
+Tax=0.00% $0.00
+TOTAL $202.97
+CHARGE $202.97
+XXXXXXXXXXXXVISA, 3434
+CHANGE $0.00
+Your Total Savings $0.00
+
+‘THANKS FOR SHOPPING WITH US
+
+136981048978476770
+
+
+2025-02-16-05:23:42 -- DEBUG: receipt_text is already a string
+2025-02-16-05:23:49 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-05:27:17 -- 
+DEBUG: New Attempt
+2025-02-16-05:27:17 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:27:25 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:27:25 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:27:25 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:27:25 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:27:25 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:27:25 -- DEBUG: Receipt Size: 110224 bytes
+2025-02-16-05:27:25 -- DEBUG: Temporary file saved: temp_bill-credit-example.png
+2025-02-16-05:27:25 -- DEBUG: Image converted to byte stream
+2025-02-16-05:27:26 -- DEBUG: Exception occurred: 400 Please use a valid role: user, model.
+2025-02-16-05:27:26 -- DEBUG: Temporary file deleted: temp_bill-credit-example.png
+2025-02-16-05:35:05 -- 
+DEBUG: New Attempt
+2025-02-16-05:35:05 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:35:22 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:35:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:35:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:35:22 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:35:22 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:35:22 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:35:22 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:35:22 -- DEBUG: Image converted to byte stream
+2025-02-16-05:35:27 -- DEBUG: Extracted receipt_text (raw): {'unparsed_text': "```json\n{\n  'items': [\n    {\n      'name': 'Off-peak Electricity',\n      'price': 60.04,\n      'quantity': 750.481291,\n      'category': 'Electricity'\n    },\n    {\n      'name': 'Mid-peak Electricity',\n      'price': 28.05,\n      'quantity': 229.877693,\n      'category': 'Electricity'\n    },\n    {\n      'name': 'On-peak Electricity',\n      'price': 29.52,\n      'quantity': 183.364347,\n      'category': 'Electricity'\n    },\n    {\n      'name': 'Delivery Charges',\n      'price': 56.31,\n      'quantity': 1\n    },\n    {\n      'name': 'Regulatory Charges',\n      'price': 7.12,\n      'quantity': 1\n    },\n    {\n      'name': 'Debt Retirement Charge',\n      'price': 8.08,\n      'quantity': 1\n    },\n    {\n      'name': 'Ontario Clean Energy Benefit',\n      'price': -21.37,\n      'quantity': 1\n    }\n  ],\n  'tax': 24.59,\n  'total': 192.99\n}\n```"}
+2025-02-16-05:35:27 -- DEBUG: receipt_text is already a string
+2025-02-16-05:35:27 -- DEBUG: Exception occurred: unsupported operand type(s) for +: 'dict' and 'str'
+2025-02-16-05:35:27 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-05:36:19 -- 
+DEBUG: New Attempt
+2025-02-16-05:36:19 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-05:36:20 -- DEBUG: /receipt endpoint hit
+2025-02-16-05:36:20 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:36:20 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:36:20 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5400,"items":[{"item_name":"Groceries","amount":400,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Medication at LOCAL DRUGS","amount":202.97,"category":"One-time","importance_rank":1,"recurrence_schedule":null,"due_date":"2020-07-22"}],"warnings":[],"conversations":[{"user_message":"My budget is 5400, I spend 400 for groceries","ai_response":"Okay, I've set your budget limit to $5400 and added $400 for groceries. How else can I help you with your budget?"},{"user_message":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the receipt items to your budget. The total for medication from LOCAL DRUGS is $202.97. This has been added as a one-time expense. How else can I help you with your budget?"}]},"conversation":"Dharmacu\n= LA@ J = y\n\nLOCAL DRUGS\n\n07/22/2020 04:36 PH\n\n6705110736, 384601 gT02\nRAF: 7105-7663-2109-3705-0142\n\n1 Pain Killer $2.99 SALE\n2 Corona Medication $199.98 SALE\n3 ITEM\nSubtotal: $202.97\nTax=0.00% $0.00\nTOTAL $202.97\nCHARGE $202.97\nXXXXXXXXXXXXVISA, 3434\nCHANGE $0.00\nYour Total Savings $0.00\n\n‘THANKS FOR SHOPPING WITH US\n\n136981048978476770\n\n\nPlease add the above receipt items as budget items."}
+2025-02-16-05:36:20 -- DEBUG: Received command: uploadReceipt
+2025-02-16-05:36:20 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-05:36:20 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-05:36:20 -- DEBUG: Image converted to byte stream
+2025-02-16-05:36:22 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-05:36:22 -- DEBUG: receipt_text is already a string
+2025-02-16-05:36:36 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-19:16:12 -- 
+DEBUG: New Attempt
+2025-02-16-19:16:12 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-19:35:12 -- DEBUG: /receipt endpoint hit
+2025-02-16-19:35:12 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"}]},"conversation":"I spend 300 on gas "}
+2025-02-16-19:35:12 -- DEBUG: Received command: uploadReceipt
+2025-02-16-19:35:12 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"}]},"conversation":"I spend 300 on gas "}
+2025-02-16-19:35:12 -- DEBUG: Received command: uploadReceipt
+2025-02-16-19:35:12 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-19:35:12 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-19:35:13 -- DEBUG: Image converted to byte stream
+2025-02-16-19:35:15 -- DEBUG: Extracted receipt_text (raw): J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |
+
+www.hydroottawa.com
+Questions/Questions : 613-738-6400
+Power Outage/Panne d’électricité : 613-738-0188
+
+Service For ¢ Service pour
+
+Electricity Charge TOU/Frais d'électricité FHC
+From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+
+Account Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04
+Mid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05
+On-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52
+Meter Number ¢ Numéro de compteur
+a - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)
+Delivery Charges/Frais de livraison $56.31
+3 Regulatory Charges/Frais réglementés $7.12
+Meter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08
+Relevé de compteur (actuel)
+Meter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59
+Relevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR
+kWh Consumption 1163.72
+
+Consommation en kWh
+
+Due Date Amount Due
+Date d'échéance 2015-10-13 Montant di $1 92.99
+
+poneions 2015-09-24
+
+Date de la facture
+
+For your information ¢ Autres renseignements
+
+Small Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families
+who need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.
+
+Petit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.
+Ce Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.
+
+*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see
+Ontario.ca/OCEB or 1-888-668-4636.
+
+*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au
+maximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.
+
+SA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF
+
+
+2025-02-16-19:35:15 -- DEBUG: receipt_text is already a string
+2025-02-16-19:35:27 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:11:39 -- 
+DEBUG: New Attempt
+2025-02-16-20:11:39 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-20:13:08 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:13:08 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:13:08 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:13:08 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:13:08 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:13:08 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:13:08 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:13:09 -- DEBUG: Image converted to byte stream
+2025-02-16-20:13:14 -- DEBUG: Extracted receipt_text (raw): {'items': [{'name': 'Off-peak/Période creuse', 'price': 60.04, 'quantity': 750.481291, 'category': "Electricity Charge TOU/Frais d'électricité FHC"}, {'name': 'Mid—peak/Période médiane', 'price': 28.05, 'quantity': 229.877693, 'category': "Electricity Charge TOU/Frais d'électricité FHC"}, {'name': 'On-—peak/Période de pointe', 'price': 29.52, 'quantity': 183.364347, 'category': "Electricity Charge TOU/Frais d'électricité FHC"}, {'name': 'Delivery Charges/Frais de livraison', 'price': 56.31, 'quantity': 1}, {'name': 'Regulatory Charges/Frais réglementés', 'price': 7.12, 'quantity': 1}, {'name': 'Debt Retirement Charge/Réglement de la dette', 'price': 8.08, 'quantity': 1}, {'name': 'HST No. 863391363 RT0001/No. TVH 863391363 RT0001', 'price': 24.59, 'quantity': 1}, {'name': "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre", 'price': -21.37, 'quantity': 1}], 'total': 192.99}
+2025-02-16-20:13:14 -- DEBUG: receipt_text is already a string
+2025-02-16-20:13:14 -- DEBUG: Exception occurred: unsupported operand type(s) for +: 'dict' and 'str'
+2025-02-16-20:13:14 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:55:44 -- 
+DEBUG: New Attempt
+2025-02-16-20:55:44 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-20:55:46 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:55:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:55:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:55:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3000,"items":[{"item_name":"Gas","amount":300,"category":"Regular","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Hydro Ottawa Electricity Bill","amount":192.99,"category":"Regular","importance_rank":2,"recurrence_schedule":"monthly","due_date":20151013}],"warnings":[],"conversations":[{"user_message":"I have a budget of 3000.","ai_response":"Okay, I've set your budget limit to $3000. Now, let's start adding some items to your budget. What are your regular expenses?"},{"user_message":"I spend 300 on gas ","ai_response":"Okay, I've added gas to your budget at $300. Is this a monthly expense, or does it vary? Knowing this will help with planning. How else can I help you?"},{"user_message":"J@tydroOttawa | Account Summary ¢ Sommaire de compte Page 1 offde 2 |\n\nwww.hydroottawa.com\nQuestions/Questions : 613-738-6400\nPower Outage/Panne d’électricité : 613-738-0188\n\nService For ¢ Service pour\n\nElectricity Charge TOU/Frais d'électricité FHC\nFrom/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\n\nAccount Number © Numéro de compte Off-peak/Période creuse 750.481291 kWh @ $0.080000/kWh $60.04\nMid—peak/Période médiane 229.877693 kWh @ $0.122000/kWh $28.05\nOn-—peak/Période de pointe 183.364347 kWh @ $0.161000/kWh $29.52\nMeter Number ¢ Numéro de compteur\na - From/Du 2015-08-12 To/Au 2015-09-10 (29 Days/Jours)\nDelivery Charges/Frais de livraison $56.31\n3 Regulatory Charges/Frais réglementés $7.12\nMeter Reading (current) 82877.56 Debt Retirement Charge/Réglement de la dette $8.08\nRelevé de compteur (actuel)\nMeter Reading (previous) 81713.84 HST No. 863391363 RT0001/No. TVH 863391363 RT0001 $24.59\nRelevé de compteur (précédent) i Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %* $21.37 CR\nkWh Consumption 1163.72\n\nConsommation en kWh\n\nDue Date Amount Due\nDate d'échéance 2015-10-13 Montant di $1 92.99\n\nponeions 2015-09-24\n\nDate de la facture\n\nFor your information ¢ Autres renseignements\n\nSmall Change. Big Difference. Go Paperless and we'll donate $5 to the Max Keeping Fund for Kids at CHEO. The Fund helps families\nwho need financial assistance for their child's medical care. Register at hydroottawa.com or 613-738-6400.\n\nPetit changement. Grosse différence. Dites adieu au papier et nous verserons 5$ au Fonds Max Keeping pour les enfants au CHEO.\nCe Fonds aide les familles a acquitter les frais médicaux de leur enfant. Inscrivez—vous: hydroottawa.com ou 613 738-6400.\n\n*Ontario Clean Energy Benefit takes 10% off the cost of up to 3,000 kWh/month of electricity use. Some exceptions apply, please see\nOntario.ca/OCEB or 1-888-668-4636.\n\n*La Prestation ontarienne pour I'énergie propre retranche 10 % du coit de la consommation d'électricité de 3 000 kWh/mois au\nmaximum. Certaines exceptions s'appliquent. Consultez le site Ontario.ca/POEP ou 1-888-668-4636 pour en savoir davantage.\n\nSA NEN eee econ omnes HN enerwre Ritbertetie baton wuevediincen: vette bni ahr. eto. ctieumeta Drihe din bAwebrunabonGd wae F& OF\n\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the Hydro Ottawa electricity bill to your budget. The due date is October 13, 2015, and the amount due is $192.99. How else can I help you?"}]},"conversation":"I spend 40 on my phone bill"}
+2025-02-16-20:55:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:55:46 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:55:46 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:55:46 -- DEBUG: Image converted to byte stream
+2025-02-16-20:55:51 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291
+    },
+    {
+      "name": "Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693
+    },
+    {
+      "name": "On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1
+    },
+    {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre —10 %*",
+      "price": -21.37,
+      "quantity": 1
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-16-20:55:51 -- DEBUG: receipt_text is already a string
+2025-02-16-20:56:07 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:58:30 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:58:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:30 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:58:30 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:58:30 -- DEBUG: Image converted to byte stream
+2025-02-16-20:58:35 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity Charge TOU/Frais d'électricité FHC"
+    },
+    {
+      "name": "Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity Charge TOU/Frais d'électricité FHC"
+    },
+    {
+      "name": "On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity Charge TOU/Frais d'électricité FHC"
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1
+    },
+    {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre",
+      "price": -21.37,
+      "quantity": 1
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-16-20:58:35 -- DEBUG: receipt_text is already a string
+2025-02-16-20:58:35 -- DEBUG: Exception occurred: 429 Resource has been exhausted (e.g. check quota).
+2025-02-16-20:58:35 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-20:58:46 -- DEBUG: /receipt endpoint hit
+2025-02-16-20:58:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:46 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":null,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"}]},"conversation":"I spend 500 on gas"}
+2025-02-16-20:58:46 -- DEBUG: Received command: uploadReceipt
+2025-02-16-20:58:46 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-16-20:58:46 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-16-20:58:47 -- DEBUG: Image converted to byte stream
+2025-02-16-20:58:51 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity Charge"
+    },
+    {
+      "name": "Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity Charge"
+    },
+    {
+      "name": "On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity Charge"
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1
+    },
+    {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre",
+      "price": -21.37,
+      "quantity": 1
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-16-20:58:51 -- DEBUG: receipt_text is already a string
+2025-02-16-20:59:01 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-16-21:13:26 -- 
+DEBUG: New Attempt
+2025-02-16-21:13:26 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-21:33:31 -- DEBUG: /receipt endpoint hit
+2025-02-16-21:33:31 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3200,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Electricity Bill","amount":192.99,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Off-peak/Période creuse\",\n      \"price\": 60.04,\n      \"quantity\": 750.481291,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Mid—peak/Période médiane\",\n      \"price\": 28.05,\n      \"quantity\": 229.877693,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"On-—peak/Période de pointe\",\n      \"price\": 29.52,\n      \"quantity\": 183.364347,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Delivery Charges/Frais de livraison\",\n      \"price\": 56.31,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Regulatory Charges/Frais réglementés\",\n      \"price\": 7.12,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Debt Retirement Charge/Réglement de la dette\",\n      \"price\": 8.08,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"HST No. 863391363 RT0001/No. TVH 863391363 RT0001\",\n      \"price\": 24.59,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre\",\n      \"price\": -21.37,\n      \"quantity\": 1\n    }\n  ],\n  \"total\": 192.99\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the electricity bill to your budget. The total amount for the electricity bill is $192.99. Is this a recurring monthly expense, or a one-time charge?  How else can I help you with your budget?"},{"user_message":"My budget is 3200","ai_response":"Okay, I have set your budget limit to $3200.0. Currently, your listed expenses are $692.99. This leaves you with $2507.01. \n\nTo make the most of your budget, I recommend allocating funds to an emergency fund. Financial experts suggest saving three to six months' worth of expenses to cover unexpected costs such as medical bills or job loss. Would you like to add a line item for this?\n\nHow else can I help you manage your budget?"}]},"conversation":"My budget is 3200"}
+2025-02-16-21:33:31 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:33:31 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":3200,"items":[{"item_name":"Gas","amount":500,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null},{"item_name":"Electricity Bill","amount":192.99,"category":"Regular","importance_rank":3,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I spend 500 on gas","ai_response":"Okay, I've added \"Gas\" to your budget with an amount of $500.0.  Is this a recurring monthly expense, or was this a one-time purchase? Knowing this will help me better understand your monthly spending. How else can I help you with your budget?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Off-peak/Période creuse\",\n      \"price\": 60.04,\n      \"quantity\": 750.481291,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Mid—peak/Période médiane\",\n      \"price\": 28.05,\n      \"quantity\": 229.877693,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"On-—peak/Période de pointe\",\n      \"price\": 29.52,\n      \"quantity\": 183.364347,\n      \"category\": \"Electricity Charge\"\n    },\n    {\n      \"name\": \"Delivery Charges/Frais de livraison\",\n      \"price\": 56.31,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Regulatory Charges/Frais réglementés\",\n      \"price\": 7.12,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Debt Retirement Charge/Réglement de la dette\",\n      \"price\": 8.08,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"HST No. 863391363 RT0001/No. TVH 863391363 RT0001\",\n      \"price\": 24.59,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre\",\n      \"price\": -21.37,\n      \"quantity\": 1\n    }\n  ],\n  \"total\": 192.99\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the electricity bill to your budget. The total amount for the electricity bill is $192.99. Is this a recurring monthly expense, or a one-time charge?  How else can I help you with your budget?"},{"user_message":"My budget is 3200","ai_response":"Okay, I have set your budget limit to $3200.0. Currently, your listed expenses are $692.99. This leaves you with $2507.01. \n\nTo make the most of your budget, I recommend allocating funds to an emergency fund. Financial experts suggest saving three to six months' worth of expenses to cover unexpected costs such as medical bills or job loss. Would you like to add a line item for this?\n\nHow else can I help you manage your budget?"}]},"conversation":"My budget is 3200"}
+2025-02-16-21:33:31 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:33:31 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-21:33:31 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-21:33:31 -- DEBUG: Image converted to byte stream
+2025-02-16-21:33:32 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-02-16-21:33:32 -- DEBUG: receipt_text is already a string
+2025-02-16-21:33:41 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-21:49:30 -- DEBUG: /receipt endpoint hit
+2025-02-16-21:49:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"}]},"conversation":"I have a budget of 5000. I spend 400 on PPV UFC matches."}
+2025-02-16-21:49:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:49:30 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"}]},"conversation":"I have a budget of 5000. I spend 400 on PPV UFC matches."}
+2025-02-16-21:49:30 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:49:30 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-21:49:30 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-21:49:30 -- DEBUG: Image converted to byte stream
+2025-02-16-21:49:31 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-02-16-21:49:31 -- DEBUG: receipt_text is already a string
+2025-02-16-21:49:36 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-16-21:53:17 -- 
+DEBUG: New Attempt
+2025-02-16-21:53:17 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-16-21:53:19 -- DEBUG: /receipt endpoint hit
+2025-02-16-21:53:19 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null},{"item_name":"Medications","amount":402.93,"category":"Health","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Phone Bill","amount":50,"category":"Utilities","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Pain Killer\",\n      \"price\": 2.99,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Corona Medication\",\n      \"price\": 199.98,\n      \"quantity\": 2\n    },\n    {\n      \"name\": \"ITEM\",\n      \"price\": 0.00,\n      \"quantity\": 3\n    }\n  ],\n  \"tax\": 0.00,\n  \"total\": 202.97\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the medication expenses to your budget. It totals $402.93. Do you have any other expenses to add?"},{"user_message":"I spend 50 on my phone bill","ai_response":"Okay, I've added the phone bill to your budget as a monthly utility expense. Do you have any other expenses to add?"}]},"conversation":"I spend 50 on my phone bill"}
+2025-02-16-21:53:19 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:53:19 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"UFC PPV","amount":400,"category":"Entertainment","importance_rank":5,"recurrence_schedule":null,"due_date":null},{"item_name":"Medications","amount":402.93,"category":"Health","importance_rank":2,"recurrence_schedule":null,"due_date":null},{"item_name":"Phone Bill","amount":50,"category":"Utilities","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"I have a budget of 5000. I spend 400 on PPV UFC matches.","ai_response":"Okay, I've set your budget limit to $5000 and added an item for UFC PPV at $400. Do you have any other expenses to add?"},{"user_message":"\n{\n  \"items\": [\n    {\n      \"name\": \"Pain Killer\",\n      \"price\": 2.99,\n      \"quantity\": 1\n    },\n    {\n      \"name\": \"Corona Medication\",\n      \"price\": 199.98,\n      \"quantity\": 2\n    },\n    {\n      \"name\": \"ITEM\",\n      \"price\": 0.00,\n      \"quantity\": 3\n    }\n  ],\n  \"tax\": 0.00,\n  \"total\": 202.97\n}\n\nPlease add the above receipt items as budget items.","ai_response":"Okay, I've added the medication expenses to your budget. It totals $402.93. Do you have any other expenses to add?"},{"user_message":"I spend 50 on my phone bill","ai_response":"Okay, I've added the phone bill to your budget as a monthly utility expense. Do you have any other expenses to add?"}]},"conversation":"I spend 50 on my phone bill"}
+2025-02-16-21:53:19 -- DEBUG: Received command: uploadReceipt
+2025-02-16-21:53:19 -- DEBUG: Receipt Size: 94596 bytes
+2025-02-16-21:53:19 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-02-16-21:53:19 -- DEBUG: Image converted to byte stream
+2025-02-16-21:53:20 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-02-16-21:53:20 -- DEBUG: receipt_text is already a string
+2025-02-16-21:53:26 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-02-21-14:41:18 -- 
+DEBUG: New Attempt
+2025-02-21-14:41:18 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-14:42:50 -- DEBUG: /receipt endpoint hit
+2025-02-21-14:42:50 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":500,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000$. I spend 500 on gas every month.","ai_response":"Okay, I've set your budget limit to $5000 and added a monthly gas expense of $500. Is there anything else I can help you budget for?"}]},"conversation":"My budget is 5000$. I spend 500 on gas every month."}
+2025-02-21-14:42:50 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:42:50 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":500,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000$. I spend 500 on gas every month.","ai_response":"Okay, I've set your budget limit to $5000 and added a monthly gas expense of $500. Is there anything else I can help you budget for?"}]},"conversation":"My budget is 5000$. I spend 500 on gas every month."}
+2025-02-21-14:42:50 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:42:50 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-21-14:42:50 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-21-14:42:51 -- DEBUG: Image converted to byte stream
+2025-02-21-14:42:55 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Off-peak Electricity",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity"
+    },
+    {
+      "name": "Mid-peak Electricity",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity"
+    },
+    {
+      "name": "On-peak Electricity",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity"
+    },
+    {
+      "name": "Delivery Charges",
+      "price": 56.31,
+      "quantity": 1,
+      "category": "Delivery"
+    },
+    {
+      "name": "Regulatory Charges",
+      "price": 7.12,
+      "quantity": 1,
+      "category": "Regulatory"
+    },
+    {
+      "name": "Debt Retirement Charge",
+      "price": 8.08,
+      "quantity": 1,
+      "category": "Debt"
+    }
+  ],
+  "tax": 24.59,
+  "total": 192.99
+}
+
+2025-02-21-14:42:55 -- DEBUG: receipt_text is already a string
+2025-02-21-14:43:01 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-21-14:48:15 -- 
+DEBUG: New Attempt
+2025-02-21-14:48:15 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-14:48:36 -- DEBUG: /receipt endpoint hit
+2025-02-21-14:48:36 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000. I spend 400 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a $400 gas expense to your budget. Is there anything else I can help you with?"}]},"conversation":"My budget is 5000. I spend 400 on gas"}
+2025-02-21-14:48:36 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:48:36 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"items":[{"item_name":"Gas","amount":400,"category":"Transportation","importance_rank":3,"recurrence_schedule":"monthly","due_date":null}],"warnings":[],"conversations":[{"user_message":"My budget is 5000. I spend 400 on gas","ai_response":"Okay, I've set your budget limit to $5000 and added a $400 gas expense to your budget. Is there anything else I can help you with?"}]},"conversation":"My budget is 5000. I spend 400 on gas"}
+2025-02-21-14:48:36 -- DEBUG: Received command: uploadReceipt
+2025-02-21-14:48:36 -- DEBUG: Receipt Size: 821116 bytes
+2025-02-21-14:48:36 -- DEBUG: Temporary file saved: temp_84pxOL1.jpg
+2025-02-21-14:48:36 -- DEBUG: Image converted to byte stream
+2025-02-21-14:48:41 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Electricity Charge TOU/Frais d'électricité FHC - Off-peak/Période creuse",
+      "price": 60.04,
+      "quantity": 750.481291,
+      "category": "Electricity"
+    },
+    {
+      "name": "Electricity Charge TOU/Frais d'électricité FHC - Mid—peak/Période médiane",
+      "price": 28.05,
+      "quantity": 229.877693,
+      "category": "Electricity"
+    },
+    {
+      "name": "Electricity Charge TOU/Frais d'électricité FHC - On-—peak/Période de pointe",
+      "price": 29.52,
+      "quantity": 183.364347,
+      "category": "Electricity"
+    },
+    {
+      "name": "Delivery Charges/Frais de livraison",
+      "price": 56.31,
+      "quantity": 1,
+      "category": "Delivery"
+    },
+    {
+      "name": "Regulatory Charges/Frais réglementés",
+      "price": 7.12,
+      "quantity": 1,
+      "category": "Regulatory"
+    },
+    {
+      "name": "Debt Retirement Charge/Réglement de la dette",
+      "price": 8.08,
+      "quantity": 1,
+      "category": "Debt Retirement"
+    },
+    {
+      "name": "HST No. 863391363 RT0001/No. TVH 863391363 RT0001",
+      "price": 24.59,
+      "quantity": 1,
+      "category": "Tax"
+    },
+      {
+      "name": "Ontario Clean Energy Benefit/Prestation ontarienne pour I'énergie propre",
+      "price": -21.37,
+      "quantity": 1,
+      "category": "Discount"
+    }
+  ],
+  "total": 192.99
+}
+
+2025-02-21-14:48:41 -- DEBUG: receipt_text is already a string
+2025-02-21-14:48:49 -- DEBUG: Temporary file deleted: temp_84pxOL1.jpg
+2025-02-21-14:54:51 -- 
+DEBUG: New Attempt
+2025-02-21-14:54:51 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-15:45:26 -- 
+DEBUG: New Attempt
+2025-02-21-15:45:26 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:03:19 -- 
+DEBUG: New Attempt
+2025-02-21-18:03:19 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:40:02 -- 
+DEBUG: New Attempt
+2025-02-21-18:40:02 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:44:53 -- 
+DEBUG: New Attempt
+2025-02-21-18:44:53 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-02-21-18:55:13 -- 
+DEBUG: New Attempt
+2025-02-21-18:55:13 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-16:57:27 -- 
+DEBUG: New Attempt
+2025-03-18-16:57:27 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-17:58:34 -- 
+DEBUG: New Attempt
+2025-03-18-17:58:34 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-18:24:56 -- 
+DEBUG: New Attempt
+2025-03-18-18:24:56 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-18:25:11 -- 
+DEBUG: New Attempt
+2025-03-18-18:25:11 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-18:40:48 -- 
+DEBUG: New Attempt
+2025-03-18-18:40:48 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-19:09:27 -- 
+DEBUG: New Attempt
+2025-03-18-19:09:27 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-23:30:43 -- 
+DEBUG: New Attempt
+2025-03-18-23:30:43 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-18-23:51:46 -- 
+DEBUG: New Attempt
+2025-03-18-23:51:46 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-19-00:22:11 -- 
+DEBUG: New Attempt
+2025-03-19-00:22:11 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-19-00:23:46 -- 
+DEBUG: New Attempt
+2025-03-19-00:23:46 -- DEBUG: Current working directory: E:\Old.OneDrive\OneDrive\Desktop\Self Improvement\Coding\Budg-It\Budg-It
+2025-03-19-00:24:21 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:24:21 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'priority': 'u=0, i'})
+2025-03-19-00:24:21 -- DEBUG: Response status code: 200
+2025-03-19-00:24:21 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-00:24:21 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-00:24:21 -- DEBUG: Response status code: 200
+2025-03-19-00:24:24 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-00:24:24 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:24:24 -- DEBUG: Response status code: 200
+2025-03-19-00:24:27 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:24:27 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:24:27 -- DEBUG: Response status code: 200
+2025-03-19-00:24:27 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-00:24:27 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-00:24:27 -- DEBUG: Response status code: 404
+2025-03-19-00:24:47 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-00:24:47 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '186', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:24:47 -- DEBUG: Chat endpoint hit
+2025-03-19-00:24:49 -- DEBUG: Response status code: 200
+2025-03-19-00:25:43 -- DEBUG: Received request: POST http://localhost:8000/receipt
+2025-03-19-00:25:43 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'multipart/form-data; boundary=----geckoformboundaryacf231d3caadbda63bf6b8a939917935', 'content-length': '95746', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:25:43 -- DEBUG: /receipt endpoint hit
+2025-03-19-00:25:43 -- DEBUG: Received current_state (raw): {"Budget":{"budget_limit":5000,"budget_surplus":4200,"items":[{"due_date":null,"amount":500,"category":"Transportation","importance_rank":3,"item_name":"Gas","recurrence_schedule":"monthly"},{"item_name":"Groceries","category":"Food","importance_rank":2,"recurrence_schedule":"monthly","amount":300,"due_date":null}],"warnings":[],"conversations":[{"ai_response":"Okay, I've set your monthly budget limit to $5000. I've also added gas ($500) and groceries ($300) as recurring monthly expenses. Your current budget surplus is $4200. How else can I help you manage your budget?","user_message":"I have a budget of 5000$ monthly. I spend 500 on gas and 300 on groceries"}]},"conversation":""}
+2025-03-19-00:25:43 -- DEBUG: Received command: uploadReceipt
+2025-03-19-00:25:43 -- DEBUG: Receipt Size: 94596 bytes
+2025-03-19-00:25:43 -- DEBUG: Temporary file saved: temp_reciept_test_1.png
+2025-03-19-00:25:44 -- DEBUG: Image converted to byte stream
+2025-03-19-00:25:45 -- DEBUG: Extracted receipt_text (raw): 
+{
+  "items": [
+    {
+      "name": "Pain Killer",
+      "price": 2.99,
+      "quantity": 1
+    },
+    {
+      "name": "Corona Medication",
+      "price": 199.98,
+      "quantity": 2
+    },
+    {
+      "name": "ITEM",
+      "price": 0.00,
+      "quantity": 3
+    }
+  ],
+  "tax": 0.00,
+  "total": 202.97
+}
+
+2025-03-19-00:25:45 -- DEBUG: receipt_text is already a string
+2025-03-19-00:25:49 -- DEBUG: Temporary file deleted: temp_reciept_test_1.png
+2025-03-19-00:25:49 -- DEBUG: Response status code: 200
+2025-03-19-00:27:17 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:27:17 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:27:17 -- DEBUG: Response status code: 200
+2025-03-19-00:28:16 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-00:28:16 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '1774', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:28:16 -- DEBUG: Chat endpoint hit
+2025-03-19-00:28:21 -- DEBUG: Response status code: 200
+2025-03-19-00:29:10 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-00:29:10 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '2924', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-00:29:10 -- DEBUG: Chat endpoint hit
+2025-03-19-00:29:15 -- DEBUG: Response status code: 200
+2025-03-19-00:36:05 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-00:36:05 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:36:05 -- DEBUG: Response status code: 200
+2025-03-19-00:36:05 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-00:36:05 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-00:36:05 -- DEBUG: Response status code: 200
+2025-03-19-00:36:05 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-00:36:05 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-00:36:05 -- DEBUG: Response status code: 404
+2025-03-19-00:36:41 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-00:36:41 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-00:36:41 -- DEBUG: Response status code: 200
+2025-03-19-01:08:11 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:11 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '172', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:11 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:12 -- DEBUG: Response status code: 200
+2025-03-19-01:08:31 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:31 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '684', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:31 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:33 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:33 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '684', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:33 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:33 -- DEBUG: Response status code: 200
+2025-03-19-01:08:35 -- DEBUG: Response status code: 200
+2025-03-19-01:08:54 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:08:54 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '1027', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:08:54 -- DEBUG: Chat endpoint hit
+2025-03-19-01:08:57 -- DEBUG: Response status code: 200
+2025-03-19-01:09:12 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:09:12 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '1392', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:09:12 -- DEBUG: Chat endpoint hit
+2025-03-19-01:09:18 -- DEBUG: Response status code: 200
+2025-03-19-01:09:59 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:09:59 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '2673', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:09:59 -- DEBUG: Chat endpoint hit
+2025-03-19-01:10:07 -- DEBUG: Response status code: 200
+2025-03-19-01:10:38 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:10:38 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '4328', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:10:38 -- DEBUG: Chat endpoint hit
+2025-03-19-01:10:45 -- DEBUG: Exception encountered: 'Budget'
+2025-03-19-01:10:45 -- DEBUG: Response status code: 500
+2025-03-19-01:10:52 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:10:52 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '4328', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:10:52 -- DEBUG: Chat endpoint hit
+2025-03-19-01:10:58 -- DEBUG: Response status code: 200
+2025-03-19-01:12:11 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:12:11 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:12:11 -- DEBUG: Response status code: 200
+2025-03-19-01:12:11 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-01:12:11 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-01:12:11 -- DEBUG: Response status code: 200
+2025-03-19-01:12:34 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:12:34 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:12:34 -- DEBUG: Response status code: 200
+2025-03-19-01:12:37 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:12:37 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:12:37 -- DEBUG: Response status code: 200
+2025-03-19-01:12:58 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:12:58 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '157', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:12:58 -- DEBUG: Chat endpoint hit
+2025-03-19-01:13:00 -- DEBUG: Response status code: 200
+2025-03-19-01:13:10 -- DEBUG: Received request: POST http://localhost:8000/chat
+2025-03-19-01:13:10 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'content-type': 'application/json', 'content-length': '535', 'origin': 'http://localhost:8000', 'connection': 'keep-alive', 'sec-fetch-dest': 'empty', 'sec-fetch-mode': 'cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=0'})
+2025-03-19-01:13:10 -- DEBUG: Chat endpoint hit
+2025-03-19-01:13:12 -- DEBUG: Response status code: 200
+2025-03-19-01:26:29 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:26:29 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:29 -- DEBUG: Response status code: 200
+2025-03-19-01:26:29 -- DEBUG: Received request: GET http://localhost:8000/static/firebaseConfig.js
+2025-03-19-01:26:29 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': '*/*', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'script', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=2'})
+2025-03-19-01:26:29 -- DEBUG: Response status code: 200
+2025-03-19-01:26:33 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:26:33 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:33 -- DEBUG: Response status code: 200
+2025-03-19-01:26:36 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:26:36 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:36 -- DEBUG: Response status code: 200
+2025-03-19-01:26:36 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-01:26:36 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-01:26:36 -- DEBUG: Response status code: 404
+2025-03-19-01:26:38 -- DEBUG: Received request: GET http://localhost:8000/
+2025-03-19-01:26:38 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'referer': 'http://localhost:8000/budget', 'connection': 'keep-alive', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:38 -- DEBUG: Response status code: 200
+2025-03-19-01:26:41 -- DEBUG: Received request: GET http://localhost:8000/budget
+2025-03-19-01:26:41 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/', 'upgrade-insecure-requests': '1', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'priority': 'u=0, i'})
+2025-03-19-01:26:41 -- DEBUG: Response status code: 200
+2025-03-19-01:26:41 -- DEBUG: Received request: GET http://localhost:8000/favicon.ico
+2025-03-19-01:26:41 -- DEBUG: Headers: Headers({'host': 'localhost:8000', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0', 'accept': 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5', 'accept-language': 'en-CA,en-US;q=0.7,en;q=0.3', 'accept-encoding': 'gzip, deflate, br, zstd', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/budget', 'sec-fetch-dest': 'image', 'sec-fetch-mode': 'no-cors', 'sec-fetch-site': 'same-origin', 'priority': 'u=6'})
+2025-03-19-01:26:41 -- DEBUG: Response status code: 404

@@ -25,6 +25,7 @@ flattenedSchema = {
             "type": "object",
             "properties": {
                 "budget_limit": {"type": "number"},
+                "budget_surplus": {"type": "number"},
                 "items": {
                     "title": "items",
                     "type": "array",
@@ -62,7 +63,7 @@ flattenedSchema = {
                     },
                 },
             },
-            "required": ["budget_limit", "items", "warnings", "conversations"],
+            "required": ["budget_limit","budget_surplus", "items", "warnings", "conversations"],
         },
         "conversation": {
             "title": "Conversation",
@@ -125,6 +126,9 @@ def generate_prompt(previous_budget: dict, user_input: str):
         17.2 Opportunity Costs: Emphasize that every increase in one budget item may require a decrease elsewhere. Guide the user on how to shift funds from lower-priority to higher-priority areas.
         17.3 Long-Term Impact: If the user removes or reduces items, prompt them to consider how that change affects future months (e.g., deferring maintenance on a car could lead to higher costs later).
         17.4 Alternatives & Creative Solutions: Offer suggestions for cheaper alternatives (e.g., “Instead of eating out 4 times a week, reduce it to 2 times, and use the savings toward your credit card debt.”).
+    18. When presented with a list of receipt/invoice items, take the total cost, and name the item something that would summarize that group, along with where the purchase was made. Only make more than one item if there are purchases that are not categorically related to one another (e.g. groceries and clothes, different categories)
+    19. Always represent days in standard date format (YYYY-MM-DD). Convert any other date format into this format.
+    20. Whenever the user asks for financial advice, do not try to compute the budget surplus. Use the budget surplus given in budget_surplus for the previous state. Use it in relation to their requests, and try to suggest ideas or actions that would keep them in line with sound financial advice.
     User input: {user_input}
     """
 
@@ -178,12 +182,12 @@ def chat_with_user(chat_session, current_budget):
     """
     Interact with the user in a chat loop.
     """
-    print(chat_session.last)
+    #print(chat_session.last)
 
     response = chat_session.send_message(
         generate_prompt(current_budget, input("Enter budget info: "))
     )
-    print(response.text)
+    #print(response.text)
 
     while True:
         try:
@@ -191,21 +195,21 @@ def chat_with_user(chat_session, current_budget):
             response = chat_session.send_message(
                 generate_prompt(current_budget, user_input)
             )
-            print(response.text)
+            #print(response.text)
         except KeyboardInterrupt:
-            print("\nExiting chat. Goodbye!")
+            #print("\nExiting chat. Goodbye!")
             break
 
 
 def send_one_chat(current_state):
     model = configure_genai()
     chat_session = initialize_chat(model, current_state)
-    print(chat_session.last)
+    #print(chat_session.last)
 
     response = chat_session.send_message(
         generate_prompt(current_state, input("Enter budget info: "))
     )
-    print(response.text)
+    #print(response.text)
 
     while True:
         try:
@@ -213,10 +217,10 @@ def send_one_chat(current_state):
             response = chat_session.send_message(
                 generate_prompt(current_state, user_input)
             )
-            print(response.text)
+            #print(response.text)
             return response.text
         except KeyboardInterrupt:
-            print("\nExiting chat. Goodbye!")
+            #print("\nExiting chat. Goodbye!")
             break
 
 def parse_receipt_text(text):

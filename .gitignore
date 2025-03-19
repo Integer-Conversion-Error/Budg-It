@@ -1,3 +1,11 @@
 config.json
 *.pyc
 /myenv
+
+old_log.txt
+temp_reciept_test_1.png
+*.png
+*.jpg
+public/firebaseConfig.js
+firebase_credentials.json
+
