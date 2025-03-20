@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgeting Assistant</title>
     <!-- Include Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
@@ -176,8 +176,6 @@
                 throw error;
             }
         }
-
-
     </script>
     <style>
         * {
@@ -187,8 +185,8 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f2f5;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fb;
             color: #333;
             display: flex;
             min-height: 100vh;
@@ -196,7 +194,7 @@
 
         /* Sidebar Styles */
         .sidebar {
-            width: 250px;
+            width: 280px;
             background-color: #2c3e50;
             color: #ecf0f1;
             padding: 20px 0;
@@ -205,15 +203,17 @@
             overflow-y: auto;
             transition: all 0.3s;
             z-index: 1000;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
         .sidebar-header {
-            padding: 10px 20px;
+            padding: 15px 25px;
             border-bottom: 1px solid #34495e;
         }
 
         .sidebar-header h3 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
             margin-bottom: 5px;
         }
 
@@ -224,15 +224,16 @@
         }
 
         .sidebar-menu {
-            padding: 10px 0;
+            padding: 15px 0;
         }
 
         .menu-label {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            padding: 10px 20px;
-            opacity: 0.6;
+            padding: 15px 25px 10px;
+            opacity: 0.7;
+            font-weight: 500;
         }
 
         .budget-list {
@@ -241,20 +242,23 @@
         }
 
         .budget-item {
-            padding: 8px 20px;
+            padding: 12px 25px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
         }
 
         .budget-item:hover {
             background-color: #34495e;
+            border-left: 4px solid #3498db;
         }
 
         .budget-item.active {
             background-color: #3498db;
+            border-left: 4px solid #2980b9;
         }
 
         .budget-name {
@@ -262,6 +266,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            font-weight: 500;
         }
 
         .budget-actions {
@@ -277,165 +282,324 @@
             font-size: 14px;
             opacity: 0.7;
             transition: opacity 0.3s;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
         }
 
         .budget-actions button:hover {
             opacity: 1;
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .create-budget {
-            margin: 10px 20px;
-            padding: 8px 15px;
+            margin: 15px 25px;
+            padding: 12px 20px;
             background-color: #3498db;
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            transition: background 0.3s;
+            gap: 10px;
+            transition: all 0.3s;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .create-budget:hover {
             background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
 
         .logout-btn {
-            margin: 20px;
-            padding: 8px 15px;
+            margin: 20px 25px;
+            padding: 12px 20px;
             background-color: #e74c3c;
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            transition: background 0.3s;
+            gap: 10px;
+            transition: all 0.3s;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .logout-btn:hover {
             background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
 
         /* Main Content Styles */
         .main-content {
             flex: 1;
-            margin-left: 250px;
-            padding: 20px;
+            margin-left: 280px;
+            padding: 30px;
             transition: margin 0.3s;
         }
 
-        .container {
-            max-width: 900px;
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1900px;
             margin: 0 auto;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
         }
 
-        h1 {
-            margin-top: 0;
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.8rem;
+        .chat-column {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 60px);
+        }
+
+        .budget-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .budget-summary {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            height: auto;
+            width: auto;
+        }
+
+        .budget-chart-container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            height: 1200;
+            
+            overflow: hidden;
+        }
+
+        .budget-table-container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            overflow-x: auto;
+            overflow-y: auto;
+            height: auto;
+            width: auto;
+        }
+
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .chat-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0;
         }
 
         .chat-log {
-            height: 400px;
+            flex: 1;
             overflow-y: auto;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 10px 5px;
+            margin-bottom: 20px;
             background-color: #fafafa;
+            border-radius: 8px;
         }
 
-        .chat-log p {
-            margin: 6px 0;
-            line-height: 1.4em;
+        .message {
+            margin-bottom: 15px;
+            max-width: 85%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
-        #userInput,
-        #receiptInput {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-right: 8px;
+        .user-message {
+            background-color: #3498db;
+            color: white;
+            align-self: flex-end;
+            margin-left: auto;
+            border-bottom-right-radius: 2px;
         }
 
-        #userInput {
-            width: calc(100% - 114px);
-            margin-bottom: 10px;
+        .ai-message {
+            background-color: #f0f2f5;
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 2px;
+        }
+
+        .chat-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        #userInput, #receiptInput {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        #userInput:focus, #receiptInput:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
         }
 
         button {
-            padding: 10px 18px;
-            background-color: #007bff;
+            padding: 12px 20px;
+            background-color: #3498db;
             color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-family: 'Poppins', sans-serif;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #2980b9;
+            transform: translateY(-2px);
         }
 
-        section#current-budget h2,
+        .budget-summary-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .budget-stat {
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .budget-stat h3 {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #7f8c8d;
+        }
+
+        .budget-stat .value {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .total-budget {
+            background-color: #f0f7ff;
+            border: 1px solid #d0e3ff;
+        }
+
+        .total-budget .value {
+            color: #3498db;
+        }
+
+        .leftover-budget {
+            background-color: #f0fff7;
+            border: 1px solid #d0ffe3;
+        }
+
+        .leftover-budget .value {
+            color: #2ecc71;
+        }
+
         h2 {
-            margin-top: 30px;
-            font-size: 1.2rem;
-            border-bottom: 1px solid #ececec;
-            padding-bottom: 4px;
-        }
-
-        #budget-value {
-            font-size: 1.05rem;
-            font-weight: 400;
-            margin: 8px 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
         }
 
         /* Table styling */
         table {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fff;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 10px;
         }
 
-        table th,
-        table td {
-            border: 1px solid #ccc;
-            padding: 8px;
+        table th, table td {
+            padding: 12px 15px;
             text-align: left;
+            border-bottom: 1px solid #eee;
         }
 
         table th {
-            background-color: #f7f7f7;
+            background-color: #f8f9fa;
             font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.9rem;
+            text-transform: uppercase;
         }
 
-        table tbody tr:nth-child(even) {
-            background-color: #fafafa;
+        table th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        table th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        table tr:last-child td:first-child {
+            border-bottom-left-radius: 8px;
+        }
+
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 8px;
+        }
+
+        table tbody tr:hover {
+            background-color: #f5f7fb;
         }
 
         /* Pie chart section */
         #budget-chart {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        #budget-chart canvas {
-            max-width: 400px;
+            width: 100%;
+            height: 250px;
             margin: 0 auto;
-            display: block;
+            position: relative;
         }
 
         /* Modal Dialog */
@@ -448,62 +612,98 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .modal-content {
-            background-color: #fefefe;
+            background-color: #fff;
             margin: 15% auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            animation: slideIn 0.3s;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         .modal-content h3 {
             margin-top: 0;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
         }
 
         .modal-content input {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+            padding: 15px;
+            margin: 15px 0;
             border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s;
         }
 
-        .modal-content button {
-            margin-right: 8px;
+        .modal-content input:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
         }
 
         .modal-content .cancel-btn {
+            background-color: #95a5a6;
+        }
+
+        .modal-content .cancel-btn:hover {
             background-color: #7f8c8d;
         }
 
         .modal-buttons {
             display: flex;
             justify-content: flex-end;
-            margin-top: 15px;
+            gap: 10px;
+            margin-top: 20px;
         }
 
         /* Toggle Button for Mobile */
         .toggle-sidebar {
             display: none;
             position: fixed;
-            top: 10px;
-            left: 10px;
+            top: 20px;
+            left: 20px;
             background-color: #3498db;
             color: white;
             border: none;
-            border-radius: 4px;
-            padding: 10px;
+            border-radius: 6px;
+            padding: 12px;
             z-index: 1001;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .chat-column, .budget-column {
+                height: auto;
+            }
+        }
+
+        @media (max-width: 992px) {
             .sidebar {
-                transform: translateX(-250px);
+                transform: translateX(-280px);
             }
 
             .main-content {
@@ -518,8 +718,18 @@
                 display: block;
             }
 
-            .main-content.sidebar-active {
-                margin-left: 250px;
+            .main-container {
+                padding-top: 60px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .main-content {
+                padding: 15px;
+            }
+            
+            .budget-summary-content {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -556,50 +766,77 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <div class="container">
-            <h1 id="current-budget-title">Budgeting Assistant</h1>
-
-            <div class="chat-log" id="chatLog">
-                <!-- Chat logs will be dynamically added here -->
+        <div class="main-container">
+            <!-- Chat Column -->
+            <div class="chat-column">
+                <div class="chat-header">
+                    <h2 id="current-budget-title">Budget Assistant</h2>
+                </div>
+                
+                <div class="chat-log" id="chatLog">
+                    <!-- Chat messages will be dynamically added here -->
+                </div>
+                
+                <div class="chat-controls">
+                    <div class="input-group">
+                        <input type="text" id="userInput" placeholder="Type your message here..." />
+                        <button onclick="sendInput()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="file" id="receiptInput" accept="image/*" />
+                        <button onclick="uploadReceipt()">
+                            <i class="fas fa-upload"></i> Upload
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <div>
-                <input type="text" id="userInput" placeholder="Type your input here..." />
-                <button onclick="sendInput()">Send</button>
+            
+            <!-- Budget Column -->
+            <div class="budget-column">
+                <!-- Budget Summary -->
+                <div class="budget-summary">
+                    <h2>Budget Summary</h2>
+                    <div class="budget-summary-content">
+                        <div class="budget-stat total-budget">
+                            <h3>TOTAL BUDGET</h3>
+                            <div class="value" id="budget-value">$0.00</div>
+                        </div>
+                        <div class="budget-stat leftover-budget">
+                            <h3>LEFTOVER BUDGET</h3>
+                            <div class="value" id="leftover-value">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Budget Chart -->
+                <div class="budget-chart-container">
+                    <h2>Budget Distribution</h2>
+                    <canvas id="pieChart"></canvas>
+                </div>
+                
+                <!-- Budget Table -->
+                <div class="budget-table-container">
+                    <h2>Budget Items</h2>
+                    <table id="budgetTable">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Amount</th>
+                                <th>Category</th>
+                                <th>Importance</th>
+                                <th>Recurrence</th>
+                                <th>Due Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Budget items will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-            <div style="margin-top: 10px;">
-                <input type="file" id="receiptInput" accept="image/*" />
-                <button onclick="uploadReceipt()">Upload Receipt</button>
-            </div>
-
-            <section id="current-budget">
-                <h2>Current Budget</h2>
-                <p id="budget-value">No Budget Defined</p>
-            </section>
-
-            <h2>Budget Items</h2>
-            <table id="budgetTable">
-                <thead>
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Amount</th>
-                        <th>Category</th>
-                        <th>Importance Rank</th>
-                        <th>Recurrence</th>
-                        <th>Due Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Budget items will be dynamically added here -->
-                </tbody>
-            </table>
-
-            <!-- Pie Chart Section -->
-            <section id="budget-chart">
-                <h2>Budget Distribution</h2>
-                <canvas id="pieChart"></canvas>
-            </section>
         </div>
     </div>
 
@@ -628,6 +865,21 @@
     </div>
 
     <script>
+        let currentState = {
+            Budget: {
+                budget_limit: null,
+                budget_surplus: 0,
+                items: [],
+                warnings: [],
+                conversations: []
+            },
+            conversation: ""
+        };
+
+        let currentBudgetId = null;
+        let budgetToDelete = null;
+        const apiUrl = "http://localhost:8000/chat";
+        const receiptUrl = "http://localhost:8000/receipt";
 
         async function sendInput() {
             const userInput = document.getElementById("userInput").value;
@@ -639,8 +891,8 @@
             // Show loading indicator
             document.getElementById("userInput").disabled = true;
             const sendButton = document.querySelector("button[onclick='sendInput()']");
-            const originalButtonText = sendButton.textContent;
-            sendButton.textContent = "Sending...";
+            const originalButtonText = sendButton.innerHTML;
+            sendButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
             
             // Add user input to current state
             currentState.conversation = userInput;
@@ -689,7 +941,7 @@
                 // Update the UI
                 updateChatLog(data.Budget.conversations);
                 updateBudgetTable(data.Budget.items);
-                updateBudgetItem();
+                updateBudgetSummary();
                 updateBudgetChart();
         
                 // Clear the input field
@@ -700,7 +952,7 @@
             } finally {
                 // Restore input and button state
                 document.getElementById("userInput").disabled = false;
-                sendButton.textContent = originalButtonText;
+                sendButton.innerHTML = originalButtonText;
                 document.getElementById("userInput").focus();
             }
         }
@@ -715,8 +967,8 @@
         
             // Show loading indicator
             const uploadButton = document.querySelector("button[onclick='uploadReceipt()']");
-            const originalButtonText = uploadButton.textContent;
-            uploadButton.textContent = "Uploading...";
+            const originalButtonText = uploadButton.innerHTML;
+            uploadButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Uploading...';
             fileInput.disabled = true;
             
             try {
@@ -765,7 +1017,7 @@
                 // Update the UI
                 updateChatLog(data.Budget.conversations);
                 updateBudgetTable(data.Budget.items);
-                updateBudgetItem();
+                updateBudgetSummary();
                 updateBudgetChart();
         
                 // Clear the file input
@@ -777,26 +1029,10 @@
                 alert(`Failed to process receipt: ${error.message}`);
             } finally {
                 // Restore upload button and file input state
-                uploadButton.textContent = originalButtonText;
+                uploadButton.innerHTML = originalButtonText;
                 fileInput.disabled = false;
             }
         }
-
-        let currentState = {
-            Budget: {
-                budget_limit: null,
-                budget_surplus: 0,
-                items: [],
-                warnings: [],
-                conversations: []
-            },
-            conversation: ""
-        };
-
-        let currentBudgetId = null;
-        let budgetToDelete = null;
-        const apiUrl = "http://localhost:8000/chat";
-        const receiptUrl = "http://localhost:8000/receipt";
 
         // Check if user is logged in
         function checkLoginStatus() {
@@ -833,7 +1069,7 @@
                     }
 
                     budgetItem.innerHTML = `
-                        <span class="budget-name">${budget.name}</span>
+                        <span class="budget-name" data-id="${budget.id}">${budget.name || "Unnamed Budget"}</span>
                         <div class="budget-actions">
                             <button onclick="deleteBudget('${budget.id}', event)">
                                 <i class="fas fa-trash"></i>
@@ -866,10 +1102,13 @@
                     item.classList.remove('active');
                 });
 
-                const selectedItems = document.querySelectorAll(`.budget-item:has(.budget-name:contains('${budgetId}'))`);
-                if (selectedItems.length > 0) {
-                    selectedItems[0].classList.add('active');
-                }
+                // Find the budget item by data-id attribute
+                document.querySelectorAll('.budget-name[data-id="' + budgetId + '"]').forEach(nameSpan => {
+                    const listItem = nameSpan.closest('.budget-item');
+                    if (listItem) {
+                        listItem.classList.add('active');
+                    }
+                });
 
                 // Load the budget data from Firebase
                 const budget = await getBudget(userId, budgetId);
@@ -879,7 +1118,7 @@
                     currentBudgetId = budgetId;
 
                     // Update the UI with the budget data
-                    document.getElementById('current-budget-title').textContent = budget.name;
+                    document.getElementById('current-budget-title').textContent = budget.name || "Budget";
 
                     // Update the current state
                     currentState = {
@@ -896,7 +1135,7 @@
                     // Update the UI
                     updateChatLog(currentState.Budget.conversations);
                     updateBudgetTable(currentState.Budget.items);
-                    updateBudgetItem();
+                    updateBudgetSummary();
                     updateBudgetChart();
                 }
             } catch (error) {
@@ -1005,20 +1244,6 @@
             }
         }
 
-        async function deleteBudgetFromFirebase(userId, budgetId) {
-            try {
-                console.log(`Deleting budget ${budgetId} for user ${userId}`);
-                await db.collection('users').doc(userId)
-                    .collection('budgets').doc(budgetId).delete();
-                console.log("Budget deleted successfully");
-                return true;
-            } catch (error) {
-                console.error("Error deleting budget:", error);
-                throw error; // Re-throw to be handled by the caller
-            }
-        }
-
-
         // Toggle sidebar for mobile view
         document.querySelector('.toggle-sidebar').addEventListener('click', function () {
             document.querySelector('.sidebar').classList.toggle('active');
@@ -1033,346 +1258,188 @@
             if (!conversations || conversations.length === 0) return;
 
             conversations.forEach(chat => {
-                const userMessage = document.createElement("p");
+                if (chat.user_message) {
+                    const userMessage = document.createElement("div");
+                    userMessage.className = "message user-message";
+    
+                    // If the user message ends with the specified phrase, replace with 'Sent Image'
+                    const displayText = chat.user_message.endsWith("Please add the above receipt items as budget items.")
+                        ? "Sent Image"
+                        : chat.user_message;
+    
+                    userMessage.textContent = displayText;
+                    chatLog.appendChild(userMessage);
+                }
 
-                // If the user message ends with the specified phrase, replace with 'Sent Image'
-                const displayText = chat.user_message && chat.user_message.endsWith("Please add the above receipt items as budget items.")
-                    ? "Sent Image"
-                    : chat.user_message || "";
-
-                userMessage.textContent = `User: ${displayText}`;
-
-                const aiResponse = document.createElement("p");
-                aiResponse.textContent = `AI: ${chat.ai_response || ""}`;
-
-                chatLog.appendChild(userMessage);
-                chatLog.appendChild(aiResponse);
+                if (chat.ai_response) {
+                    const aiMessage = document.createElement("div");
+                    aiMessage.className = "message ai-message";
+                    aiMessage.textContent = chat.ai_response;
+                    chatLog.appendChild(aiMessage);
+                }
             });
 
             chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom
         }
-
-        // Upload receipt function
-
 
         // Updates the budget table with the latest budget items
         function updateBudgetTable(items) {
             const tableBody = document.getElementById("budgetTable").querySelector("tbody");
             tableBody.innerHTML = ""; // Clear previous table data
 
-            if (!items || items.length === 0) return;
+            if (!items || items.length === 0) {
+                const emptyRow = document.createElement("tr");
+                emptyRow.innerHTML = `<td colspan="6" style="text-align: center; padding: 20px;">No budget items yet</td>`;
+                tableBody.appendChild(emptyRow);
+                return;
+            }
 
             items.forEach(item => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
                     <td>${item.item_name || ""}</td>
-                    <td>${item.amount || 0}</td>
+                    <td>$${parseFloat(item.amount || 0).toFixed(2)}</td>
                     <td>${item.category || "N/A"}</td>
                     <td>${item.importance_rank !== null ? item.importance_rank : "N/A"}</td>
-                    <td>${item.recurrence_schedule || "N/A"}</td>
+                    <td>${item.recurrence_schedule || "One-time"}</td>
                     <td>${item.due_date || "N/A"}</td>
                 `;
                 tableBody.appendChild(row);
             });
         }
 
-        // Updates the budget limit display
-        function updateBudgetDisplay(budget) {
+        // Updates the budget summary
+        function updateBudgetSummary() {
+            const budgetLimit = currentState.Budget.budget_limit;
+            const budgetSurplus = currentState.Budget.budget_surplus;
+            
+            // Update total budget
             const budgetElement = document.getElementById('budget-value');
-            if (budget !== null && budget !== undefined) {
-                budgetElement.textContent = `$${parseFloat(budget).toFixed(2)}`;
+            if (budgetLimit !== null && budgetLimit !== undefined) {
+                budgetElement.textContent = `$${parseFloat(budgetLimit).toFixed(2)}`;
             } else {
-                budgetElement.textContent = "No Budget Defined";
+                budgetElement.textContent = "Not Set";
             }
-        }
-
-        // Replace these functions in your script
-
-        async function getUserBudgets(userId) {
-            try {
-                console.log("Getting budgets for user:", userId);
-                const budgetsSnapshot = await db.collection('users').doc(userId)
-                    .collection('budgets').orderBy('created', 'desc').get();
-
-                const budgets = [];
-                budgetsSnapshot.forEach(doc => {
-                    budgets.push({
-                        id: doc.id,
-                        ...doc.data()
-                    });
-                });
-
-                console.log("Retrieved budgets:", budgets.length);
-                return budgets;
-            } catch (error) {
-                console.error("Error fetching budgets:", error);
-                return [];
-            }
-        }
-
-        // Update loadUserBudgets to correctly display budget names
-        async function loadUserBudgets() {
-            const userId = sessionStorage.getItem('userId');
-            if (!userId) return;
-
-            try {
-                console.log("Loading user budgets...");
-                const budgets = await getUserBudgets(userId);
-                const budgetList = document.getElementById('budgetList');
-                budgetList.innerHTML = '';
-
-                budgets.forEach(budget => {
-                    const budgetItem = document.createElement('li');
-                    budgetItem.className = 'budget-item';
-                    if (budget.id === currentBudgetId) {
-                        budgetItem.classList.add('active');
-                    }
-
-                    // Use the budget name for display, but store the ID as a data attribute
-                    budgetItem.innerHTML = `
-                <span class="budget-name" data-id="${budget.id}">${budget.name || "Unnamed Budget"}</span>
-                <div class="budget-actions">
-                    <button onclick="deleteBudget('${budget.id}', event)">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
-            `;
-
-                    // Add click event to switch budgets
-                    budgetItem.addEventListener('click', function (e) {
-                        // Ignore clicks on the delete button
-                        if (e.target.tagName === 'BUTTON' || e.target.tagName === 'I') return;
-                        switchBudget(budget.id);
-                    });
-
-                    budgetList.appendChild(budgetItem);
-                });
-
-                console.log("User budgets loaded successfully");
-            } catch (error) {
-                console.error("Error loading budgets:", error);
-            }
-        }
-
-        // Update the switchBudget function to use data-id for finding budgets
-        async function switchBudget(budgetId) {
-            const userId = sessionStorage.getItem('userId');
-            if (!userId) return;
-
-            try {
-                console.log("Switching to budget:", budgetId);
-
-                // Highlight the selected budget in the sidebar
-                document.querySelectorAll('.budget-item').forEach(item => {
-                    item.classList.remove('active');
-                });
-
-                // Find the budget item by data-id attribute
-                document.querySelectorAll('.budget-name[data-id="' + budgetId + '"]').forEach(nameSpan => {
-                    const listItem = nameSpan.closest('.budget-item');
-                    if (listItem) {
-                        listItem.classList.add('active');
-                    }
-                });
-
-                // Load the budget data from Firebase
-                const budget = await getBudget(userId, budgetId);
-                if (budget) {
-                    // Update current budget ID in session storage
-                    sessionStorage.setItem('currentBudgetId', budgetId);
-                    currentBudgetId = budgetId;
-
-                    // Update the UI with the budget data
-                    document.getElementById('current-budget-title').textContent = budget.name || "Budget";
-
-                    // Update the current state
-                    currentState = {
-                        Budget: {
-                            budget_limit: budget.budget_limit,
-                            budget_surplus: budget.budget_surplus || 0,
-                            items: budget.items || [],
-                            warnings: budget.warnings || [],
-                            conversations: budget.conversations || []
-                        },
-                        conversation: ""
-                    };
-
-                    // Update the UI
-                    updateChatLog(currentState.Budget.conversations);
-                    updateBudgetTable(currentState.Budget.items);
-                    updateBudgetItem();
-                    updateBudgetChart();
-
-                    console.log("Budget switched successfully");
+            
+            // Update leftover budget
+            const leftoverElement = document.getElementById('leftover-value');
+            if (budgetSurplus !== null && budgetSurplus !== undefined) {
+                leftoverElement.textContent = `$${parseFloat(budgetSurplus).toFixed(2)}`;
+                
+                // Change color based on value
+                if (budgetSurplus < 0) {
+                    leftoverElement.style.color = '#e74c3c'; // Red for negative
                 } else {
-                    console.error("Budget not found:", budgetId);
+                    leftoverElement.style.color = '#2ecc71'; // Green for positive
                 }
-            } catch (error) {
-                console.error("Error switching budget:", error);
+            } else {
+                leftoverElement.textContent = "$0.00";
             }
-        }
-
-        // Updates budget item
-        function updateBudgetItem() {
-            updateBudgetDisplay(currentState.Budget.budget_limit);
         }
 
         // Create or update the pie chart that visualizes the budget distribution
         function updateBudgetChart() {
+            // Destroy the previous chart instance if it exists
+            if (window.pieChartInstance) {
+                window.pieChartInstance.destroy();
+                window.pieChartInstance = null;
+            }
+            
             const items = currentState.Budget.items || [];
             const budgetLimit = parseFloat(currentState.Budget.budget_limit) || 0;
             let labels = [];
             let dataValues = [];
+            let backgroundColors = [];
+
+            // Set of colors for the chart
+            const colorSet = [
+                '#3498db', // Blue
+                '#2ecc71', // Green
+                '#e74c3c', // Red
+                '#f39c12', // Orange
+                '#9b59b6', // Purple
+                '#1abc9c', // Teal
+                '#34495e', // Dark Blue
+                '#e67e22', // Dark Orange
+                '#27ae60', // Dark Green
+                '#c0392b', // Dark Red
+                '#8e44ad', // Dark Purple
+                '#16a085', // Dark Teal
+                '#d35400', // Darker Orange
+                '#2980b9', // Darker Blue
+                '#7f8c8d'  // Gray
+            ];
 
             // Sum the cost of budget items and prepare labels/data
             const totalItemsCost = items.reduce((total, item) => {
                 const amount = parseFloat(item.amount) || 0;
-                labels.push(item.item_name || "");
+                labels.push(item.item_name || "Unnamed Item");
                 dataValues.push(amount);
+                backgroundColors.push(colorSet[labels.length % colorSet.length]);
                 return total + amount;
             }, 0);
 
-            // Calculate surplus and add it if available
-            const surplus = budgetLimit - totalItemsCost;
-            if (surplus > 0) {
-                labels.push("Surplus");
-                dataValues.push(surplus);
+            // Calculate surplus and add it if available and budget limit is set
+            if (budgetLimit > 0) {
+                const surplus = budgetLimit - totalItemsCost;
+                if (surplus > 0) {
+                    labels.push("Leftover Budget");
+                    dataValues.push(surplus);
+                    backgroundColors.push('#2ecc71'); // Green for leftover
+                }
+            }
+            
+            // If no data, add placeholder
+            if (dataValues.length === 0) {
+                labels = ['No Budget Data'];
+                dataValues = [100];
+                backgroundColors = ['#ecf0f1'];
             }
 
-            // Create or update the pie chart using Chart.js
-            if (window.pieChartInstance) {
-                // Update existing chart data
-                window.pieChartInstance.data.labels = labels;
-                window.pieChartInstance.data.datasets[0].data = dataValues;
-                window.pieChartInstance.data.datasets[0].backgroundColor = generateColors(labels.length);
-                window.pieChartInstance.update();
-            } else {
-                // Initialize the chart
-                const ctx = document.getElementById('pieChart').getContext('2d');
-                window.pieChartInstance = new Chart(ctx, {
-                    type: 'pie',
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            data: dataValues,
-                            backgroundColor: generateColors(labels.length)
-                        }]
+            // Initialize the chart
+            const ctx = document.getElementById('pieChart').getContext('2d');
+            window.pieChartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: dataValues,
+                        backgroundColor: backgroundColors,
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { 
+                            position: 'right',
+                            labels: {
+                                boxWidth: 15,
+                                padding: 15,
+                                font: {
+                                    family: "'Poppins', sans-serif",
+                                    size: 12
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${value.toFixed(2)} (${percentage}%)`;
+                                }
+                            }
+                        }
                     },
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: { position: 'top' },
-                            title: { display: true, text: 'Budget Distribution' }
-                        }
-                    }
-                });
-            }
-        }
-
-        // Helper function to generate colors for the chart segments
-        function generateColors(numColors) {
-            const colors = [
-                '#FF6384', // Red-Pink
-                '#36A2EB', // Blue
-                '#FFCE56', // Yellow
-                '#4BC0C0', // Teal
-                '#9966FF', // Purple
-                '#FF9F40', // Orange
-                '#2ECC71', // Green
-                '#E74C3C', // Bright Red
-                '#8E44AD', // Dark Purple
-                '#1ABC9C', // Aqua
-                '#D35400', // Dark Orange
-                '#C0392B', // Dark Red
-                '#3498DB', // Light Blue
-                '#F1C40F', // Golden Yellow
-                '#27AE60', // Forest Green
-                '#9B59B6', // Soft Purple
-                '#34495E', // Dark Gray-Blue
-                '#16A085', // Deep Teal
-                '#F39C12', // Bright Orange
-                '#7F8C8D'  // Muted Gray
-            ];
-
-            if (numColors <= colors.length) {
-                return colors.slice(0, numColors);
-            } else {
-                let extended = [];
-                for (let i = 0; i < numColors; i++) {
-                    extended.push(colors[i % colors.length]);
+                    cutout: '60%'
                 }
-                return extended;
-            }
-        }
-
-        // Sends user input to the /chat endpoint and updates the state
-        // Replace the sendInput function with this version that saves to Firebase
-
-
-        // Initialize the page
-        async function initializePage() {
-            if (!checkLoginStatus()) return;
-
-            // Verify token with backend
-            const isTokenValid = await verifyToken();
-            if (!isTokenValid) {
-                alert("Your session has expired or is invalid. Please log in again.");
-                logout();
-                return;
-            }
-
-            setupUserInfo();
-
-            // Get current budget ID from session storage
-            currentBudgetId = sessionStorage.getItem('currentBudgetId');
-
-            // Load user budgets
-            await loadUserBudgets();
-
-            // Load current budget if available
-            if (currentBudgetId) {
-                await switchBudget(currentBudgetId);
-            } else {
-                // Create a default budget if none exists
-                const userId = sessionStorage.getItem('userId');
-                if (userId) {
-                    const budgets = await getUserBudgets(userId);
-                    if (budgets.length > 0) {
-                        await switchBudget(budgets[0].id);
-                    } else {
-                        const defaultBudgetId = await createBudget(userId, 'My Budget');
-                        await loadUserBudgets();
-                        await switchBudget(defaultBudgetId);
-                    }
-                }
-            }
-        }
-
-        async function getCurrentUserToken() {
-            return new Promise((resolve, reject) => {
-                // Give Firebase auth a moment to initialize properly
-                setTimeout(async () => {
-                    try {
-                        const user = firebase.auth().currentUser;
-                        if (!user) {
-                            console.log("No user is currently signed in");
-                            resolve(null);
-                            return;
-                        }
-
-                        const token = await user.getIdToken(true);
-                        console.log("Token obtained successfully");
-                        resolve(token);
-                    } catch (error) {
-                        console.error("Error getting token:", error);
-                        resolve(null); // Resolve with null instead of rejecting
-                    }
-                }, 1000); // Wait 1 second for auth to stabilize
             });
         }
 
-
-        
         async function verifyToken() {
             try {
                 console.log("Starting token verification...");
@@ -1411,8 +1478,30 @@
             }
         }
 
+        async function getCurrentUserToken() {
+            return new Promise((resolve, reject) => {
+                // Give Firebase auth a moment to initialize properly
+                setTimeout(async () => {
+                    try {
+                        const user = firebase.auth().currentUser;
+                        if (!user) {
+                            console.log("No user is currently signed in");
+                            resolve(null);
+                            return;
+                        }
 
-        // Call this at the start of initializePage
+                        const token = await user.getIdToken(true);
+                        console.log("Token obtained successfully");
+                        resolve(token);
+                    } catch (error) {
+                        console.error("Error getting token:", error);
+                        resolve(null); // Resolve with null instead of rejecting
+                    }
+                }, 1000); // Wait 1 second for auth to stabilize
+            });
+        }
+
+        // Initialize the page
         async function initializePage() {
             if (!checkLoginStatus()) return;
 
@@ -1455,6 +1544,7 @@
                 }
             }
         }
+
         function logout() {
             console.log("Logging out user");
             auth.signOut().then(() => {
